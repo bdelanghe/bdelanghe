@@ -1,0 +1,21 @@
+name: readme
+
+# Regenerate this profile README from the GitHub corpus, grouped by self-labeled
+# topic. Runs on the default GITHUB_TOKEN (synoptic uses the public /users endpoint).
+on:
+  schedule:
+    - cron: "0 12 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: bdelanghe/synoptic-github@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          group-by: topic

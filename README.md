@@ -1,57 +1,50 @@
-# My Repositories
+# Robert DeLanghe
 
-- [bdelanghe](https://github.com/bdelanghe/bdelanghe) - 🚀 Harnessing ADHD-driven obsession for categorization and meta-exploration, I'm a developer who blurs language boundaries and thrives in the vibrancy of coding communities.🎨🔧🌐 (⭐ 1 | 🍴 0 | ❗ 0) - 🐚 Written in Shell
+`bdelanghe` · 21 public repositories · TypeScript 8 · HTML 2 · JavaScript 2 · Jupyter Notebook 2
 
-- [synoptic-github](https://github.com/bdelanghe/synoptic-github) -  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ (⭐ 0 | 🍴 0 | ❗ 0) - 🐚 Written in Shell
+## experiment
 
-- [printer-bot](https://github.com/bdelanghe/printer-bot) (⭐ 1 | 🍴 2 | ❗ 1) - 🐍 Written in Python
+- [flask-mysql-ngrok](https://github.com/bdelanghe/flask-mysql-ngrok) — Bare-bones Flask + MySQL todo app with ngrok, set up with devenv. `📄HTML`
+- [lone](https://github.com/bdelanghe/lone) — Semantic blessing engine for DOM subtrees — untrusted element trees become typed Blessed<T> / Finding[] across a stable contract boundary. `🔷TypeScript`
+- [fold-engine](https://github.com/bdelanghe/fold-engine) — Linked-data engine for an Obsidian vault — JSON-LD / schema.org structure over notes. `📄HTML`
+- [unfold-obsidian-vault](https://github.com/bdelanghe/unfold-obsidian-vault) — An Obsidian vault published as structured, schema.org-annotated content.
+- [lean-to](https://github.com/bdelanghe/lean-to) — tiny vite project `🔷TypeScript`
+- [frond](https://github.com/bdelanghe/frond) — JS/TS round-trip validation with Deno + SWC: parse to an AST and regenerate source to check fidelity. `🔷TypeScript`
+- [overengineering-a-slide](https://github.com/bdelanghe/overengineering-a-slide) — Automating a simple slide with overengineered code `🔷TypeScript`
 
-- [first-pass](https://github.com/bdelanghe/first-pass) - A CLI tool that enhances your resume creation, aligns skills with job descriptions, and guides in building evidence-backed points 🚀📝 (⭐ 0 | 🍴 0 | ❗ 0) - 🔷 Written in TypeScript
+## developer-tools
 
-- [pull-request](https://github.com/bdelanghe/pull-request) - A secure, personalized fork 🍴 of @repo-sync's GitHub action: 'pull-request'. Enhanced for robust CI and ensuring unchanged action behavior 🔐 (⭐ 0 | 🍴 0 | ❗ 0) - 🐚 Written in Shell
+- [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `🔷TypeScript`
+- [git-ast](https://github.com/bdelanghe/git-ast) — Language-aware Git: AST-based diffs and merges instead of line-based — cleaner history, fewer conflicts. `🦀Rust`
+- [dev-registry](https://github.com/bdelanghe/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `🐚Shell`
+- [dev-contracts-spec](https://github.com/bdelanghe/dev-contracts-spec) — Zod schemas and types for dev-contracts `🔷TypeScript`
 
-- [gitleaks-action](https://github.com/bdelanghe/gitleaks-action) - A secure, personalized fork 🍴 of @gitleaks' GitHub action: 'gitleaks-action'. Enhanced for robust CI and ensuring unchanged action behavior 🔐 (⭐ 0 | 🍴 0 | ❗ 2) - 🟨 Written in JavaScript
+## ai
 
-- [create-pull-request](https://github.com/bdelanghe/create-pull-request) - A secure, personalized fork 🍴 of @peter-evans' GitHub action: 'create-pull-request'. Enhanced for robust CI and ensuring unchanged action behavior 🔐 (⭐ 0 | 🍴 0 | ❗ 1) - 🔷 Written in TypeScript
+- [bdelanghe-claude-skills](https://github.com/bdelanghe/bdelanghe-claude-skills) — Claude Code skills and plugins for AI-assisted engineering workflows
+- [first-pass](https://github.com/bdelanghe/first-pass) — A CLI tool that enhances your resume creation, aligns skills with job descriptions, and guides in building evidence-backed points 🚀📝 `🔷TypeScript`
+- [mcp-conversations-sqlite](https://github.com/bdelanghe/mcp-conversations-sqlite)
 
-- [parts-of-speech-analysis](https://github.com/bdelanghe/parts-of-speech-analysis) - An interactive tool for text analysis, utilizing p5.js and RitaJS. It sorts words from your input text into Penn Treebank Part-of-Speech categories 🎯🎨📘 (⭐ 0 | 🍴 1 | ❗ 0) - 📜 Written in Rich Text Format
+## cli
 
-- [sicp](https://github.com/bdelanghe/sicp) - A personal exploration through the iconic "Structure and Interpretation of Computer Programs". This repository houses my journey, providing personal solutions to the book's exercises 📚💡 (⭐ 0 | 🍴 0 | ❗ 0) - 📜 Written in Scheme
+- [ssh-doctor](https://github.com/bdelanghe/ssh-doctor) — A Bash script that diagnoses SSH setup issues and provides streamlined troubleshooting 🩺🔧 `🐚Shell`
+- [git-tidy](https://github.com/bdelanghe/git-tidy) — Flags local branches merged via PR but diverged from their merged state — keeps your repo tidy. `🐹Go`
 
-- [warehouse-layout](https://github.com/bdelanghe/warehouse-layout) - A project using a JavaScript-based box-stacking algorithm to model efficient warehouse organization 📦🔧 (⭐ 0 | 🍴 0 | ❗ 0) - 🟨 Written in JavaScript
+## game
 
-- [dark-magics](https://github.com/bdelanghe/dark-magics) - A project highlighting the pitfalls of Python wildcard imports, overridden magic methods, and unexpected class behaviors 🐰💻 @recursecenter (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+- [sort-doku](https://github.com/bdelanghe/sort-doku) — A unique take on the classic Sudoku puzzle game, introducing the concept of interchangeable elements and state reduction 🧩🌀  `🔷TypeScript`
+- [hookie](https://github.com/bdelanghe/hookie) — A word deconstruction game developed with boardgame.io and React, providing a strategic Scrabble Hooks variant 🎲🔤 `Jupyter Notebook`
 
-- [game-of-life](https://github.com/bdelanghe/game-of-life) - A Python implementation of the game, showcasing the power of pair programming and collaboration 🎲🧩 @recursecenter (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+## algorithms
 
-- [tic-tac-toe](https://github.com/bdelanghe/tic-tac-toe) - A Python-based game that adds dynamic customization to the classic Tic Tac Toe 🎲💻 @recursecenter (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+- [warehouse-layout](https://github.com/bdelanghe/warehouse-layout) — A project using a JavaScript-based box-stacking algorithm to model efficient warehouse organization 📦🔧 `🟨JavaScript`
 
-- [zombie-finder](https://github.com/bdelanghe/zombie-finder) - A web app transforming environments into a zombie world, featuring QR code scavenging and seasonal rescue missions 🧟‍♂️🔦 (⭐ 0 | 🍴 0 | ❗ 0) - 📄 Written in HTML
+## data-viz
 
-- [ctci](https://github.com/bdelanghe/ctci) - A collection of Python solutions to the problem sets in the book, designed to aid in interview preparation 🐍🔎 (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+- [imdb-kaggle](https://github.com/bdelanghe/imdb-kaggle) — TMDB keyword sentiment pipeline (SCL lexicon to per-movie valence), run monthly via GitHub Actions and published to Kaggle. `Jupyter Notebook`
 
-- [leet-me](https://github.com/bdelanghe/leet-me) - A Python CLI tool that personalizes LeetCode practice by selecting problems based on user-preferred parameters 🎯🐍 (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+## design-tokens
 
-- [matchbox-tic-tac-toe](https://github.com/bdelanghe/matchbox-tic-tac-toe) - A CLI game with a progressively learning AI based on the MENACE algorithm, providing an evolving gameplay experience 🎲🤖 (⭐ 0 | 🍴 0 | ❗ 0) - 🐍 Written in Python
+- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `🟨JavaScript`
 
-- [what-is-ada](https://github.com/bdelanghe/what-is-ada) - A community game where players guess my dog, Ada's breed, using provided images. Accuracy determines the scoring 🐕 🔎 (⭐ 0 | 🍴 0 | ❗ 0) - 📄 Written in HTML
-
-- [bdelanghe.github.io](https://github.com/bdelanghe/bdelanghe.github.io) - A personal webpage repository showcasing projects and blogs, built and deployed with GitHub Pages 🌐💼 (⭐ 0 | 🍴 0 | ❗ 0) - 📄 Written in HTML
-
-- [anagram-trie](https://github.com/bdelanghe/anagram-trie) - A Python project that uses Trie data structures for swift anagram retrieval and word checking 🧩🌳 (⭐ 0 | 🍴 0 | ❗ 0) - 📜 Written in Jupyter Notebook
-
-- [ssh-doctor](https://github.com/bdelanghe/ssh-doctor) - A Bash script that diagnoses SSH setup issues and provides streamlined troubleshooting 🩺🔧 (⭐ 0 | 🍴 0 | ❗ 0) - 🐚 Written in Shell
-
-- [hookie](https://github.com/bdelanghe/hookie) - A word deconstruction game developed with boardgame.io and React, providing a strategic Scrabble Hooks variant 🎲🔤 (⭐ 0 | 🍴 0 | ❗ 5) - 📜 Written in Jupyter Notebook
-
-- [sort-doku](https://github.com/bdelanghe/sort-doku) - A unique take on the classic Sudoku puzzle game, introducing the concept of interchangeable elements and state reduction 🧩🌀  (⭐ 0 | 🍴 0 | ❗ 5) - 🔷 Written in TypeScript
-
-- [the-conversation](https://github.com/bdelanghe/the-conversation) - A website co-created through an interactive dialogue with GitHub Copilot CLI and GPT-4 🤖💬 (⭐ 0 | 🍴 0 | ❗ 0)
-
-- [present-me](https://github.com/bdelanghe/present-me) - Pull Request as a document / blog post / presentation tool (⭐ 0 | 🍴 0 | ❗ 1) - 🐹 Written in Go
-
-- [lean-to](https://github.com/robertdelanghe/lean-to) - tiny vite project (⭐ 0 | 🍴 0 | ❗ 3) - 🔷 Written in TypeScript
-
-- [welcome-to-learn-5-welcome-000](https://github.com/learn-co-students/welcome-to-learn-5-welcome-000) (⭐ 0 | 🍴 0 | ❗ 0) - 💎 Written in Ruby
-
-- [textie-feelie](https://github.com/goodforenergy/textie-feelie) (⭐ 0 | 🍴 0 | ❗ 0) - 🟨 Written in JavaScript
+<sub>Generated by <a href="https://github.com/bdelanghe/synoptic-github">synoptic-github</a> @ 066c275 · 2023-08-06 — grouped by self-labeled topic.</sub>
