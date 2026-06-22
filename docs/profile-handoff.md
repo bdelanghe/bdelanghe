@@ -1,21 +1,20 @@
 # Profile hand-off — paste-ready copy
 
-This repo's `README.md` is **auto-regenerated daily** by the synoptic-github
-action (`.github/workflows/update-readme.yml`), so handcrafted edits there get
-overwritten on the next run. The finished copy below lives here instead, so the
-paste-ready text survives in the repo rather than only in a chat thread.
+The durable home for finished profile copy across surfaces — GitHub and LinkedIn —
+so the paste-ready text lives in the repo, not only in a chat thread.
 
-To make any of this go live, paste it into the relevant surface (and, for the
-profile `README.md`, see the note at the bottom about the auto-update action).
+Framing decision (current): **Bounded Systems is a project, not employment.** Aura
+stays the current role; Bounded Systems is independent/self-employed work alongside it.
 
 ---
 
-## Profile README (the `bdelanghe/bdelanghe` README)
+## 1. Profile README — ✅ LIVE
 
-Infra-serious but human: leads with Bounded Systems and the **door** thesis (the
-audience is engineers sizing up the work), keeps the Recurse-Center / pairing
-warmth so it doesn't read as a cold corporate pivot, and demotes the résumé
-framing without erasing it.
+This is shipped: `README.md` is now the handcrafted profile below, and the daily
+auto-regeneration has been retired (cron removed from `.github/workflows/readme.yml`,
+legacy `update-readme.yml` deleted). To regenerate the old synoptic repo listing,
+run `readme.yml` manually via **Run workflow** — note that doing so overwrites
+`README.md`.
 
 ```markdown
 ### Robert DeLanghe
@@ -37,7 +36,7 @@ threads: dev containers, state machines (xstate), design tokens. Brooklyn, NY.
 
 ---
 
-## Sidebar bio (the short GitHub profile field, separate from the README)
+## 2. GitHub sidebar bio (short profile field)
 
 ```
 Building Bounded Systems — bounded authority for AI agents, at the door.
@@ -45,25 +44,114 @@ Building Bounded Systems — bounded authority for AI agents, at the door.
 
 ---
 
-## Manual follow-ups (genuinely-yours calls)
+## 3. GitHub pins — follow-up (manual)
 
-These need your decision, not a guess:
-
-- **LinkedIn** still says "Integration Engineer · Ruby/JS." This README will send
-  engineers there — either refresh it to match, or drop the link until you do.
-- **Pins** — consider re-pinning `prx` and `guest-room` to the top so the
-  profile's evidence matches its claim (currently `sort-doku`, `first-pass`, …).
+Re-pin `prx` and `guest-room` to the top so the profile's evidence matches its
+claim (currently `sort-doku`, `first-pass`, …). They live under the
+**bounded-systems** org, so in **Customize your pins** switch the source dropdown
+to that org. Pins must be **public** repos.
 
 ---
 
-## Note on the auto-update action
+## 4. LinkedIn — Headline
 
-The profile README block above will **not** appear on the profile until the
-synoptic-github auto-update is changed — otherwise the next scheduled run
-regenerates `README.md` from the repo listing and discards the handcrafted copy.
-Options when you're ready:
+```
+I build the security layer for agentic systems — software delivered by agents, governed like infrastructure
+```
 
-- Disable/remove the schedule in `.github/workflows/update-readme.yml` and commit
-  the handcrafted README directly, or
-- Inject this block as a static header/intro that the generator preserves on each
-  run.
+Shorter alternative:
+
+```
+Security layer for agentic systems · capability-based access control · building prx + @bounded-systems
+```
+
+> Drop the "Ruby/JS" from the headline — list languages under **Skills**, where
+> LinkedIn actually indexes them.
+
+---
+
+## 5. LinkedIn — About
+
+```
+I build the security layer for agentic systems — the machinery that lets software be delivered by agents but governed like infrastructure. My work centers on capability-based security: every privileged effect an agent performs is verified against a signed owner, so nothing consequential happens without a traceable, enforceable source.
+
+This is the throughline of my engineering: imposing structure on systems as they scale. At Aura I work at the integration boundary between systems; before that I led front-end and developer-experience work, including a rebuild that cut load times 45%. The current work, prx and the bounded-systems capability libraries, is where I'm working out the harder problem — keeping many agent-authored components honest against each other as they evolve.
+
+Deepest in: capability security, access control, TypeScript, systems architecture. Working across the full stack (Node, Python, Postgres, Docker, AWS) when the problem needs it.
+
+Building in the open at github.com/bounded-systems. Reach me at cv@robertdelanghe.com.
+```
+
+---
+
+## 6. LinkedIn — Experience
+
+### Current (keep / update in place)
+
+- **Title:** Integration Engineer
+- **Company:** Aura · Full-time
+- **Dates:** `<your start date>` – Present · Brooklyn, NY
+- **Description:**
+  > Work at the integration boundary between systems — the connections, contracts,
+  > and reliability where Aura's platform meets the services and data around it.
+
+### Add (project)
+
+- **Title:** Creator (Independent Project)  *(switch to "Founder" if/when it graduates from a project)*
+- **Company:** Bounded Systems · Self-employed
+- **Dates:** 2025 – Present · Brooklyn, NY
+- **Link:** https://bounded.tools · https://github.com/bounded-systems
+- **Description:**
+  > Capability-based security for agentic systems — software delivered by agents,
+  > governed like infrastructure. Every privileged effect an agent performs is
+  > verified against a signed owner, so nothing consequential happens without a
+  > traceable, enforceable source. Building **prx** and the `@bounded-systems`
+  > capability libraries in the open.
+
+### Optional (past) — only if you want it on the timeline
+
+The "rebuild that cut load times 45%" front-end / developer-experience role. Needs
+your real company + dates:
+
+- **Title:** `<Front-End / Developer Experience Lead>`
+- **Company:** `<company>`
+- **Dates:** `<start>` – `<end>`
+- **Description:**
+  > Led front-end and developer-experience work; drove a rebuild that cut load
+  > times 45%.
+
+---
+
+## 7. LinkedIn — Company Page (Bounded Systems)
+
+A Page gives the project an official presence + logo the Experience entry can link
+to; it does **not** make it your employer.
+
+| Field | Value |
+| --- | --- |
+| **Name** | `Bounded Systems` |
+| **Public URL** | `linkedin.com/company/bounded-systems` |
+| **Website** | `https://bounded.tools` |
+| **Industry** | `Software Development` |
+| **Organization size** | `0-1 employees` |
+| **Organization type** | `Self-employed` *(alt: `Privately held` if you want it to read more company-like)* |
+| **Logo** | The Bounded Systems mark, 300×300 — from the [`bounded-systems/brand`](https://github.com/bounded-systems/brand) repo |
+
+**Tagline** (≤120 chars):
+
+```
+The security layer for agentic systems — software delivered by agents, governed like infrastructure
+```
+
+Shorter tagline options:
+
+```
+Capability-based security for agentic systems.
+```
+```
+Bounded authority for AI agents — at the door.
+```
+
+> Editing LinkedIn quietly: **Settings → Visibility → "Share profile updates with
+> your network" → Off** before making personal-profile edits, so they don't
+> broadcast.
