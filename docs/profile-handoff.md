@@ -86,39 +86,55 @@ Building in the open at github.com/bounded-systems. Reach me at cv@robertdelangh
 
 ## 6. LinkedIn — Experience
 
-### Current (keep / update in place)
+**Guardrails:** don't rename titles of record — "Integrations Consultant" was the
+real title at three contract roles, and "Senior Integration Engineer" is the
+current Aura title, so "integration" can't be purged wholesale. The repetition to
+fix is **"Integrations Consultant" ×3** in 2018–2021; consolidate that, don't
+falsify titles. Curate the timeline to the throughline: *imposing structure on
+systems as they scale → capability security.*
 
-- **Title:** Integration Engineer
-- **Company:** Aura · Full-time
-- **Dates:** `<your start date>` – Present · Brooklyn, NY
-- **Description:**
-  > Work at the integration boundary between systems — the connections, contracts,
-  > and reliability where Aura's platform meets the services and data around it.
+### Spine — foreground (all pull one direction)
 
-### Add (project)
-
-- **Title:** Creator (Independent Project)  *(switch to "Founder" if/when it graduates from a project)*
-- **Company:** Bounded Systems · Self-employed
-- **Dates:** 2025 – Present · Brooklyn, NY
-- **Link:** https://bounded.tools · https://github.com/bounded-systems
-- **Description:**
+**Bounded Systems — Creator (Independent Project)** · Self-employed · 2025 – Present · Brooklyn, NY
+- Link: https://bounded.tools · https://github.com/bounded-systems
+- *(switch "Creator" → "Founder" if/when it graduates from a project)*
   > Capability-based security for agentic systems — software delivered by agents,
   > governed like infrastructure. Every privileged effect an agent performs is
   > verified against a signed owner, so nothing consequential happens without a
   > traceable, enforceable source. Building **prx** and the `@bounded-systems`
   > capability libraries in the open.
 
-### Optional (past) — only if you want it on the timeline
+**Senior Integration Engineer — Aura Home, Inc.** · Full-time · Oct 2023 – Present · NYC Metro · Hybrid
+  > Work at the integration boundary between systems — the connections, contracts,
+  > and reliability where Aura's platform meets the services and data around it.
 
-The "rebuild that cut load times 45%" front-end / developer-experience role. Needs
-your real company + dates:
+**Software Engineer — L2L** · Full-time · Apr 2021 – Sep 2023 · NYC Metro · Remote
+- **Lead with the static-analysis bullet** — it's the cleanest bridge to the
+  Bounded Systems "keeping agent-authored components honest" line. Trim the
+  design-system / pagination / dashboard front-end bullets to one so they don't
+  drag back toward front-end.
 
-- **Title:** `<Front-End / Developer Experience Lead>`
-- **Company:** `<company>`
-- **Dates:** `<start>` – `<end>`
-- **Description:**
-  > Led front-end and developer-experience work; drove a rebuild that cut load
-  > times 45%.
+**Participant — Recurse Center** · Sep 2019 – Dec 2019 · Brooklyn, NY
+- Keep the Haskell/type-theory bullet verbatim — it explicitly names itself the
+  foundation for the capability/contract work. Narrative gift; don't cut.
+
+### Consolidate — the "remove integrations" move
+
+Three overlapping **Integrations Consultant** contracts (2018–2021):
+- **Keep Pioneer Works** (Nov 2018 – Feb 2021) as the representative one — strongest
+  bullets (CRM consolidation, Square API ETL, 35-tool evaluation).
+- **Drop Kaleida Studio and theprepared.org**, or fold their single best line into
+  Pioneer Works. Removes two of the three identical headers in one move.
+
+### Trim — pre-engineering (your call)
+
+- **Roll & Hill** (Inventory Manager, 2015–2018) and **Situ Fabrication**
+  (Designer/Rhino, 2014) predate the engineering career. Drop them, or collapse to
+  a one-line "Earlier: operations & fabrication" note. Keep only if you want the
+  non-linear Bennington-design origin to show.
+
+> Net: ~8 roles → ~5 that all pull one direction, and "Integrations Consultant"
+> appears once instead of three times.
 
 ---
 
@@ -155,3 +171,36 @@ Bounded authority for AI agents — at the door.
 > Editing LinkedIn quietly: **Settings → Visibility → "Share profile updates with
 > your network" → Off** before making personal-profile edits, so they don't
 > broadcast.
+
+---
+
+## 8. LinkedIn — Skills (curation)
+
+The existing list over-indexes on L2L-era front-end; the security-layer skills
+were buried ~#11. Reorder to lead with the thesis, prune the noise.
+
+**Pin top 5, in this order** (mirrors the headline):
+
+1. `Capability-Based Security`
+2. `Access Control`
+3. `Software Architecture`
+4. `Distributed Systems`
+5. `TypeScript`
+
+**Keep, below the pins (≈6–12):**
+`System Integration` · `System Architecture` · `Developer Experience` ·
+`Node.js` · `Python (Programming Language)` · `PostgreSQL` · `Docker` ·
+`Amazon Web Services (AWS)` · `REST APIs` · `Algorithms` · `Theory of Computation`
+
+**Prune / let sink (L2L-era front-end — dilutes the story):**
+`jQuery` · `Bootstrap (Framework)` · `SASS` · `Angular.js` · `Vue.js` · `AJAX` ·
+`Responsive Web Design` · `HTML5` · `CSS` · `Figma (Software)` · `Nuxt.js` · `Jenkins`
+
+**Dedupe:**
+- `Python` + `Python (Programming Language)` → keep the canonical one, drop the bare `Python`.
+- `Docker` + `Docker Products` → keep `Docker`.
+- `Software Architecture` (Bounded Systems) vs `System Architecture` (Aura) → both fine; tied to different roles, both signal senior.
+
+**Attach skills to experiences** — LinkedIn ranks skills shown *with* a role higher:
+- Bounded Systems: `Capability-Based Security`, `Software Architecture`, `Access Control` (done).
+- Aura (Senior Integration Engineer): attach `System Architecture`, `Access Control`, `API Integrations`.
