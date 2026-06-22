@@ -44,12 +44,27 @@ Building Bounded Systems — bounded authority for AI agents, at the door.
 
 ---
 
-## 3. GitHub pins — follow-up (manual)
+## 3. GitHub pins (manual) — the 6 to pin, in order
 
-Re-pin `prx` and `guest-room` to the top so the profile's evidence matches its
-claim (currently `sort-doku`, `first-pass`, …). They live under the
-**bounded-systems** org, so in **Customize your pins** switch the source dropdown
-to that org. Pins must be **public** repos.
+Current pins (`sort-doku`, `first-pass`, `hookie`, …) predate the repositioning and
+argue for a different person than the README. Replace with these 6, in display
+order, so the evidence matches the claim:
+
+1. `bounded-systems/guest-room` — the capability runtime (the model)
+2. `bounded-systems/prx` — the agent-run work-unit CLI (has a ⭐)
+3. `bounded-systems/claude-box` — capability-secured box for agent sessions (the product)
+4. `bounded-systems/ocap-provenance` — capability-use provenance (the rigor)
+5. `bounded-systems/door-kit` — door-client SDK (represents the whole door family)
+6. `bdelanghe/git-ast` — AST-based git in Rust (range + systems depth)
+
+- **#6 alt:** swap `git-ast` for a representative door (`door-concierge` / `door-scout`)
+  if you'd rather stay all-in on the org. One non-agent project keeps it from reading
+  monomaniacal, so `git-ast` is the lean.
+- **Skip `gastownhall/beads` (24.7k★)** — strong social proof, but not yours and
+  off-narrative; borrowed stars dilute a focused profile.
+
+In **Customize your pins**, switch the **Show** source to the **bounded-systems**
+org to surface those repos. All pins must be **public**.
 
 ---
 
