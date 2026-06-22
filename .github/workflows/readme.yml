@@ -1,0 +1,25 @@
+name: readme
+
+# Auto-fill ONLY the marked block in README.md with a grouped project list,
+# preserving the handcrafted banner/bio/closing. Daily + on demand.
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: bdelanghe/synoptic-github@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          inject-into: README.md
+          group-by: topic
+          orgs: bounded-systems
+          # Optional: curate which repos appear by topic, e.g.
+          # filter: capability-security,agent-infra,developer-tools,ai,cli

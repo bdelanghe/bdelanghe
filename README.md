@@ -17,4 +17,9 @@ agent acts through — not the process, not the container.
 Recurse Center alum in Brooklyn, NY — happiest pairing on a hard problem. Came up
 through dev containers, state machines (xstate), and design tokens.
 
+## More work
+
+<!-- synoptic:start -->
+<!-- synoptic:end -->
+
 *Let's build something bounded. 🤝*
