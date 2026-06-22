@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="Robert DeLanghe — Capability security for agentic systems" src="assets/header-light.svg" width="100%">
+</picture>
+
 ### Robert DeLanghe
 
 I build **[Bounded Systems](https://github.com/bounded-systems)** — infrastructure for
