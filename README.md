@@ -14,7 +14,7 @@ agent acts through — not the process, not the container.
 - 🤖 **[prx](https://github.com/bounded-systems/prx)** — the agent-run work-unit CLI + the `@bounded-systems/*` capability libraries.
 - 🌐 **[bounded.tools](http://bounded.tools)**
 
-Recurse Center never-graduate, still happiest pairing on a hard problem. Earlier
-threads: dev containers, state machines (xstate), design tokens. Brooklyn, NY.
+Recurse Center alum in Brooklyn, NY — happiest pairing on a hard problem. Came up
+through dev containers, state machines (xstate), and design tokens.
 
 *Let's build something bounded. 🤝*
