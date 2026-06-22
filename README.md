@@ -15,7 +15,6 @@ agent acts through — not the process, not the container.
 - 🚪 **[guest-room](https://github.com/bounded-systems/guest-room)** — the capability model in one library: rooms & doors, specs that run as tests.
 - 🤖 **[prx](https://github.com/bounded-systems/prx)** — the agent-run work-unit CLI + the `@bounded-systems/*` capability libraries.
 - 🌐 **[bounded.tools](http://bounded.tools)**
-- 🎨 **[robertdelanghe.com](https://robertdelanghe.com)** — art & making
 
 Recurse Center alum in Brooklyn, NY — happiest pairing on a hard problem. Came up
 through dev containers, state machines (xstate), and design tokens.
