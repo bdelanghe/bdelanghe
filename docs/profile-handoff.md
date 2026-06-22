@@ -8,6 +8,30 @@ stays the current role; Bounded Systems is independent/self-employed work alongs
 
 ---
 
+## 0. Execution checklist (do in one sitting)
+
+Section refs (§) point to the paste-ready copy below.
+
+**GitHub**
+- [ ] Pins — set the 6, in order: `guest-room` · `prx` · `claude-box` · `ocap-provenance` · `door-kit` · `git-ast` (§3; switch the dialog's **Show** source to **bounded-systems**)
+- [ ] Sidebar bio — paste §2
+
+**LinkedIn** — first: Settings → Visibility → "Share profile updates" → **Off** (§7 note)
+- [ ] Headline — §4 (delete "Ruby/JS")
+- [ ] About — §5
+- [ ] Experience · Aura — confirm title **Senior Integration Engineer**, add the 2 quantified bullets with **real numbers** (§6) ← only gap that needs your data
+- [ ] Experience · L2L — reorder to lead with the static-analysis bullet; demote front-end (§6)
+- [ ] Experience · consolidate — drop **Kaleida** + **theprepared.org**, keep **Pioneer Works** (§6)
+- [ ] Experience · Recurse Center — leave the Haskell/type-theory bullet verbatim (§6)
+- [ ] Experience · Roll & Hill + Situ — drop, or use the one-line collapse (§6)
+- [ ] Skills — pin top 5, let front-end sink, dedupe `Python`/`Docker` (§8)
+- [ ] Company Page — create with the §7 fields + tagline; logo (300×300) from `bounded-systems/brand`
+
+**Site / résumé** (you have local access to `bdelanghe/site`; the sandbox couldn't reach `robertdelanghe.dev` — `host_not_allowed`)
+- [ ] Check `robertdelanghe.dev` + `/resume` for stale "Integration Engineer · Ruby/JS", front-end-forward framing, and the Aura title; align to the README/LinkedIn story. Paste me the headline/summary/titles/skills if you want a second pass.
+
+---
+
 ## 1. Profile README — ✅ LIVE
 
 This is shipped: `README.md` is now the handcrafted profile below, and the daily
