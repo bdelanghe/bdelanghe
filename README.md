@@ -66,8 +66,8 @@ through dev containers, state machines (xstate), and design tokens.
 ## design-tokens
 
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `HTML`
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `HTML`
 
 ## data-viz
 
@@ -94,8 +94,18 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
-- [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point
-- [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores
+- [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
+- [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
+- [slack](https://github.com/bounded-systems/slack) — Policy-gated, provenance-tracked Slack read surface: bounded read ops behind a swappable transport port, with keymaker-minted scoped credentials `TypeScript`
+- [scout](https://github.com/bounded-systems/scout) — Content-addressed surface reads (file/grep/files) with anchored-chain provenance `TypeScript`
+- [repo-root](https://github.com/bounded-systems/repo-root) — Repo-root resolution capability: lazy git-based runtime root plus the eager .git-marker walk for build/codegen, the one sanctioned root-resolution point `TypeScript`
+- [proc](https://github.com/bounded-systems/proc) — The one allowed subprocess spawn point, routing external-tool invocations through a capability `TypeScript`
+- [host](https://github.com/bounded-systems/host) — The one sanctioned reader of host/OS ambient state (home dir, temp dir, hostname), routing ambient authority through capability imports `TypeScript`
+- [github-budget](https://github.com/bounded-systems/github-budget) — Rate-limit-aware gh wrapper with bucket classification, pre-call gating, and audit trail `TypeScript`
+- [git](https://github.com/bounded-systems/git) — Git CLI wrapper with policy enforcement and stale-lock recovery `TypeScript`
+- [gh](https://github.com/bounded-systems/gh) — GitHub CLI wrapper with policy enforcement, rate-limit gating, and budget audit logging `TypeScript`
+- [bd](https://github.com/bounded-systems/bd) — Typed interface to the beads CLI with policy enforcement and short-ID guards `TypeScript`
+- [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point `TypeScript`
 - [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
 - [policy](https://github.com/bounded-systems/policy) — Tool-policy engine enforcing subcommand allowlists by tool, state, and role `TypeScript`
 - [machine-schema](https://github.com/bounded-systems/machine-schema) — Brands, handoff envelope, and state/phase/invariant primitives for work-unit machines `TypeScript`
