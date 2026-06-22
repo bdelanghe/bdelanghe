@@ -10,6 +10,8 @@ letting AI agents do real engineering work without handing them unbounded author
 The bet: draw the boundary at the **door** — a scope-bounded set of capabilities an
 agent acts through — not the process, not the container.
 
+**Start here → [robertdelanghe.dev](https://robertdelanghe.dev)** — the thesis, and how it's built.
+
 - 🚪 **[guest-room](https://github.com/bounded-systems/guest-room)** — the capability model in one library: rooms & doors, specs that run as tests.
 - 🤖 **[prx](https://github.com/bounded-systems/prx)** — the agent-run work-unit CLI + the `@bounded-systems/*` capability libraries.
 - 🌐 **[bounded.tools](http://bounded.tools)**
