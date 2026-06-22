@@ -44,12 +44,27 @@ Building Bounded Systems — bounded authority for AI agents, at the door.
 
 ---
 
-## 3. GitHub pins — follow-up (manual)
+## 3. GitHub pins (manual) — the 6 to pin, in order
 
-Re-pin `prx` and `guest-room` to the top so the profile's evidence matches its
-claim (currently `sort-doku`, `first-pass`, …). They live under the
-**bounded-systems** org, so in **Customize your pins** switch the source dropdown
-to that org. Pins must be **public** repos.
+Current pins (`sort-doku`, `first-pass`, `hookie`, …) predate the repositioning and
+argue for a different person than the README. Replace with these 6, in display
+order, so the evidence matches the claim:
+
+1. `bounded-systems/guest-room` — the capability runtime (the model)
+2. `bounded-systems/prx` — the agent-run work-unit CLI (has a ⭐)
+3. `bounded-systems/claude-box` — capability-secured box for agent sessions (the product)
+4. `bounded-systems/ocap-provenance` — capability-use provenance (the rigor)
+5. `bounded-systems/door-kit` — door-client SDK (represents the whole door family)
+6. `bdelanghe/git-ast` — AST-based git in Rust (range + systems depth)
+
+- **#6 alt:** swap `git-ast` for a representative door (`door-concierge` / `door-scout`)
+  if you'd rather stay all-in on the org. One non-agent project keeps it from reading
+  monomaniacal, so `git-ast` is the lean.
+- **Skip `gastownhall/beads` (24.7k★)** — strong social proof, but not yours and
+  off-narrative; borrowed stars dilute a focused profile.
+
+In **Customize your pins**, switch the **Show** source to the **bounded-systems**
+org to surface those repos. All pins must be **public**.
 
 ---
 
@@ -105,14 +120,19 @@ systems as they scale → capability security.*
   > capability libraries in the open.
 
 **Senior Integration Engineer — Aura Home, Inc.** · Full-time · Oct 2023 – Present · NYC Metro · Hybrid
-  > Work at the integration boundary between systems — the connections, contracts,
-  > and reliability where Aura's platform meets the services and data around it.
+- The current senior role should carry the most weight — add 2 quantified bullets (real numbers, don't fabricate).
+  > Own the integration boundary where Aura's platform meets external services and
+  > data — the contracts, reliability, and access patterns that keep many systems
+  > honest as they change.
+  > - Designed and shipped `<integration/system>`, `<impact + metric>`.
+  > - `<Reliability / contract / security improvement>`, reducing `<failure mode>` by `<X%>`.
 
 **Software Engineer — L2L** · Full-time · Apr 2021 – Sep 2023 · NYC Metro · Remote
-- **Lead with the static-analysis bullet** — it's the cleanest bridge to the
-  Bounded Systems "keeping agent-authored components honest" line. Trim the
-  design-system / pagination / dashboard front-end bullets to one so they don't
-  drag back toward front-end.
+- Lead with static analysis (the bridge to "keeping components honest"); demote the front-end bullets.
+  > - Built static-analysis gating into the PR pipeline — automated checks that blocked defects before merge, cutting critical bugs 20% and high-priority issues 25% across a 20-engineer team.
+  > - Built a configurable dashboard framework that cut the widget development cycle from a week to a day (70%).
+  > - Architected and rolled out a company-wide design system with Design & Product, cutting task lead time 30%.
+  > - Patched a core component library with windowed/infinite-scroll rendering, dropping page load from 30s to near-instant (95%).
 
 **Participant — Recurse Center** · Sep 2019 – Dec 2019 · Brooklyn, NY
 - Keep the Haskell/type-theory bullet verbatim — it explicitly names itself the
@@ -120,18 +140,22 @@ systems as they scale → capability security.*
 
 ### Consolidate — the "remove integrations" move
 
-Three overlapping **Integrations Consultant** contracts (2018–2021):
-- **Keep Pioneer Works** (Nov 2018 – Feb 2021) as the representative one — strongest
-  bullets (CRM consolidation, Square API ETL, 35-tool evaluation).
-- **Drop Kaleida Studio and theprepared.org**, or fold their single best line into
-  Pioneer Works. Removes two of the three identical headers in one move.
+Keep **Integrations Consultant — Pioneer Works** (Nov 2018 – Feb 2021) as the one
+representative contract; rewritten bullets:
+  > - Planned and launched a unified CRM, consolidating core data and cutting payment-tracking time from 5h to 1h (80%).
+  > - Built a Square-API ETL pipeline categorizing event transactions — enabling per-event P&L across 200+ events.
+  > - Evaluated 35 tools across 7 categories and steered a cross-functional team to the integrations that simplified company workflow.
+  > - Wrote in-tool docs and onboarding that cut support interruptions ~94% (10×/day → 4×/week).
+
+**Drop Kaleida Studio and theprepared.org** as standalone entries (same title,
+overlapping dates). Optional fold-in line for Pioneer Works if you want the breadth:
+  > Concurrent independent integration work (Kaleida Studio, theprepared.org): production-automation and CMS/data pipelines — eliminated edition-numbering errors, cut shipping lead time 7d→2d, reduced newsletter curation 70%.
 
 ### Trim — pre-engineering (your call)
 
-- **Roll & Hill** (Inventory Manager, 2015–2018) and **Situ Fabrication**
-  (Designer/Rhino, 2014) predate the engineering career. Drop them, or collapse to
-  a one-line "Earlier: operations & fabrication" note. Keep only if you want the
-  non-linear Bennington-design origin to show.
+**Roll & Hill** (Inventory Manager, 2015–2018) and **Situ Fabrication**
+(Designer/Rhino, 2014) predate engineering. Drop, or collapse to one closing line:
+  > Earlier: operations leadership at Roll & Hill (cut production errors 80%, tripled on-time delivery) and digital-fabrication design at Situ (Rhino modeling for a Versace/SO-IL commission) — the Bennington design-and-computation origin behind the systems work.
 
 > Net: ~8 roles → ~5 that all pull one direction, and "Integrations Consultant"
 > appears once instead of three times.
