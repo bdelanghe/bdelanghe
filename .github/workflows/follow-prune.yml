@@ -1,0 +1,28 @@
+name: follow-prune
+
+on:
+  schedule:
+    - cron: '23 9 * * 1'   # weekly Monday 09:23 UTC
+  workflow_dispatch:
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: bdelanghe/synoptic-github
+          path: synoptic-github
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Export + prune off-thesis follows
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
+          GH_USER: bdelanghe
+          ORGS: bounded-systems
+        run: |
+          bun synoptic-github/follows.mjs --export /tmp/follows-fresh.jsonl
+          bun synoptic-github/follows.mjs --prune /tmp/follows-fresh.jsonl --apply --yes --limit 50
