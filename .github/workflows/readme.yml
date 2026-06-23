@@ -16,19 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-      # Banner is derived from tokens, never hand-painted: strings come from
-      # site/data/profile.json (content tokens), colors from bounded-systems/brand
-      # (design tokens). Regenerated here so assets/header-*.svg can't drift.
-      - name: Check out site (token sources + banner generator)
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-        with:
-          repository: bdelanghe/site
-          path: _site
-      - name: Fetch brand design tokens
-        run: curl -fsSL https://raw.githubusercontent.com/bounded-systems/brand/main/tokens/tokens.json -o _tokens.json
-      - name: Generate banner from tokens
-        run: node _site/banner.mjs --profile _site/data/profile.json --tokens _tokens.json --out assets
-
+      # NOTE: assets/header-*.svg are NOT generated here anymore. They are owned
+      # by bounded-systems/brand's deploy-headers workflow (single source of
+      # truth: brand/tokens.json for colors, brand/content/strings.json for
+      # copy). Two generators writing the same files drifted and rendered a
+      # blank/black banner; consolidating to one owner fixed it. This workflow
+      # now only injects the grouped project list into README.md.
       - uses: bdelanghe/synoptic-github@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

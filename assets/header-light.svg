@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280" role="img" aria-label="Robert DeLanghe — Capability-secured systems &amp; developer tooling">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280" role="img" aria-label="Robert DeLanghe — Bounded authority for AI agents">
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="{primitive.green-700}"/>
-      <stop offset="1" stop-color="{primitive.amber-600}"/>
+      <stop offset="0" stop-color="#0C5A42"/>
+      <stop offset="1" stop-color="#B5762A"/>
     </linearGradient>
   </defs>
-  <rect width="1280" height="280" fill="{primitive.paper}"/>
+  <rect width="1280" height="280" fill="#EDEAE1"/>
   <rect x="0" y="0" width="8" height="280" fill="url(#accent)"/>
-  <text x="72" y="118" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="{primitive.ink-900}" letter-spacing="-1">Robert DeLanghe</text>
+  <text x="72" y="118" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="#16221C" letter-spacing="-1">Robert DeLanghe</text>
   <rect x="74" y="140" width="96" height="4" rx="2" fill="url(#accent)"/>
-  <text x="72" y="186" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="25" font-weight="600" fill="{primitive.ink-600}">Capability-secured systems &amp; developer tooling</text>
-  <text x="72" y="222" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="500" fill="{primitive.ink-500}" letter-spacing="2.5">TYPESCRIPT · DENO · OCAP · AST TOOLING · AI-ASSISTED ENGINEERING</text>
+  <text x="72" y="186" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="25" font-weight="600" fill="#5C6B63">Bounded authority for AI agents</text>
+  <text x="72" y="222" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="500" fill="#5E6B62" letter-spacing="2.5">CAPABILITY SECURITY · AGENT INFRASTRUCTURE · AI · DEVELOPER TOOLS</text>
   <g transform="translate(1078,72)" stroke="url(#accent)" stroke-width="3" fill="none">
     <rect x="0" y="0" width="132" height="140" rx="10"/>
     <rect x="41" y="44" width="50" height="96" rx="6"/>
-    <circle cx="80" cy="92" r="4.5" fill="{primitive.amber-600}" stroke="none"/>
+    <circle cx="80" cy="92" r="4.5" fill="#B5762A" stroke="none"/>
   </g>
 </svg>
