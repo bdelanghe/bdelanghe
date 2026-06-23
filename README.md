@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Robert DeLanghe — Capability security for agentic systems" src="assets/header-light.svg" width="100%">
+  <img alt="Robert DeLanghe — Bounded authority for AI agents" src="assets/header-light.svg" width="100%">
 </picture>
 
 ### I make it safe to let AI agents write and ship real code.
