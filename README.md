@@ -23,18 +23,18 @@ through dev containers, state machines (xstate), and design tokens.
 
 <!-- synoptic:start -->
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-06-22</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-06-23</summary>
 
 ## capability-security
 
-- [ocap-provenance](https://github.com/bounded-systems/ocap-provenance) — Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain. `TypeScript`
 - [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
+- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
+- [ocap-provenance](https://github.com/bounded-systems/ocap-provenance) — Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain. `TypeScript`
 - [lone](https://github.com/bounded-systems/lone) — Semantic blessing engine for DOM subtrees — untrusted element trees become typed Blessed<T> / Finding[] across a stable contract boundary. `TypeScript`
 - [door-peercred](https://github.com/bounded-systems/door-peercred) — SO_PEERCRED helper for launcherd (Rust) — extracted from claude-box; a launcherd helper, not a door `Rust`
 - [door-concierge](https://github.com/bounded-systems/door-concierge) — concierged — the capability-introducer door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-net](https://github.com/bounded-systems/door-net) — netd — the allowlist-egress capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [dev-registry](https://github.com/bounded-systems/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `Shell`
 
 ## agent-infra
@@ -46,6 +46,7 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## ai
 
+- [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [claude-token-tools](https://github.com/bounded-systems/claude-token-tools) — Claude Code token-saving toolkit — model-usage auditor + home-manager module `JavaScript`
 - [bdelanghe-claude-skills](https://github.com/bdelanghe/bdelanghe-claude-skills) — Claude Code skills and plugins for AI-assisted engineering workflows
 - [first-pass](https://github.com/bdelanghe/first-pass) — A CLI tool that enhances your resume creation, aligns skills with job descriptions, and guides in building evidence-backed points 🚀📝 `TypeScript`
@@ -69,9 +70,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `HTML`
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 
 ## data-viz
 
@@ -80,33 +81,35 @@ through dev containers, state machines (xstate), and design tokens.
 ## experiment
 
 - [flask-mysql-ngrok](https://github.com/bdelanghe/flask-mysql-ngrok) — Bare-bones Flask + MySQL todo app with ngrok, set up with devenv. `HTML`
-- [fold-engine](https://github.com/bdelanghe/fold-engine) — Linked-data engine for an Obsidian vault — JSON-LD / schema.org structure over notes. `HTML`
-- [unfold-obsidian-vault](https://github.com/bdelanghe/unfold-obsidian-vault) — An Obsidian vault published as structured, schema.org-annotated content.
+- [fold-engine](https://github.com/bounded-systems/fold-engine) — Linked-data engine for an Obsidian vault — JSON-LD / schema.org structure over notes. `HTML`
+- [unfold-obsidian-vault](https://github.com/bounded-systems/unfold-obsidian-vault) — An Obsidian vault published as structured, schema.org-annotated content.
 - [lean-to](https://github.com/bdelanghe/lean-to) — tiny vite project `TypeScript`
 
 ## other
 
-- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
-- [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
-- [slack](https://github.com/bounded-systems/slack) — Policy-gated, provenance-tracked Slack read surface: bounded read ops behind a swappable transport port, with keymaker-minted scoped credentials `TypeScript`
-- [scout](https://github.com/bounded-systems/scout) — Content-addressed surface reads (file/grep/files) with anchored-chain provenance `TypeScript`
-- [repo-root](https://github.com/bounded-systems/repo-root) — Repo-root resolution capability: lazy git-based runtime root plus the eager .git-marker walk for build/codegen, the one sanctioned root-resolution point `TypeScript`
 - [proc](https://github.com/bounded-systems/proc) — The one allowed subprocess spawn point, routing external-tool invocations through a capability `TypeScript`
-- [policy](https://github.com/bounded-systems/policy) — Tool-policy engine enforcing subcommand allowlists by tool, state, and role `TypeScript`
-- [machine-schema](https://github.com/bounded-systems/machine-schema) — Brands, handoff envelope, and state/phase/invariant primitives for work-unit machines `TypeScript`
-- [host](https://github.com/bounded-systems/host) — The one sanctioned reader of host/OS ambient state (home dir, temp dir, hostname), routing ambient authority through capability imports `TypeScript`
+- [slack](https://github.com/bounded-systems/slack) — Policy-gated, provenance-tracked Slack read surface: bounded read ops behind a swappable transport port, with keymaker-minted scoped credentials `TypeScript`
+- [bd](https://github.com/bounded-systems/bd) — Typed interface to the beads CLI with policy enforcement and short-ID guards `TypeScript`
+- [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
+- [scout](https://github.com/bounded-systems/scout) — Content-addressed surface reads (file/grep/files) with anchored-chain provenance `TypeScript`
+- [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
+- [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
 - [github-budget](https://github.com/bounded-systems/github-budget) — Rate-limit-aware gh wrapper with bucket classification, pre-call gating, and audit trail `TypeScript`
+- [schema-gen](https://github.com/bounded-systems/schema-gen) — Project zod schemas to explicit, fast-types-clean TypeScript (zod → JSON Schema → .d.ts) `TypeScript`
+- [lobby](https://github.com/bounded-systems/lobby) — Offline Obsidian vault (Copilot+Ollama) — drafts become robertdelanghe.dev posts `JavaScript`
+- [disposition](https://github.com/bounded-systems/disposition) — Pure classifier mapping work-unit surface state to a disposition (ok/prune/repair/review) `TypeScript`
+- [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point `TypeScript`
+- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [git](https://github.com/bounded-systems/git) — Git CLI wrapper with policy enforcement and stale-lock recovery `TypeScript`
 - [gh](https://github.com/bounded-systems/gh) — GitHub CLI wrapper with policy enforcement, rate-limit gating, and budget audit logging `TypeScript`
-- [fs](https://github.com/bounded-systems/fs) — Filesystem capability seam; the one allowed filesystem-access point with an injectable FileSystem `TypeScript`
-- [env](https://github.com/bounded-systems/env) — The one sanctioned reader of process.env, routing ambient config through capability imports `TypeScript`
-- [disposition](https://github.com/bounded-systems/disposition) — Pure classifier mapping work-unit surface state to a disposition (ok/prune/repair/review) `TypeScript`
-- [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
-- [bd](https://github.com/bounded-systems/bd) — Typed interface to the beads CLI with policy enforcement and short-ID guards `TypeScript`
-- [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point `TypeScript`
+- [policy](https://github.com/bounded-systems/policy) — Tool-policy engine enforcing subcommand allowlists by tool, state, and role `TypeScript`
 - [audit-context](https://github.com/bounded-systems/audit-context) — Ambient runtime context for gh-call audit attribution (verb, actor, truth reason) `TypeScript`
-- [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
-- [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
+- [fs](https://github.com/bounded-systems/fs) — Filesystem capability seam; the one allowed filesystem-access point with an injectable FileSystem `TypeScript`
+- [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
+- [repo-root](https://github.com/bounded-systems/repo-root) — Repo-root resolution capability: lazy git-based runtime root plus the eager .git-marker walk for build/codegen, the one sanctioned root-resolution point `TypeScript`
+- [machine-schema](https://github.com/bounded-systems/machine-schema) — Brands, handoff envelope, and state/phase/invariant primitives for work-unit machines `TypeScript`
+- [host](https://github.com/bounded-systems/host) — The one sanctioned reader of host/OS ambient state (home dir, temp dir, hostname), routing ambient authority through capability imports `TypeScript`
+- [env](https://github.com/bounded-systems/env) — The one sanctioned reader of process.env, routing ambient config through capability imports `TypeScript`
 - [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 
 </details>

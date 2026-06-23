@@ -1,86 +1,40 @@
 {
-  "$description": "Bounded Systems brand tokens. Source of truth. Edit here; regenerate tokens.css via build-tokens.mjs.",
+  "$description": "Bounded Systems brand tokens. Source of truth. Three tiers: primitive (raw palette) → color (semantic roles, alias primitives) → text (component recipes). Edit here; regenerate tokens.css via build-tokens.mjs. Only the semantic/recipe layers are emitted as --bs-*; primitives are the source-of-truth palette the semantics point at (change a primitive → every role that aliases it updates).",
+  "primitive": {
+    "$description": "Raw palette. Not emitted directly — referenced by the semantic color tier. Theming = change a primitive once.",
+    "green-700": { "$type": "color", "$value": "#0C5A42", "$description": "Brand green" },
+    "green-900": { "$type": "color", "$value": "#073D2C", "$description": "Deep green" },
+    "green-100": { "$type": "color", "$value": "#E2EBE6", "$description": "Green wash" },
+    "green-200": { "$type": "color", "$value": "#D2E0D8", "$description": "Green soft" },
+    "paper": { "$type": "color", "$value": "#EDEAE1", "$description": "Warm paper" },
+    "white": { "$type": "color", "$value": "#FFFFFF" },
+    "cream": { "$type": "color", "$value": "#F4F1EA", "$description": "Warm off-white" },
+    "ink-900": { "$type": "color", "$value": "#16221C", "$description": "Near-black ink" },
+    "ink-600": { "$type": "color", "$value": "#5C6B63", "$description": "Muted ink" },
+    "ink-500": { "$type": "color", "$value": "#5E6B62", "$description": "Mono-label ink (WCAG-AA on paper)" },
+    "line": { "$type": "color", "$value": "#E4E0D4", "$description": "Hairline" },
+    "clay-600": { "$type": "color", "$value": "#A6432F", "$description": "Clay" },
+    "clay-100": { "$type": "color", "$value": "#F2DED8", "$description": "Clay wash" },
+    "amber-600": { "$type": "color", "$value": "#B5762A", "$description": "Amber" },
+    "amber-100": { "$type": "color", "$value": "#F3E8D6", "$description": "Amber wash" }
+  },
   "color": {
-    "forest": {
-      "$type": "color",
-      "$value": "#0C5A42",
-      "$description": "Primary brand fill"
-    },
-    "forest-deep": {
-      "$type": "color",
-      "$value": "#073D2C",
-      "$description": "Pressed / deep surfaces"
-    },
-    "paper": {
-      "$type": "color",
-      "$value": "#EDEAE1",
-      "$description": "App background, warm"
-    },
-    "card": {
-      "$type": "color",
-      "$value": "{color.white}",
-      "$description": "Card surface — aliases white"
-    },
-    "card-alt": {
-      "$type": "color",
-      "$value": "#F4F1EA",
-      "$description": "Light avatar fill"
-    },
-    "ink": {
-      "$type": "color",
-      "$value": "#16221C",
-      "$description": "Primary text"
-    },
-    "ink-soft": {
-      "$type": "color",
-      "$value": "#5C6B63",
-      "$description": "Secondary text"
-    },
-    "ink-mono": {
-      "$type": "color",
-      "$value": "#5E6B62",
-      "$description": "Mono label / slug text (darkened to meet WCAG AA 4.5:1 on paper)"
-    },
-    "line": {
-      "$type": "color",
-      "$value": "#E4E0D4",
-      "$description": "Hairline borders"
-    },
-    "white": {
-      "$type": "color",
-      "$value": "#FFFFFF",
-      "$description": "Mark on forest"
-    },
-    "forest-tint": {
-      "$type": "color",
-      "$value": "#E2EBE6",
-      "$description": "Forest wash — subtle tinted surface"
-    },
-    "forest-soft": {
-      "$type": "color",
-      "$value": "#D2E0D8",
-      "$description": "Forest soft — fills/borders on tinted surfaces"
-    },
-    "clay": {
-      "$type": "color",
-      "$value": "#A6432F",
-      "$description": "Clay — accent / negative (the 'no' in transaction demos)"
-    },
-    "clay-tint": {
-      "$type": "color",
-      "$value": "#F2DED8",
-      "$description": "Clay wash — negative surface"
-    },
-    "amber": {
-      "$type": "color",
-      "$value": "#B5762A",
-      "$description": "Amber — caution / highlight"
-    },
-    "amber-tint": {
-      "$type": "color",
-      "$value": "#F3E8D6",
-      "$description": "Amber wash — caution surface"
-    }
+    "forest": { "$type": "color", "$value": "{primitive.green-700}", "$description": "Primary brand fill" },
+    "forest-deep": { "$type": "color", "$value": "{primitive.green-900}", "$description": "Pressed / deep surfaces" },
+    "paper": { "$type": "color", "$value": "{primitive.paper}", "$description": "App background, warm" },
+    "card": { "$type": "color", "$value": "{primitive.white}", "$description": "Card surface" },
+    "card-alt": { "$type": "color", "$value": "{primitive.cream}", "$description": "Light avatar fill" },
+    "ink": { "$type": "color", "$value": "{primitive.ink-900}", "$description": "Primary text" },
+    "ink-soft": { "$type": "color", "$value": "{primitive.ink-600}", "$description": "Secondary text" },
+    "ink-mono": { "$type": "color", "$value": "{primitive.ink-500}", "$description": "Mono label / slug text" },
+    "line": { "$type": "color", "$value": "{primitive.line}", "$description": "Hairline borders" },
+    "white": { "$type": "color", "$value": "{primitive.white}", "$description": "Mark on forest" },
+    "forest-tint": { "$type": "color", "$value": "{primitive.green-100}", "$description": "Subtle tinted surface" },
+    "forest-soft": { "$type": "color", "$value": "{primitive.green-200}", "$description": "Fills/borders on tinted surfaces" },
+    "clay": { "$type": "color", "$value": "{primitive.clay-600}", "$description": "Accent / negative" },
+    "clay-tint": { "$type": "color", "$value": "{primitive.clay-100}", "$description": "Negative surface" },
+    "amber": { "$type": "color", "$value": "{primitive.amber-600}", "$description": "Caution / highlight" },
+    "amber-tint": { "$type": "color", "$value": "{primitive.amber-100}", "$description": "Caution surface" }
   },
   "font": {
     "display": {
