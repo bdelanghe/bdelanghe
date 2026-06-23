@@ -19,23 +19,9 @@ jobs:
       - uses: oven-sh/setup-bun@v2
 
       - name: Prune off-thesis stars
-        id: prune
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
           GH_USER: bdelanghe
           ORGS: bounded-systems
         run: |
-          output=$(bun synoptic-github/lists.mjs --prune stars.jsonl --apply --yes --limit 400 2>&1)
-          echo "$output"
-          # Use delimiter syntax to safely set multiline/unicode output
-          {
-            echo "output<<PRUNE_EOF"
-            echo "$output"
-            echo "PRUNE_EOF"
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Disable when complete
-        if: "!contains(steps.prune.outputs.output, 'remain')"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow disable star-prune.yml
+          bun synoptic-github/lists.mjs --prune stars.jsonl --apply --yes --limit 400
