@@ -35,5 +35,6 @@ jobs:
           inject-into: README.md
           group-by: topic
           orgs: bounded-systems
+          featured: ssh-doctor,first-pass,git-tidy,synoptic-github
           # Optional: curate which repos appear by topic, e.g.
           # filter: capability-security,agent-infra,developer-tools,ai,cli
