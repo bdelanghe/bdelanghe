@@ -1,0 +1,36 @@
+name: star-prune
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # hourly at :17, off the :00 pile-up
+  workflow_dispatch:         # manual trigger for testing / one-shot runs
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: bdelanghe/synoptic-github
+          path: synoptic-github
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Prune off-thesis stars
+        id: prune
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
+          GH_USER: bdelanghe
+          ORGS: bounded-systems
+        run: |
+          output=$(bun synoptic-github/lists.mjs --prune stars.jsonl --apply --yes --limit 400 2>&1)
+          echo "$output"
+          echo "output=$output" >> "$GITHUB_OUTPUT"
+
+      - name: Disable when complete
+        if: contains(steps.prune.outputs.output, '· done')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow disable star-prune.yml
