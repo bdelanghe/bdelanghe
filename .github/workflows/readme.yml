@@ -23,6 +23,8 @@ jobs:
       # blank/black banner; consolidating to one owner fixed it. This workflow
       # now only injects the grouped project list into README.md.
       - uses: bdelanghe/synoptic-github@v2
+        env:
+          FEATURED: ssh-doctor,first-pass,git-tidy,synoptic-github
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           inject-into: README.md
