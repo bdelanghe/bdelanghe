@@ -52,9 +52,16 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## developer-tools
 
+- [hooksmith](https://github.com/bounded-systems/hooksmith) — Build Rust binaries into Lefthook hooks with WASM components `Rust`
 - [dev-contracts-spec](https://github.com/bounded-systems/dev-contracts-spec) — Zod schemas and types for dev-contracts `TypeScript`
+- [schema-bridge](https://github.com/bounded-systems/schema-bridge) — Schema bridge tool for transformations `TypeScript`
+- [lima-devshell](https://github.com/bounded-systems/lima-devshell) — Bootstrap devshell for Lima VM environments + macOS Home Manager config (Nix flake). `Nix`
 - [git-ast](https://github.com/bounded-systems/git-ast) — Language-aware Git: AST-based diffs and merges instead of line-based — cleaner history, fewer conflicts. `Rust`
 - [frond](https://github.com/bounded-systems/frond) — JS/TS round-trip validation with Deno + SWC: parse to an AST and regenerate source to check fidelity. `TypeScript`
+- [dev-contracts-validate](https://github.com/bounded-systems/dev-contracts-validate) `TypeScript`
+- [dev-contracts-transform](https://github.com/bounded-systems/dev-contracts-transform)
+- [dev-contracts-extract](https://github.com/bounded-systems/dev-contracts-extract)
+- [dev-contracts](https://github.com/bounded-systems/dev-contracts)
 
 ## infrastructure
 
@@ -63,8 +70,8 @@ through dev containers, state machines (xstate), and design tokens.
 ## design-tokens
 
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `HTML`
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 
 ## experiment
 
@@ -86,6 +93,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
+- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
 - [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
 - [slack](https://github.com/bounded-systems/slack) — Policy-gated, provenance-tracked Slack read surface: bounded read ops behind a swappable transport port, with keymaker-minted scoped credentials `TypeScript`
@@ -108,8 +117,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [audit-context](https://github.com/bounded-systems/audit-context) — Ambient runtime context for gh-call audit attribution (verb, actor, truth reason) `TypeScript`
 - [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
 - [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
-- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
-- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [lobby](https://github.com/bounded-systems/lobby) — Offline Obsidian vault (Copilot+Ollama) — drafts become robertdelanghe.dev posts `JavaScript`
 - [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 
