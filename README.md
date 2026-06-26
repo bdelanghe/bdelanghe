@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-06-24</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-06-25</summary>
 
 ## capability-security
 
@@ -52,11 +52,11 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## developer-tools
 
+- [git-ast](https://github.com/bounded-systems/git-ast) — Language-aware Git: a clean/smudge design for AST-based diffs & merges. Design stage — spec + compiling skeleton, not yet a working tool. `Rust`
 - [hooksmith](https://github.com/bounded-systems/hooksmith) — Build Rust binaries into Lefthook hooks with WASM components `Rust`
 - [dev-contracts-spec](https://github.com/bounded-systems/dev-contracts-spec) — Zod schemas and types for dev-contracts `TypeScript`
 - [schema-bridge](https://github.com/bounded-systems/schema-bridge) — Schema bridge tool for transformations `TypeScript`
 - [lima-devshell](https://github.com/bounded-systems/lima-devshell) — Bootstrap devshell for Lima VM environments + macOS Home Manager config (Nix flake). `Nix`
-- [git-ast](https://github.com/bounded-systems/git-ast) — Language-aware Git: AST-based diffs and merges instead of line-based — cleaner history, fewer conflicts. `Rust`
 - [frond](https://github.com/bounded-systems/frond) — JS/TS round-trip validation with Deno + SWC: parse to an AST and regenerate source to check fidelity. `TypeScript`
 - [dev-contracts-validate](https://github.com/bounded-systems/dev-contracts-validate) `TypeScript`
 - [dev-contracts-transform](https://github.com/bounded-systems/dev-contracts-transform)
