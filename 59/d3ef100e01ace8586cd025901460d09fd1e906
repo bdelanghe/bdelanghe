@@ -1,0 +1,205 @@
+_site/.github/workflows/audit.yml
+  s_c2e87c267b8b34::t_08b0e371ecee88 1-40
+_site/.github/workflows/brand-checks.yml
+  s_c2e87c267b8b34::t_75f6df7049c880 1-32
+_site/.github/workflows/cards.yml
+  s_c2e87c267b8b34::t_842ef7bec049fe 1-50
+_site/.github/workflows/copy-review.yml
+  s_c2e87c267b8b34::t_811bd60cf59b64 1-33
+_site/.github/workflows/deploy.yml
+  s_c2e87c267b8b34::t_225dfa548213ac 1-42
+_site/.github/workflows/linkedin-check.yml
+  s_c2e87c267b8b34::t_0f9474a0a0eada 1-25
+_site/.github/workflows/refresh.yml
+  s_c2e87c267b8b34::t_e299fd365d0eeb 1-42
+_site/.github/workflows/resume-parse.yml
+  s_c2e87c267b8b34::t_c444cd8a42a29d 1-33
+_site/.github/workflows/semantic.yml
+  s_c2e87c267b8b34::t_b7cec2a9ed98a9 1-28
+_site/.gitignore
+  s_c2e87c267b8b34::t_5bcb251bca2b2f 1-6
+_site/404.html
+  s_c2e87c267b8b34::t_c15b730bfae202 1-29
+_site/README.md
+  s_c2e87c267b8b34::t_c1b6da83882a36 1-43
+_site/SYSTEM.md
+  s_c2e87c267b8b34::t_8c8bf2e51aff53 1-162
+_site/assets/logo.svg
+  s_c2e87c267b8b34::t_b4f7dd9fc77262 1-19
+_site/audit-catalog.mjs
+  s_c2e87c267b8b34::t_e8c1a0e9884307 1-86
+_site/banner.mjs
+  s_c2e87c267b8b34::t_402b9b330eb0dc 1-79
+_site/brand/.claude/settings.json
+  s_c2e87c267b8b34::t_d731bbea2de83e 1-5
+_site/brand/.github/workflows/coverage.yml
+  s_c2e87c267b8b34::t_628b3b81294727 1-28
+_site/brand/.github/workflows/front-desk-add.yml
+  s_c2e87c267b8b34::t_9e1829c4d2cdda 1-56
+_site/brand/.github/workflows/notify-front-desk.yml
+  s_c2e87c267b8b34::t_f96c4dc8324912 1-10
+_site/brand/.github/workflows/tokens.yml
+  s_c2e87c267b8b34::t_73fb4781536f06 1-22
+_site/brand/.gitignore
+  s_c2e87c267b8b34::t_76a07338d6fbba 1-3
+_site/brand/README.md
+  s_c2e87c267b8b34::t_7c9d00762170f1 1-126
+_site/brand/avatar/avatar-forest.svg
+  s_c2e87c267b8b34::t_2516c194044dcf 1-7
+_site/brand/avatar/avatar-light.svg
+  s_c2e87c267b8b34::t_9e8b579b3af1ca 1-7
+_site/brand/content/brand-voice.feature
+  s_c2e87c267b8b34::t_1c8eb5d4f86372 1-19
+_site/brand/content/strings.json
+  s_c2e87c267b8b34::t_a0666e75a4d870 1-19
+_site/brand/content/strings.schema.json
+  s_c2e87c267b8b34::t_bc5ac355535670 1-30
+_site/brand/css/base.css
+  s_c2e87c267b8b34::t_c6b013f5c27522 1-26
+_site/brand/css/fonts.css
+  s_c2e87c267b8b34::t_d612f545ae1354 1-52
+_site/brand/design/README.md
+  s_c2e87c267b8b34::t_4bd311e09d477b 1-34
+_site/brand/design/avatar.html
+  s_c2e87c267b8b34::t_1a71882e010ef1 1-39
+_site/brand/design/colors.html
+  s_c2e87c267b8b34::t_55f69adc2e0936 1-61
+_site/brand/design/lockup.html
+  s_c2e87c267b8b34::t_8da465418bfa50 1-34
+_site/brand/design/mark.html
+  s_c2e87c267b8b34::t_2e75b088612559 1-31
+_site/brand/design/preview.css
+  s_c2e87c267b8b34::t_b91c5dad1a4cca 1-96
+_site/brand/design/radius.html
+  s_c2e87c267b8b34::t_1743071b21edb7 1-61
+_site/brand/design/type.html
+  s_c2e87c267b8b34::t_3334d7ea26ba8d 1-74
+_site/brand/lockup/lockup-forest.svg
+  s_c2e87c267b8b34::t_25aca7dc62c4ba 1-15
+_site/brand/lockup/lockup-light.svg
+  s_c2e87c267b8b34::t_0112daaa8b00dc 1-15
+_site/brand/mark/mark-forest.svg
+  s_c2e87c267b8b34::t_246f42b73ff5f5 1-4
+_site/brand/mark/mark-white.svg
+  s_c2e87c267b8b34::t_7f79af9a0aec86 1-4
+_site/brand/package.json
+  s_c2e87c267b8b34::t_efd4cbf9593039 1-24
+_site/brand/style-dictionary.config.mjs
+  s_c2e87c267b8b34::t_039ccd928821e1 1-55
+_site/brand/tokens/build-tokens.mjs
+  s_c2e87c267b8b34::t_fddf19eee1910c 1-80
+_site/brand/tokens/tokens.css
+  s_c2e87c267b8b34::t_2d6f30e4d53e78 1-85
+_site/brand/tokens/tokens.json
+  s_c2e87c267b8b34::t_c044eff4cd0279 1-209
+_site/brand/tools/a11y.mjs
+  s_c2e87c267b8b34::t_8c813f9f7ac44a 1-73
+_site/brand/tools/content.mjs
+  s_c2e87c267b8b34::t_8e99f202c65c84 1-173
+_site/brand/tools/coverage.mjs
+  s_c2e87c267b8b34::t_b29fe378ec5f24 1-190
+_site/brand/tools/meta.mjs
+  s_c2e87c267b8b34::t_a0f391f2bb7bbb 1-103
+_site/brand/uno-preset.mjs
+  s_c2e87c267b8b34::t_8a5e3b9d42552a 1-50
+_site/build.mjs
+  s_c2e87c267b8b34::t_0e88634a8b78f5 1-608
+_site/card.mjs
+  s_c2e87c267b8b34::t_4fdaeae390f0f7 1-55
+_site/contract/jsonresume.schema.json
+  s_c2e87c267b8b34::t_b8644d31d53957 1-500
+_site/contract/posts.schema.json
+  s_c2e87c267b8b34::t_ff3205b8022c34 1-19
+_site/contract/profile.schema.json
+  s_c2e87c267b8b34::t_054111a6ec6827 1-110
+_site/contract/site.schema.json
+  s_c2e87c267b8b34::t_39bbcf4db0b041 1-79
+_site/contract/topics.json
+  s_c2e87c267b8b34::t_1e136bf29275bc 1-23
+_site/copy-review.mjs
+  s_c2e87c267b8b34::t_66c48337edd660 1-249
+_site/data/audit/README.md
+  s_c2e87c267b8b34::t_fea9b5869900a3 1-36
+_site/data/audit/attested-claims.json
+  s_c2e87c267b8b34::t_50a08797702e65 1-6
+_site/data/audit/catalog.json
+  s_c2e87c267b8b34::t_bef7dcef6d0d5a 1-122
+_site/data/audit/grounding.json
+  s_c2e87c267b8b34::t_06e46c2084d71b 1-15
+_site/data/highlight-copy.json
+  s_c2e87c267b8b34::t_e6a477cb29573d 1-5
+_site/data/linkedin/README.md
+  s_c2e87c267b8b34::t_6d0614f4eae6c0 1-42
+_site/data/linkedin/accepted-drift.json
+  s_c2e87c267b8b34::t_ee075aa7a320b9 1-20
+_site/data/linkedin/resume.json
+  s_c2e87c267b8b34::t_09f7989b112f8b 1-38
+_site/data/profile.json
+  s_c2e87c267b8b34::t_42ab426d268a78 1-95
+_site/data/site.json
+  s_c2e87c267b8b34::t_a32186dcfca256 1-232
+_site/fetch.mjs
+  s_c2e87c267b8b34::t_05c628b37c48ec 1-120
+_site/flake.lock
+  s_c2e87c267b8b34::t_9dc6d51e543862 1-44
+_site/flake.nix
+  s_c2e87c267b8b34::t_db648d8df4875e 1-55
+_site/linkedin-check.mjs
+  s_c2e87c267b8b34::t_6330ab46eeae0e 1-199
+_site/notes/outreach.md
+  s_c2e87c267b8b34::t_0ece4ed1b3e8fe 1-49
+_site/package-lock.json
+  s_c2e87c267b8b34::t_43f7c43e5295d3 1-1603
+_site/package.json
+  s_c2e87c267b8b34::t_d4f79699a716d5 1-25
+_site/posts.mjs
+  s_c2e87c267b8b34::t_edb86abd6351c8 1-74
+_site/posts/agent-authored-code-drift.md
+  s_c2e87c267b8b34::t_9d276892940ea2 1-27
+_site/resume-parse.mjs
+  s_c2e87c267b8b34::t_e9faaf9bf373a5 1-206
+_site/schema-validate.mjs
+  s_c2e87c267b8b34::t_aa42f8ba4431e0 1-65
+_site/scripts/audit.mjs
+  s_c2e87c267b8b34::t_cf03ae2ff94323 1-48
+_site/scripts/gen-attestation.mjs
+  s_c2e87c267b8b34::t_80183ed22485de 1-68
+_site/scripts/vendor-audit.mjs
+  s_c2e87c267b8b34::t_34705cf8df8268 1-46
+_site/semantic/deno.json
+  s_c2e87c267b8b34::t_0bbd2cae05cbc0 1-6
+_site/semantic/gate.ts
+  s_c2e87c267b8b34::t_e9d2535e751a4f 1-24
+_site/styles.css
+  s_c2e87c267b8b34::t_30d5b12654859a 1-166
+_site/vendor/string-audit/ai-tells.json
+  s_c2e87c267b8b34::t_9aab73b1b27756 1-35
+_site/vendor/string-audit/audit-gate.mjs
+  s_c2e87c267b8b34::t_e4fee7499bef0e 1-109
+_site/vendor/string-audit/catalog.mjs
+  s_c2e87c267b8b34::t_f653ad7593206e 1-25
+_site/vendor/string-audit/dictionary.txt
+  s_c2e87c267b8b34::t_c862fac5723fbc 1-47
+_site/vendor/string-audit/prose.mjs
+  s_c2e87c267b8b34::t_2965983edf69f1 1-249
+_site/vendor/string-audit/provenance.json
+  s_c2e87c267b8b34::t_d4d39f5080f9e4 1-14
+_site/wrangler.jsonc
+  s_c2e87c267b8b34::t_b43935a21fc901 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "59d3ef100e01ace8586cd025901460d09fd1e906",
+  "prompts": {},
+  "sessions": {
+    "s_c2e87c267b8b34": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ee4ad0-54c0-4b68-ad30-5624b4210f9a",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Robert DeLanghe <1240090+bdelanghe@users.noreply.github.com>"
+    }
+  }
+}
