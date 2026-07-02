@@ -1,0 +1,96 @@
+/* Preview chrome for the Bounded Systems design-system cards.
+   On-brand by construction — styled with the same tokens it documents
+   (see ../tokens/tokens.css). Do not hardcode brand values here; use the vars. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 32px;
+  background: var(--bs-color-paper);
+  color: var(--bs-color-ink);
+  font-family: var(--bs-font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+.bs-head { margin: 0 0 24px; }
+.bs-head .eyebrow {
+  font-family: var(--bs-font-mono);
+  font-size: var(--bs-text-label);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bs-color-ink-mono);
+  margin: 0 0 8px;
+}
+.bs-head h1 { margin: 0; }
+.bs-head p {
+  margin: 6px 0 0;
+  color: var(--bs-color-ink-soft);
+  max-width: 60ch;
+}
+
+/* color & radius grids */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+.cell {
+  background: var(--bs-color-card);
+  border: 1px solid var(--bs-color-line);
+  border-radius: var(--bs-radius-md);
+  overflow: hidden;
+}
+.cell .chip { height: 92px; border-bottom: 1px solid var(--bs-color-line); }
+.cell .meta { padding: 12px 14px; }
+.cell .name {
+  font-family: var(--bs-font-mono);
+  font-size: 12px;
+  color: var(--bs-color-ink);
+}
+.cell .val {
+  font-family: var(--bs-font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--bs-color-ink-soft);
+  margin-top: 3px;
+}
+
+/* type ramp */
+.ramp { display: grid; gap: 22px; }
+.ramp .row { display: grid; gap: 6px; }
+.ramp .sample { color: var(--bs-color-ink); }
+.ramp .sample.bs-text-label { color: var(--bs-color-ink-mono); }
+.ramp .spec {
+  font-family: var(--bs-font-mono);
+  font-size: 11px;
+  color: var(--bs-color-ink-soft);
+}
+
+/* asset cards */
+.assets { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.asset { display: grid; gap: 10px; }
+.asset .frame {
+  border: 1px solid var(--bs-color-line);
+  border-radius: var(--bs-radius-lg);
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  min-height: 200px;
+}
+.asset .frame.on-forest { background: var(--bs-color-forest); border-color: transparent; }
+.asset .frame.on-paper { background: var(--bs-color-paper); }
+.asset .frame.on-card { background: var(--bs-color-card-alt); }
+.asset .frame img { display: block; max-width: 100%; height: auto; }
+.asset .caption {
+  font-family: var(--bs-font-mono);
+  font-size: 11px;
+  color: var(--bs-color-ink-soft);
+}
+
+.note {
+  margin-top: 22px;
+  font-family: var(--bs-font-mono);
+  font-size: 11px;
+  color: var(--bs-color-ink-soft);
+}

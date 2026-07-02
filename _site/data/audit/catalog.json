@@ -1,0 +1,122 @@
+{
+  "hero.headline": {
+    "type": "headline",
+    "value": "Senior software engineer. I ship systems where agents write the code — and I built the tooling to trust them in production."
+  },
+  "hero.intro": {
+    "type": "body",
+    "value": "I'm Bobby. I became a software engineer by chasing the parts of code that feel like math — type systems, proofs, recursion, the self-referential knots where a thing contains itself and still holds together. I go down those paths because they're beautiful, not because anyone asked; the useful part shows up on its own. Lately it showed up as agents."
+  },
+  "hero.summary": {
+    "type": "body",
+    "value": "At Aura I ship agent-authored delivery in production. The instinct behind it is old — make invalid states unrepresentable, push correctness into the type system until violations can't compile — and agents are just where it turned urgent: orgs want them shipping like senior engineers and give them none of the safety rails. So I built the rails — a contract-and-validation layer where every privileged effect is bound to a signed owner, enforced in CI. The harder, general version is out in the open, in prx and the bounded-systems libraries."
+  },
+  "banner.tagline": {
+    "type": "tagline",
+    "value": "Capability-secured systems & developer tooling"
+  },
+  "seeking.cta": {
+    "type": "cta",
+    "value": "Get in touch"
+  },
+  "seeking.focus": {
+    "type": "body",
+    "value": "Engineering on agentic products · safe agent-authored delivery · agent infrastructure"
+  },
+  "seeking.detail": {
+    "type": "body",
+    "value": "Senior engineering on teams building agentic products — where having shipped agent-authored systems and their guardrails is the rare part. Brooklyn · NYC · remote."
+  },
+  "exp.bounded-systems.what": {
+    "type": "body",
+    "value": "Capability security for AI agents — software delivered by agents, governed like infrastructure. The open, general form of the guardrails I ship at Aura."
+  },
+  "exp.bounded-systems.b0": {
+    "type": "body",
+    "value": "Designed a capability runtime — prx, guest-room, claude-box — where agents act only through the scoped door references they hold, every privileged effect is verified against its signed owner, and provenance is bound to an auditable chain (ocap-provenance)."
+  },
+  "exp.aura.what": {
+    "type": "claim",
+    "value": "On Commerce — the team behind Aura's website, commerce-routing, and business-operations systems — I architected the contract-and-validation layer behind inventory-purchasing: one source of truth, CI drift-gated across 130+ components, delivered as agent-authored PRs."
+  },
+  "exp.aura.b0": {
+    "type": "body",
+    "value": "Architected the contract-and-validation layer replacing Aura's spreadsheet-driven supply plan (the system behind inventory-purchasing): a compile-and-publish model where one source of truth generates every downstream surface — schemas, docs, tests, agent context — CI drift-gated so nothing falls out of sync."
+  },
+  "exp.aura.b1": {
+    "type": "body",
+    "value": "Made the pipeline auditable by construction — provenance and contract checks gating every generated output, sign-off bound to an owner-role enforced in CI rather than to individuals."
+  },
+  "exp.aura.b2": {
+    "type": "body",
+    "value": "Drove it as agent-authored delivery: every change moves through one auditable pipeline to a reviewed PR, applying the same provenance-and-contract discipline to the agents' own output."
+  },
+  "exp.l2l.what": {
+    "type": "claim",
+    "value": "Built the quality gates and developer experience for a 20-engineer team — static-analysis PR gating that blocked defects before merge, on top of design-system and performance work."
+  },
+  "exp.l2l.b0": {
+    "type": "claim",
+    "value": "Built static-analysis gating into the PR pipeline — blocking defects before merge, cutting critical bugs 20% and high-priority issues 25% across a 20-engineer team."
+  },
+  "exp.l2l.b1": {
+    "type": "claim",
+    "value": "Shipped the frontend platform behind it — a design system (−30% task lead time), a dashboard framework (widget builds a week → a day), and pagination + perf work that brought First Contentful Paint under a second."
+  },
+  "exp.pioneer-works.what": {
+    "type": "body",
+    "value": "Built the events + revenue data layer for the arts foundation."
+  },
+  "exp.pioneer-works.b0": {
+    "type": "claim",
+    "value": "A unified CRM + Square-API ETL — −80% payment-tracking time, P&L across 200+ events."
+  },
+  "exp.kaleida-studio.what": {
+    "type": "body",
+    "value": "Built just-in-time production automation for the fabrication studio."
+  },
+  "exp.kaleida-studio.b0": {
+    "type": "claim",
+    "value": "Just-in-time production workflows — eliminated edition-numbering errors (10/month → 0)."
+  },
+  "exp.the-prepared.what": {
+    "type": "body",
+    "value": "Built the publishing pipeline for the manufacturing publication."
+  },
+  "exp.the-prepared.b0": {
+    "type": "claim",
+    "value": "A unified content pipeline — −70% curation time across 1000+ articles."
+  },
+  "exp.recurse-center.what": {
+    "type": "body",
+    "value": "Type theory in Haskell — using the type system to make invalid states unrepresentable. The intellectual root of the capability work: push correctness into the boundary so violations can't compile."
+  },
+  "exp.recurse-center.b0": {
+    "type": "body",
+    "value": "Algebraic data types, typeclasses, and type-driven design — the same instinct now applied to security seams: invalid states unrepresentable, sign-off un-forgeable."
+  },
+  "work.prx": {
+    "type": "body",
+    "value": "The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR."
+  },
+  "work.guest-room": {
+    "type": "body",
+    "value": "Guest-agnostic room+door capability runtime — an agent reaches the outside world only through the door references it's handed."
+  },
+  "work.claude-box": {
+    "type": "body",
+    "value": "A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic."
+  },
+  "work.door-kit": {
+    "type": "body",
+    "value": "In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol."
+  },
+  "work.ocap-provenance": {
+    "type": "body",
+    "value": "Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain."
+  },
+  "work.string-audit": {
+    "type": "body",
+    "value": "Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls."
+  }
+}

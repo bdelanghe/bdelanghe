@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Robert DeLanghe">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C5A42"/>
+      <stop offset="1" stop-color="#0A4636"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <!-- monogram: r + d, the d's bowl left open — a door ajar -->
+  <g fill="none" stroke="#F4F1EA" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <!-- r -->
+    <path d="M150 196 V340"/>
+    <path d="M150 232 q0 -36 54 -36"/>
+    <!-- d : stem + an open bowl (gap on the lower-left = the door) -->
+    <path d="M362 150 V340"/>
+    <path d="M362 300 a52 52 0 1 1 -52 -52"/>
+  </g>
+  <circle cx="362" cy="356" r="9" fill="#56D4DD"/>
+</svg>

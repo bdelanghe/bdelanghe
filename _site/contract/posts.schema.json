@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robertdelanghe.dev/contract/posts.schema.json",
+  "title": "post / frontmatter contract",
+  "description": "The standard every blog post is held to. build.mjs validates each posts/*.md frontmatter against this; a post that doesn't conform can't build — the same invalid-states-unrepresentable boundary the rest of the site uses.",
+  "type": "object",
+  "required": ["title", "date", "description"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "description": "post h1 / feed title / og:title" },
+    "date": { "type": "string", "description": "ISO date YYYY-MM-DD — published date, drives feed + sort order" },
+    "description": { "type": "string", "description": "one line, kept ≤160 chars — meta description, index blurb, feed summary" },
+    "slug": { "type": "string", "description": "URL slug; defaults to the filename" },
+    "type": { "type": "string", "enum": ["post"], "description": "vault discriminator; optional here so vault drafts copy in unchanged" },
+    "target": { "type": "string", "enum": ["dev", "bounded-tools"], "description": "publish destination/voice from the vault. This site renders only 'dev' (or absent); 'bounded-tools' is skipped." },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "topic tags — keywords + h-entry categories" },
+    "syndication": { "type": "array", "items": { "type": "string" }, "description": "POSSE: URLs where this post was syndicated (Medium, dev.to, Mastodon…); rendered as u-syndication backlinks" }
+  }
+}

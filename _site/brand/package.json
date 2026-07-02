@@ -1,0 +1,24 @@
+{
+  "name": "@bounded-systems/brand",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Identity assets and design tokens for Bounded Systems.",
+  "type": "module",
+  "scripts": {
+    "build:css": "node tokens/build-tokens.mjs",
+    "check": "node tokens/build-tokens.mjs --check",
+    "build:sd": "style-dictionary build --config style-dictionary.config.mjs",
+    "build": "npm run build:css && npm run build:sd",
+    "coverage": "node tools/coverage.mjs css design",
+    "coverage:check": "node tools/coverage.mjs --check css",
+    "coverage:colors": "node tools/coverage.mjs --colors --check css",
+    "content": "node tools/content.mjs",
+    "content:check": "node tools/content.mjs --check",
+    "meta": "node tools/meta.mjs",
+    "a11y": "node tools/a11y.mjs",
+    "a11y:check": "node tools/a11y.mjs --check"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  }
+}

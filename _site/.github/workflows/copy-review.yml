@@ -1,0 +1,33 @@
+name: copy-review
+
+# Agentic copy review: Claude reads the authored prose (data/profile.json,
+# data/site.json) and judges it against the site's own thesis and voice —
+# claim integrity, thesis coherence, voice, clarity. The deterministic gates
+# can't make those calls; this one can. Report-only by default (findings land
+# in the run summary); add --strict to block on blocker-severity findings.
+#
+# Skips cleanly when ANTHROPIC_API_KEY is absent (e.g. fork PRs), so it never
+# blocks a contributor who can't run it.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "data/profile.json"
+      - "data/site.json"
+      - "copy-review.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  copy-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Agentic copy review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node copy-review.mjs --strict # blocks on blocker-severity claim-integrity findings

@@ -1,0 +1,20 @@
+{
+  "_doc": "Known, intentional divergences between data/profile.json (canonical) and the LinkedIn export. Listed here so linkedin-check.mjs classifies them as 'accepted' instead of re-flagging them every run. Add an entry only when the divergence is a deliberate choice, with a note explaining why.",
+  "accepted": [
+    {
+      "org": "Pioneer Works",
+      "field": "title",
+      "note": "LinkedIn 'Integrations Consultant' was targeted at landing the Aura integration role. The repo carries the truer engineering framing ('Software Engineer (Contract)'). GitHub is canonical; LinkedIn stays as-is."
+    },
+    {
+      "org": "Kaleida Studio",
+      "field": "title",
+      "note": "Same as Pioneer Works — 'Integrations Consultant' on LinkedIn, engineering framing in the repo."
+    },
+    {
+      "org": "The Prepared",
+      "field": "title",
+      "note": "Same as Pioneer Works — 'Integrations Consultant' on LinkedIn, engineering framing in the repo."
+    }
+  ]
+}

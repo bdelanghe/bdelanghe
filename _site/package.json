@@ -1,0 +1,25 @@
+{
+  "name": "robertdelanghe-dev",
+  "version": "0.1.0",
+  "private": true,
+  "description": "robertdelanghe.dev — software-engineering portfolio, built on @bounded-systems/brand.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs && node scripts/gen-attestation.mjs",
+    "check": "node brand/tokens/build-tokens.mjs --check",
+    "check:linkedin": "node linkedin-check.mjs",
+    "check:copy": "node copy-review.mjs",
+    "dev": "python3 -m http.server 8080",
+    "prebuild": "npm run check",
+    "deploy": "wrangler deploy",
+    "check:resume": "node resume-parse.mjs",
+    "audit:catalog": "node audit-catalog.mjs",
+    "audit": "node scripts/audit.mjs --strict",
+    "audit:vendor": "node scripts/vendor-audit.mjs"
+  },
+  "devDependencies": {
+    "an-array-of-english-words": "^2.0.0",
+    "wrangler": "^4",
+    "write-good": "^1.0.8"
+  }
+}

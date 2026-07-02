@@ -1,0 +1,61 @@
+<!-- @dsCard group="Foundations" name="Color" subtitle="Brand palette tokens" width="900" height="520" -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color — Bounded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <header class="bs-head">
+    <p class="eyebrow">Foundations</p>
+    <h1 class="bs-text-h2">Color</h1>
+    <p>Derived live from <code>tokens.css</code> — each chip reads its own
+       <code>--bs-color-*</code> custom property, so this card can never drift from the tokens.</p>
+  </header>
+  <div class="grid" id="grid"></div>
+  <p class="note" id="note" hidden>Could not read tokens.css rules (serve over http to enable). Run a static server in repo root.</p>
+
+  <script>
+    function colorTokens() {
+      const out = [];
+      for (const sheet of document.styleSheets) {
+        let rules;
+        try { rules = sheet.cssRules; } catch { return null; }
+        if (!rules) continue;
+        for (const rule of rules) {
+          if (rule.selectorText === ":root") {
+            const s = rule.style;
+            for (let i = 0; i < s.length; i++) {
+              const prop = s[i];
+              if (prop.startsWith("--bs-color-")) {
+                out.push({ name: prop.replace("--bs-color-", ""), value: s.getPropertyValue(prop).trim() });
+              }
+            }
+          }
+        }
+      }
+      return out;
+    }
+    const tokens = colorTokens();
+    const grid = document.getElementById("grid");
+    if (!tokens || !tokens.length) {
+      document.getElementById("note").hidden = false;
+    } else {
+      for (const t of tokens) {
+        const cell = document.createElement("div");
+        cell.className = "cell";
+        cell.innerHTML =
+          '<div class="chip" style="background:' + t.value + '"></div>' +
+          '<div class="meta"><div class="name">color.' + t.name + '</div>' +
+          '<div class="val">' + t.value + "</div></div>";
+        grid.appendChild(cell);
+      }
+    }
+  </script>
+</body>
+</html>

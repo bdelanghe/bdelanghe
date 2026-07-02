@@ -1,0 +1,35 @@
+{
+  "_comment": "AI-tell rules as data (promoted from spikes/ — see issue #6). Each pattern: { re, flags, why, level }. Levels: error (definite AI artifact — chatbot text, placeholders) | warn (likely cadence) | suggestion (filler). aiIsms() in prose.mjs loads this; the structural tells that aren't simple regex (em-dash count, anaphora, tricolons) stay in code. Seeded from the vale-signs-of-ai-writing corpus + Wikipedia 'Signs of AI writing'.",
+  "patterns": [
+    { "re": "\\bas an? (?:ai|large) language model\\b", "flags": "i", "why": "chatbot meta-artifact", "level": "error" },
+    { "re": "\\b(?:i (?:cannot|can't) (?:provide|assist)|i'?m sorry,? but)\\b", "flags": "i", "why": "assistant refusal boilerplate", "level": "error" },
+    { "re": "\\b(?:knowledge cutoff|as of my last (?:update|training)|my training data)\\b", "flags": "i", "why": "knowledge-cutoff reference", "level": "error" },
+    { "re": "\\[(?:insert|your|company|product|name|link)[^\\]]*\\]", "flags": "i", "why": "unfilled placeholder", "level": "error" },
+    { "re": "\\butm_source=chatgpt\\b", "flags": "i", "why": "ChatGPT tracking URL", "level": "error" },
+    { "re": "\\blorem ipsum\\b", "flags": "i", "why": "placeholder text shipped", "level": "error" },
+
+    { "re": "\\b(?:isn'?t|aren'?t|wasn'?t|weren'?t|won'?t|don'?t|doesn'?t|not)\\b[^.?!—–]{1,50}[—–][^.?!]{0,50}\\b(?:it'?s|that'?s|but|they'?re|we'?re|it is|that is)\\b", "flags": "i", "why": "antithesis \"it isn't X — it's Y\" cadence", "level": "suggestion" },
+    { "re": "\\bnot\\s+(?:just|only|merely|simply|about)\\b[^.?!]{1,50},\\s*(?:but|it'?s|they'?re|it is|we)\\b", "flags": "i", "why": "\"not just X, it's Y\" cadence", "level": "warn" },
+    { "re": "\\bthe\\s+(?:easy|simple|fun|hard|tricky|tough|real|interesting|important)\\s+part\\b", "flags": "i", "why": "\"the [easy/hard] part\" framing", "level": "warn" },
+    { "re": "\\b(?:the\\s+(?:best part|result|catch|kicker|bottom line|takeaway)\\s*\\?|sound familiar\\?|here'?s the (?:thing|kicker|catch)|but here'?s)", "flags": "i", "why": "rhetorical teaser fragment", "level": "warn" },
+    { "re": "\\bnot only\\b[^.?!]{1,60}\\bbut also\\b", "flags": "i", "why": "\"not only … but also\" cadence", "level": "warn" },
+    { "re": "\\bwhether you'?re\\b[^.?!]{1,60}\\bor\\b", "flags": "i", "why": "\"whether you're X or Y\" cadence", "level": "warn" },
+    { "re": "\\bmore than just\\b", "flags": "i", "why": "\"more than just\" cadence", "level": "warn" },
+    { "re": "\\b(?:it'?s (?:important|worth) (?:to note|noting)|it is important to note|while it'?s true that)\\b", "flags": "i", "why": "hedging cluster", "level": "warn" },
+    { "re": "\\bin (?:today'?s|this) (?:fast-paced|ever-(?:evolving|changing)|digital|modern)[^.?!]{0,20}?(?:world|landscape|age|era)\\b", "flags": "i", "why": "generic AI opener", "level": "warn" },
+    { "re": "\\b(?:furthermore|moreover|in conclusion|to sum up)\\b", "flags": "i", "why": "essay-transition tic", "level": "warn" }
+  ],
+  "lexicon": {
+    "suggestion": [
+      "delve", "seamless", "seamlessly", "robust", "leverage", "elevate", "unlock", "harness",
+      "realm", "tapestry", "testament", "embark", "foster", "bustling", "supercharge",
+      "effortless", "effortlessly", "empower", "streamline", "game-changer", "game-changing",
+      "cutting-edge", "best-in-class", "next-level", "transformative", "revolutionize",
+      "ever-evolving", "ever-changing", "look no further", "rest assured", "when it comes to",
+      "dive in", "deep dive", "needless to say", "the world of", "unleash", "turbocharge",
+      "meticulous", "meticulously", "underscore", "pivotal", "vibrant", "navigate the",
+      "landscape of", "in the realm of", "a testament to", "stand out from the crowd",
+      "take it to the next level"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+name: resume-parse
+
+# Résumé-parser gate: build dist/, then read dist/resume.html the way an automated
+# parser (ATS) would — count its tokens and have Claude parse it as an ATS,
+# reporting the extracted fields + what it can't cleanly parse. Report-only
+# (findings → the run summary); --strict fails below an ats_parseability threshold.
+# Skips cleanly when ANTHROPIC_API_KEY is absent.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "data/profile.json"
+      - "resume-parse.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  resume-parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Build dist/
+        run: node build.mjs
+      - name: Parse the résumé as an ATS
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node resume-parse.mjs # report-only; add --strict to gate

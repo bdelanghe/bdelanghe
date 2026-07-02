@@ -1,0 +1,23 @@
+{
+  "$comment": "Controlled topic vocabulary — the org-level contract for self-labeling. The labeler may ONLY assign slugs from this list (1-4 per repo). GitHub topics must be lowercase, <=50 chars, hyphenated.",
+  "vocabulary": [
+    { "slug": "agent-infra", "label": "Agent infrastructure" },
+    { "slug": "capability-security", "label": "Capability security / ocap" },
+    { "slug": "developer-tools", "label": "Developer tooling" },
+    { "slug": "cli", "label": "Command-line tool" },
+    { "slug": "library", "label": "Reusable library / SDK" },
+    { "slug": "github-actions", "label": "GitHub Actions / CI" },
+    { "slug": "nix", "label": "Nix / reproducible builds" },
+    { "slug": "devcontainers", "label": "Dev containers / environments" },
+    { "slug": "design-tokens", "label": "Design tokens / design systems" },
+    { "slug": "state-machines", "label": "State machines / xstate" },
+    { "slug": "web", "label": "Web app / site" },
+    { "slug": "data-viz", "label": "Data viz / analysis" },
+    { "slug": "ai", "label": "AI / LLM / Claude" },
+    { "slug": "game", "label": "Game / puzzle" },
+    { "slug": "algorithms", "label": "Algorithms / data structures" },
+    { "slug": "learning", "label": "Learning / Recurse Center" },
+    { "slug": "experiment", "label": "Experiment / prototype" },
+    { "slug": "infrastructure", "label": "Infra / ops / containers" }
+  ]
+}

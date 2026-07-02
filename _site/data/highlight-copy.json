@@ -1,0 +1,5 @@
+{
+  "_source": "Editorial overrides for Selected Work descriptions, by repo name. build.mjs applies these over the GitHub repo description from data/site.json — so the site's copy lives here, not scattered across the source repos. Add an entry only to override; unlisted repos keep their upstream description.",
+  "guest-room": "Guest-agnostic room+door capability runtime — an agent reaches the outside world only through the door references it's handed.",
+  "door-kit": "In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol."
+}

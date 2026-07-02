@@ -1,0 +1,74 @@
+<!-- @dsCard group="Foundations" name="Type" subtitle="Composite text styles" width="900" height="560" -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Type — Bounded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <header class="bs-head">
+    <p class="eyebrow">Foundations</p>
+    <h1 class="bs-text-h2">Type</h1>
+    <p>The composite <code>text.*</code> styles (mono label, display headings). Each row
+       is rendered with its real <code>.bs-text-*</code> class and the spec is read back
+       from the computed style — what you read is what the token produces.</p>
+  </header>
+  <div class="ramp" id="ramp"></div>
+  <p class="note" id="note" hidden>Could not read tokens.css rules (serve over http to enable).</p>
+
+  <script>
+    var SAMPLES = {
+      "bs-text-h1": "Bounded Systems",
+      "bs-text-h2": "Bounded authority for AI agents",
+      "bs-text-title": "Drawn at the door",
+      "bs-text-body": "A room, a door, an agent — the capability model made physical.",
+      "bs-text-label": "Bounded Systems · Brand"
+    };
+    function textClasses() {
+      var set = [];
+      for (var s = 0; s < document.styleSheets.length; s++) {
+        var rules;
+        try { rules = document.styleSheets[s].cssRules; } catch (e) { return null; }
+        if (!rules) continue;
+        for (var i = 0; i < rules.length; i++) {
+          var sel = rules[i].selectorText;
+          var m = sel && sel.match(/^\.(bs-text-[\w-]+)$/);
+          if (m && set.indexOf(m[1]) === -1) set.push(m[1]);
+        }
+      }
+      return set;
+    }
+    var classes = textClasses();
+    var ramp = document.getElementById("ramp");
+    if (!classes || !classes.length) {
+      document.getElementById("note").hidden = false;
+    } else {
+      classes.forEach(function (cls) {
+        var row = document.createElement("div");
+        row.className = "row";
+        var sample = document.createElement("div");
+        sample.className = "sample " + cls;
+        sample.textContent = SAMPLES[cls] || "The quick brown fox";
+        row.appendChild(sample);
+        document.body.appendChild(row); // attach so styles compute
+        var cs = getComputedStyle(sample);
+        var spec = document.createElement("div");
+        spec.className = "spec";
+        spec.textContent =
+          "." + cls + "  —  " + cs.fontFamily.split(",")[0].replace(/\"/g, "") +
+          " " + cs.fontWeight + " / " + cs.fontSize +
+          " / lh " + cs.lineHeight +
+          (cs.letterSpacing !== "normal" ? " / ls " + cs.letterSpacing : "") +
+          (cs.textTransform !== "none" ? " / " + cs.textTransform : "");
+        row.appendChild(spec);
+        ramp.appendChild(row);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "zod": "npm:zod@3",
+    "linkedom": "npm:linkedom@0.15.3"
+  }
+}

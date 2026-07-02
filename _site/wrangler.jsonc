@@ -1,0 +1,11 @@
+{
+  // Static-assets Worker for robertdelanghe.dev — serves the built dist/ folder.
+  // Build: `npm run build`.  Deploy: `npx wrangler deploy`.
+  "name": "site",
+  "account_id": "a2ca40f474fa65ed8f751a3efdf74c01",
+  "compatibility_date": "2026-06-21",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

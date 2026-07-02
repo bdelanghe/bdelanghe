@@ -1,0 +1,28 @@
+name: semantic
+
+# lone — bless each rendered post's DOM (semantic HTML + accessibility). The runtime
+# member of the contract family (content schemas + brand design tokens + lone semantics).
+# Blocking: any error-severity finding fails the build.
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ["posts/**", "build.mjs", "posts.mjs", "semantic/**", ".github/workflows/semantic.yml"]
+  workflow_dispatch:
+
+jobs:
+  bless:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          submodules: recursive
+      - name: Build site
+        run: node build.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Get lone
+        run: git clone --depth 1 https://github.com/bounded-systems/lone lone
+      - name: lone — bless rendered posts
+        run: deno run --allow-read --allow-net --config semantic/deno.json semantic/gate.ts

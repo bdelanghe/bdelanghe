@@ -1,0 +1,32 @@
+name: brand-checks
+
+# Gate the site against the shared design + content system (the brand submodule):
+# no hardcoded colours, content tokens, complete meta + agent-readiness, a11y contrast.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Build dist/
+        run: node build.mjs
+      - name: No hardcoded colours (all colours are tokens)
+        run: node brand/tools/coverage.mjs --colors --check dist
+      - name: Content tokens (schema + Gherkin + lint)
+        run: node brand/tools/content.mjs --check dist
+      - name: Meta + agent-readiness
+        run: node brand/tools/meta.mjs --check dist
+      - name: Accessibility (WCAG AA contrast + headings)
+        run: node brand/tools/a11y.mjs --check dist

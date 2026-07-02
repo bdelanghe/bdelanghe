@@ -1,0 +1,26 @@
+/* Bounded Systems — base resets + element defaults built on the tokens.
+   Depends on tokens.css (CSS variables) being loaded first. */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bs-color-paper);
+  color: var(--bs-color-ink);
+  font-family: var(--bs-font-display);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; }
+
+::selection {
+  background: var(--bs-color-forest);
+  color: var(--bs-color-white);
+}

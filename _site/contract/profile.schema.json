@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robertdelanghe.dev/contract/profile.schema.json",
+  "title": "profile / copy contract",
+  "description": "Content tokens (slugs for copy) for the site's identity. Curated from a saved source (e.g. a LinkedIn webarchive), version-controlled, never live-fetched. build.mjs renders from these slugs.",
+  "type": "object",
+  "required": ["name", "role", "headline", "summary", "links"],
+  "additionalProperties": true,
+  "properties": {
+    "name": { "type": "string" },
+    "role": { "type": "string" },
+    "place": { "type": "string" },
+    "banner": {
+      "type": "object",
+      "description": "Profile banner content tokens — the strings the generated header SVG renders (banner.mjs). Colors come from brand design tokens, not here.",
+      "additionalProperties": false,
+      "properties": {
+        "tagline": { "type": "string", "description": "banner subtitle — one line under the name" },
+        "stack": { "type": "array", "items": { "type": "string" }, "description": "small-caps tech list rendered under the tagline" }
+      }
+    },
+    "headline": { "type": "string", "description": "hero h1 — one line" },
+    "intro": { "type": "string", "description": "hero — short first-person bio line, sits between headline and summary" },
+    "summary": { "type": "string", "description": "hero lead paragraph" },
+    "experience": {
+      "type": "array",
+      "description": "Roles, newest first. Curated from a saved source, not live.",
+      "items": {
+        "type": "object",
+        "required": ["org", "when", "what"],
+        "additionalProperties": false,
+        "properties": {
+          "org": { "type": "string" },
+          "role": { "type": "string" },
+          "when": { "type": "string" },
+          "where": { "type": "string" },
+          "url": { "type": "string", "description": "Canonical org link (e.g. LinkedIn company page)." },
+          "what": { "type": "string" },
+          "bullets": { "type": "array", "items": { "type": "string" }, "description": "Detailed achievements — used by the résumé." }
+        }
+      }
+    },
+    "skills": { "type": "array", "items": { "type": "string" }, "description": "Skill keywords for the résumé." },
+    "proof": {
+      "type": "array",
+      "description": "Claim → evidence: repos/links that back the hero claims.",
+      "items": {
+        "type": "object",
+        "required": ["label", "href"],
+        "additionalProperties": false,
+        "properties": { "label": { "type": "string" }, "href": { "type": "string" } }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["org", "when", "what"],
+        "additionalProperties": false,
+        "properties": {
+          "org": { "type": "string" },
+          "degree": { "type": "string" },
+          "when": { "type": "string" },
+          "where": { "type": "string" },
+          "url": { "type": "string", "description": "Canonical org link (e.g. LinkedIn school page)." },
+          "what": { "type": "string" }
+        }
+      }
+    },
+    "seeking": {
+      "type": "object",
+      "description": "Job-search callout: what roles you're open to.",
+      "required": ["focus"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "focus": { "type": "string" },
+        "detail": { "type": "string" },
+        "cta": { "type": "string" },
+        "href": { "type": "string" }
+      }
+    },
+    "social": {
+      "type": "array",
+      "description": "Canonical identity set — profiles you control. One source for JSON-LD sameAs, rel=me (IndieAuth), and the footer 'Elsewhere' line.",
+      "items": {
+        "type": "object",
+        "required": ["label", "href"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "href": { "type": "string" }
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label", "href"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "href": { "type": "string" }
+        }
+      }
+    }
+  }
+}

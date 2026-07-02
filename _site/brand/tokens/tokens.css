@@ -1,0 +1,85 @@
+/* AUTO-GENERATED from tokens.json by build-tokens.mjs — do not edit by hand. */
+:root {
+  /* color */
+  --bs-color-forest: #0C5A42;
+  --bs-color-forest-deep: #073D2C;
+  --bs-color-paper: #EDEAE1;
+  --bs-color-card: #FFFFFF;
+  --bs-color-card-alt: #F4F1EA;
+  --bs-color-ink: #16221C;
+  --bs-color-ink-soft: #5C6B63;
+  --bs-color-ink-mono: #5E6B62;
+  --bs-color-line: #E4E0D4;
+  --bs-color-white: #FFFFFF;
+  --bs-color-forest-tint: #E2EBE6;
+  --bs-color-forest-soft: #D2E0D8;
+  --bs-color-clay: #A6432F;
+  --bs-color-clay-tint: #F2DED8;
+  --bs-color-amber: #B5762A;
+  --bs-color-amber-tint: #F3E8D6;
+  /* font family */
+  --bs-font-display: "Space Grotesk", sans-serif;
+  --bs-font-mono: "IBM Plex Mono", monospace;
+  /* size & radius */
+  --bs-text-h1: 46px;
+  --bs-text-h2: 26px;
+  --bs-text-title: 18px;
+  --bs-text-body: 15px;
+  --bs-text-label: 11px;
+  --bs-radius-lg: 18px;
+  --bs-radius-md: 12px;
+  /* grade — base + derived bg/fg tints (deterministic) */
+  --bs-grade-enforced: #3FB984;
+  --bs-grade-enforced-bg: #E2F5ED;
+  --bs-grade-enforced-fg: #28664B;
+  --bs-grade-enforced-on-dark: #9FDCC2;
+  --bs-grade-enforced-on-dark-bg: color-mix(in srgb, #3FB984 14%, transparent);
+  --bs-grade-partial: #C8902F;
+  --bs-grade-partial-bg: #F7EEE0;
+  --bs-grade-partial-fg: #665425;
+  --bs-grade-partial-on-dark: #E4C897;
+  --bs-grade-partial-on-dark-bg: color-mix(in srgb, #C8902F 14%, transparent);
+  --bs-grade-aspirational: #7E8C83;
+  --bs-grade-aspirational-bg: #ECEEEC;
+  --bs-grade-aspirational-fg: #45524A;
+  --bs-grade-aspirational-on-dark: #BFC6C1;
+  --bs-grade-aspirational-on-dark-bg: color-mix(in srgb, #7E8C83 14%, transparent);
+}
+
+/* Text styles — composite recipes built from the tokens above. */
+.bs-text-h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+.bs-text-h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.bs-text-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.bs-text-body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.bs-text-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+name: refresh
+
+# Maintenance mechanism: re-ingest the GitHub corpus on a schedule and commit
+# data/site.json so the site stays current as repos change. The deploy workflow
+# then rebuilds from the refreshed contract.
+on:
+  schedule:
+    - cron: "17 8 * * 1" # weekly, Monday 08:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: DeterminateSystems/nix-installer-action@90bb610b90bf290cad97484ba341453bd1cbefea # v19
+
+      # GH_CORPUS_TOKEN (a PAT that can read your private repos) gives full counts;
+      # without it, the default token sees public repos only.
+      - name: Re-ingest corpus → data/site.json
+        run: nix develop --command node fetch.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_CORPUS_TOKEN || github.token }}
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/site.json; then
+            echo "corpus unchanged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/site.json
+            git commit -m "chore: refresh corpus (data/site.json)"
+            git push
+          fi

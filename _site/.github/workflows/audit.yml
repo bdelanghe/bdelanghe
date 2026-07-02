@@ -1,0 +1,40 @@
+name: audit
+
+# One content gate, run the same locally and in CI: `npm run audit` (scripts/audit.mjs).
+# It verifies the vendored auditor in vendor/string-audit/ against its sha256 provenance
+# (vendor/string-audit/provenance.json), regenerates the typed-symbol catalog from the
+# contracts, and runs the prose + grounding gate over the curated audit data — blocking
+# on error-level findings or ungrounded claims (--strict). Bump the pinned auditor with
+# `npm run audit:vendor -- --ref <tag>`.
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "audit-catalog.mjs"
+      - "scripts/audit.mjs"
+      - "vendor/string-audit/**"
+      - ".github/workflows/audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "audit-catalog.mjs"
+      - "scripts/audit.mjs"
+      - "vendor/string-audit/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Install deps (the gate's prose checks need an-array-of-english-words + write-good)
+        run: npm ci --no-audit --no-fund
+      - name: Content gate (provenance + prose + grounding, --strict)
+        run: npm run audit

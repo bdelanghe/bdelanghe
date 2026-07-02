@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/bounded-systems/string-audit",
+  "ref": "v0.6.0",
+  "commit": "5abc45c83de62780c129fb4df0e7f0bfdf86141d",
+  "fetched": "2026-06-23",
+  "note": "Vendored gate (audit-gate.mjs + prose.mjs/catalog.mjs and their data) from the shared, owned auditor. Content-addressed: `npm run audit` verifies each file against the sha256 below before running, and fails on drift. Update with `npm run audit:vendor -- --ref <tag>`.",
+  "files": {
+    "audit-gate.mjs": "sha256:cb5ce26ca060522ec0d54cb5ae4c9769cf1328c652a1d055e4be6612c9c9e094",
+    "prose.mjs": "sha256:6d3c4d43885cef1c7f08cf6dbc1dda76dfa5b59d0b416b88c34bb5f62acd2bae",
+    "catalog.mjs": "sha256:b8d58a4fe286cebc67b7e7cb24a9b52747918576b6687fc89fb17e281fdd1ca9",
+    "dictionary.txt": "sha256:60fa9c055e137e64e678540a0c958229494791614a9642fc946ab50c75bdf47b",
+    "ai-tells.json": "sha256:c2c73d8ffbf50bb65d22d6b340ec1a11dccdace6d6f26e266c66704a9f68590c"
+  }
+}

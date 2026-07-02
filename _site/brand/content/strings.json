@@ -1,0 +1,19 @@
+{
+  "$description": "Bounded Systems content tokens — canonical brand copy. The verbal half of the design system: one source of truth for words, the way tokens.json is for visuals. Surfaces (and other repos) may extend this with their own content/strings.json; the content tool merges core + per-repo. Scenarios in content/*.feature assert these are presented consistently.",
+  "name": {
+    "$value": "Bounded Systems",
+    "$description": "Org name — exact casing."
+  },
+  "tagline": {
+    "$value": "Bounded authority for AI agents",
+    "$description": "Primary tagline — hero / link cards / titles."
+  },
+  "description": {
+    "$value": "Capability security for AI agents — authority drawn at the door, not the process or container. Every claim graded against the running code.",
+    "$description": "One-line description — meta description (kept ≤160 chars), intros."
+  },
+  "thesis": {
+    "$value": "Draw the boundary at the door — a scope-bounded set of capabilities an agent acts through, not the process, not the container.",
+    "$description": "The core bet, stated once."
+  }
+}

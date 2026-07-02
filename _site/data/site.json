@@ -1,0 +1,232 @@
+{
+  "generatedAt": "2026-06-21T23:13:30.767Z",
+  "owner": {
+    "login": "bdelanghe",
+    "name": "Robert DeLanghe"
+  },
+  "stats": {
+    "repos": 115,
+    "public": 60,
+    "private": 55,
+    "sources": 106,
+    "forks": 9,
+    "tagged": 48,
+    "languages": [
+      {
+        "name": "TypeScript",
+        "count": 26
+      },
+      {
+        "name": "Python",
+        "count": 20
+      },
+      {
+        "name": "other",
+        "count": 13
+      },
+      {
+        "name": "Jupyter Notebook",
+        "count": 9
+      },
+      {
+        "name": "Rust",
+        "count": 9
+      },
+      {
+        "name": "Shell",
+        "count": 8
+      },
+      {
+        "name": "HTML",
+        "count": 8
+      },
+      {
+        "name": "JavaScript",
+        "count": 4
+      },
+      {
+        "name": "Nix",
+        "count": 4
+      },
+      {
+        "name": "Go Template",
+        "count": 1
+      },
+      {
+        "name": "Go",
+        "count": 1
+      },
+      {
+        "name": "C++",
+        "count": 1
+      },
+      {
+        "name": "Rich Text Format",
+        "count": 1
+      },
+      {
+        "name": "Scheme",
+        "count": 1
+      }
+    ],
+    "topics": [
+      {
+        "name": "developer-tools",
+        "count": 11
+      },
+      {
+        "name": "experiment",
+        "count": 10
+      },
+      {
+        "name": "capability-security",
+        "count": 10
+      },
+      {
+        "name": "web",
+        "count": 9
+      },
+      {
+        "name": "ai",
+        "count": 8
+      },
+      {
+        "name": "learning",
+        "count": 7
+      },
+      {
+        "name": "game",
+        "count": 7
+      },
+      {
+        "name": "algorithms",
+        "count": 6
+      },
+      {
+        "name": "library",
+        "count": 6
+      },
+      {
+        "name": "cli",
+        "count": 5
+      },
+      {
+        "name": "infrastructure",
+        "count": 5
+      },
+      {
+        "name": "agent-infra",
+        "count": 4
+      },
+      {
+        "name": "design-tokens",
+        "count": 3
+      },
+      {
+        "name": "data-viz",
+        "count": 2
+      },
+      {
+        "name": "nix",
+        "count": 2
+      },
+      {
+        "name": "profile-readme",
+        "count": 1
+      },
+      {
+        "name": "state-machines",
+        "count": 1
+      },
+      {
+        "name": "github-actions",
+        "count": 1
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "name": "prx",
+      "fullName": "bounded-systems/prx",
+      "url": "https://github.com/bounded-systems/prx",
+      "description": "The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR.",
+      "language": "TypeScript",
+      "stars": 1,
+      "pinned": true,
+      "topics": [
+        "agent-infra",
+        "capability-security",
+        "cli"
+      ]
+    },
+    {
+      "name": "guest-room",
+      "fullName": "bounded-systems/guest-room",
+      "url": "https://github.com/bounded-systems/guest-room",
+      "description": "Guest-agnostic room+door capability runtime — the core library claude-box is built on.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pinned": true,
+      "topics": [
+        "agent-infra",
+        "capability-security",
+        "library"
+      ]
+    },
+    {
+      "name": "claude-box",
+      "fullName": "bounded-systems/claude-box",
+      "url": "https://github.com/bounded-systems/claude-box",
+      "description": "A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pinned": true,
+      "topics": [
+        "agent-infra",
+        "ai",
+        "capability-security"
+      ]
+    },
+    {
+      "name": "door-kit",
+      "fullName": "bounded-systems/door-kit",
+      "url": "https://github.com/bounded-systems/door-kit",
+      "description": "In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol",
+      "language": "TypeScript",
+      "stars": 0,
+      "pinned": true,
+      "topics": [
+        "capability-security",
+        "library"
+      ]
+    },
+    {
+      "name": "ocap-provenance",
+      "fullName": "bounded-systems/ocap-provenance",
+      "url": "https://github.com/bounded-systems/ocap-provenance",
+      "description": "Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pinned": true,
+      "topics": [
+        "capability-security",
+        "library"
+      ]
+    },
+    {
+      "name": "string-audit",
+      "fullName": "bounded-systems/string-audit",
+      "url": "https://github.com/bounded-systems/string-audit",
+      "description": "Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls.",
+      "language": "JavaScript",
+      "stars": 0,
+      "pinned": true,
+      "topics": [
+        "ai",
+        "capability-security",
+        "developer-tools",
+        "library"
+      ]
+    }
+  ]
+}

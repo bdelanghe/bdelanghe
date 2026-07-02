@@ -1,0 +1,61 @@
+<!-- @dsCard group="Foundations" name="Radius" subtitle="Corner radii" width="600" height="360" -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radius — Bounded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <header class="bs-head">
+    <p class="eyebrow">Foundations</p>
+    <h1 class="bs-text-h2">Radius</h1>
+    <p>Corner radii, read live from the <code>--bs-radius-*</code> custom properties.</p>
+  </header>
+  <div class="grid" id="grid"></div>
+  <p class="note" id="note" hidden>Could not read tokens.css rules (serve over http to enable).</p>
+
+  <script>
+    function radiusTokens() {
+      var out = [];
+      for (var s = 0; s < document.styleSheets.length; s++) {
+        var rules;
+        try { rules = document.styleSheets[s].cssRules; } catch (e) { return null; }
+        if (!rules) continue;
+        for (var i = 0; i < rules.length; i++) {
+          if (rules[i].selectorText === ":root") {
+            var st = rules[i].style;
+            for (var j = 0; j < st.length; j++) {
+              var p = st[j];
+              if (p.indexOf("--bs-radius-") === 0) {
+                out.push({ name: p.replace("--bs-", ""), value: st.getPropertyValue(p).trim() });
+              }
+            }
+          }
+        }
+      }
+      return out;
+    }
+    var tokens = radiusTokens();
+    var grid = document.getElementById("grid");
+    if (!tokens || !tokens.length) {
+      document.getElementById("note").hidden = false;
+    } else {
+      tokens.forEach(function (t) {
+        var cell = document.createElement("div");
+        cell.className = "cell";
+        cell.innerHTML =
+          '<div class="chip" style="background:var(--bs-color-forest);border-top-left-radius:' +
+          t.value + ";border-top-right-radius:" + t.value + '"></div>' +
+          '<div class="meta"><div class="name">' + t.name + '</div>' +
+          '<div class="val">' + t.value + "</div></div>";
+        grid.appendChild(cell);
+      });
+    }
+  </script>
+</body>
+</html>

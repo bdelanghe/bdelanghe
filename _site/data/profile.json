@@ -1,0 +1,95 @@
+{
+  "_source": "Curated from a saved LinkedIn webarchive (2026-06). NOT live-fetched — this file is the contract (content tokens / slugs for copy). Edit here; the site renders from these slugs.",
+  "name": "Robert DeLanghe",
+  "role": "Senior Software Engineer",
+  "place": "Brooklyn · Aura · Recurse Center · Bennington",
+  "banner": {
+    "tagline": "Capability-secured systems & developer tooling",
+    "stack": ["TypeScript", "Deno", "ocap", "AST tooling", "AI-assisted engineering"]
+  },
+  "headline": "Senior software engineer. I ship systems where agents write the code — and I built the tooling to trust them in production.",
+  "intro": "I'm Bobby. I became a software engineer by chasing the parts of code that feel like math — type systems, proofs, recursion, the self-referential knots where a thing contains itself and still holds together. I go down those paths because they're beautiful, not because anyone asked; the useful part shows up on its own. Lately it showed up as agents.",
+  "summary": "At Aura I ship agent-authored delivery in production. The instinct behind it is old — make invalid states unrepresentable, push correctness into the type system until violations can't compile — and agents are just where it turned urgent: orgs want them shipping like senior engineers and give them none of the safety rails. So I built the rails — a contract-and-validation layer where every privileged effect is bound to a signed owner, enforced in CI. The harder, general version is out in the open, in prx and the bounded-systems libraries.",
+  "proof": [
+    { "label": "prx", "href": "https://github.com/bounded-systems/prx" },
+    { "label": "guest-room", "href": "https://github.com/bounded-systems/guest-room" },
+    { "label": "ocap-provenance", "href": "https://github.com/bounded-systems/ocap-provenance" },
+    { "label": "bounded.tools", "href": "https://bounded.tools/#provenance" }
+  ],
+  "experience": [
+    {
+      "org": "Bounded Systems", "role": "Creator (Independent Project)", "when": "2025 — present", "where": "Brooklyn", "url": "https://www.linkedin.com/company/bounded-systems",
+      "what": "Capability security for AI agents — software delivered by agents, governed like infrastructure. The open, general form of the guardrails I ship at Aura.",
+      "bullets": [
+        "Designed a capability runtime — prx, guest-room, claude-box — where agents act only through the scoped door references they hold, every privileged effect is verified against its signed owner, and provenance is bound to an auditable chain (ocap-provenance)."
+      ]
+    },
+    {
+      "org": "Aura", "role": "Senior Software Engineer · Commerce", "when": "Oct 2023 — present", "where": "New York · Hybrid", "url": "https://www.linkedin.com/company/aurahomeinc",
+      "what": "On Commerce — the team behind Aura's website, commerce-routing, and business-operations systems — I architected the contract-and-validation layer behind inventory-purchasing: one source of truth, CI drift-gated across 130+ components, delivered as agent-authored PRs.",
+      "bullets": [
+        "Architected the contract-and-validation layer replacing Aura's spreadsheet-driven supply plan (the system behind inventory-purchasing): a compile-and-publish model where one source of truth generates every downstream surface — schemas, docs, tests, agent context — CI drift-gated so nothing falls out of sync.",
+        "Made the pipeline auditable by construction — provenance and contract checks gating every generated output, sign-off bound to an owner-role enforced in CI rather than to individuals.",
+        "Drove it as agent-authored delivery: every change moves through one auditable pipeline to a reviewed PR, applying the same provenance-and-contract discipline to the agents' own output."
+      ]
+    },
+    {
+      "org": "L2L", "role": "Software Engineer", "when": "Apr 2021 — Sep 2023", "where": "New York · Remote", "url": "https://www.linkedin.com/company/l2l-manufacturingsoftware",
+      "what": "Built the quality gates and developer experience for a 20-engineer team — static-analysis PR gating that blocked defects before merge, on top of design-system and performance work.",
+      "bullets": [
+        "Built static-analysis gating into the PR pipeline — blocking defects before merge, cutting critical bugs 20% and high-priority issues 25% across a 20-engineer team.",
+        "Shipped the frontend platform behind it — a design system (−30% task lead time), a dashboard framework (widget builds a week → a day), and pagination + perf work that brought First Contentful Paint under a second."
+      ]
+    },
+    {
+      "org": "Pioneer Works", "role": "Software Engineer (Contract)", "when": "Nov 2018 — Feb 2021", "where": "Brooklyn", "url": "https://www.linkedin.com/company/pioneer-works-center-for-arts-and-innovation",
+      "what": "Built the events + revenue data layer for the arts foundation.",
+      "bullets": [
+        "A unified CRM + Square-API ETL — −80% payment-tracking time, P&L across 200+ events."
+      ]
+    },
+    {
+      "org": "Kaleida Studio", "role": "Software Engineer (Contract)", "when": "Jun 2019 — Mar 2020", "where": "Brooklyn", "url": "https://www.linkedin.com/company/kaleida",
+      "what": "Built just-in-time production automation for the fabrication studio.",
+      "bullets": [
+        "Just-in-time production workflows — eliminated edition-numbering errors (10/month → 0)."
+      ]
+    },
+    {
+      "org": "The Prepared", "role": "Software Engineer (Contract)", "when": "Oct 2018 — Feb 2019", "where": "Brooklyn", "url": "https://www.linkedin.com/company/theprepared",
+      "what": "Built the publishing pipeline for the manufacturing publication.",
+      "bullets": [
+        "A unified content pipeline — −70% curation time across 1000+ articles."
+      ]
+    },
+    {
+      "org": "Recurse Center", "role": "Participant", "when": "Sep 2019 — Dec 2019", "where": "Brooklyn", "url": "https://www.linkedin.com/company/recurse-center",
+      "what": "Type theory in Haskell — using the type system to make invalid states unrepresentable. The intellectual root of the capability work: push correctness into the boundary so violations can't compile.",
+      "bullets": [
+        "Algebraic data types, typeclasses, and type-driven design — the same instinct now applied to security seams: invalid states unrepresentable, sign-off un-forgeable."
+      ]
+    }
+  ],
+  "education": [
+    { "org": "Bennington College", "degree": "BA, Architecture & Sculpture", "when": "Sep 2009 — Dec 2012", "where": "Bennington, VT", "url": "https://www.linkedin.com/school/bennington-college", "what": "Computational & parametric design — algorithmic design for digital fabrication." }
+  ],
+  "skills": ["TypeScript", "Systems architecture", "Rust", "Python", "Node · Postgres · Docker · AWS", "CI/CD & provenance", "Nix", "Agent-authored delivery", "Capability-based security", "Access control"],
+  "seeking": {
+    "label": "Open to new roles",
+    "focus": "Engineering on agentic products · safe agent-authored delivery · agent infrastructure",
+    "detail": "Senior engineering on teams building agentic products — where having shipped agent-authored systems and their guardrails is the rare part. Brooklyn · NYC · remote.",
+    "cta": "Get in touch",
+    "href": "mailto:cv@robertdelanghe.dev"
+  },
+  "social": [
+    { "label": "GitHub", "href": "https://github.com/bdelanghe" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/rdelanghe/" }
+  ],
+  "links": [
+    { "label": "GitHub", "href": "https://github.com/bdelanghe" },
+    { "label": "Résumé", "href": "/resume" },
+    { "label": "Writing", "href": "/blog" },
+    { "label": "bounded.tools", "href": "https://bounded.tools" },
+    { "label": "cv@robertdelanghe.dev", "href": "mailto:cv@robertdelanghe.dev" }
+  ]
+}

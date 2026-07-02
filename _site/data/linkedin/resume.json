@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Robert DeLanghe",
+    "label": "I build the security layer for agentic systems — software delivered by agents, governed like infrastructure",
+    "email": "cv@robertdelanghe.com",
+    "url": "https://robertdelanghe.dev",
+    "summary": "I build the security layer for agentic systems — the machinery that lets software be delivered by agents but governed like infrastructure. My work centers on capability-based security.",
+    "location": { "city": "Brooklyn", "region": "New York", "countryCode": "US" },
+    "profiles": [
+      { "network": "LinkedIn", "username": "rdelanghe", "url": "https://www.linkedin.com/in/rdelanghe" },
+      { "network": "GitHub", "username": "bdelanghe", "url": "https://github.com/bdelanghe" }
+    ]
+  },
+  "work": [
+    { "name": "Bounded Systems", "position": "Creator (Independent Project)", "startDate": "2025" },
+    { "name": "Aura Home, Inc.", "position": "Senior Software Engineer", "location": "New York City Metropolitan Area", "startDate": "2023-10" },
+    { "name": "L2L", "position": "Software Engineer", "location": "New York City Metropolitan Area", "startDate": "2021-04", "endDate": "2023-09" },
+    { "name": "Pioneer Works Art Foundation", "position": "Integrations Consultant", "startDate": "2018-11", "endDate": "2021-02" },
+    { "name": "Kaleida Studio", "position": "Integrations Consultant", "location": "Brooklyn, New York, United States", "startDate": "2019-06", "endDate": "2020-03" },
+    { "name": "Recurse Center", "position": "Participant", "startDate": "2019-09", "endDate": "2019-12" },
+    { "name": "theprepared.org", "position": "Integrations Consultant", "location": "Brooklyn, New York, United States", "startDate": "2018-10", "endDate": "2019-02" },
+    { "name": "Roll & Hill", "position": "Inventory Manager | Assembler to Management", "location": "New York City Metropolitan Area", "startDate": "2015-12", "endDate": "2018-08" },
+    { "name": "Situ Fabrication", "position": "Designer | Rapid Prototyping and Rhino Modeling Specialist", "startDate": "2014-09", "endDate": "2014-12" }
+  ],
+  "skills": [
+    { "name": "Platform Architecture" },
+    { "name": "System Integration" },
+    { "name": "Developer Experience" },
+    { "name": "Distributed Systems" },
+    { "name": "Docker" },
+    { "name": "Python" },
+    { "name": "Algorithms" },
+    { "name": "Parametric Modeling" },
+    { "name": "Theory of Computation" },
+    { "name": "Computational Design" }
+  ]
+}

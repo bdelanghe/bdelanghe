@@ -1,0 +1,42 @@
+name: deploy
+
+# Primary deploy: one repo-owned, hermetic pipeline. nix build (nodejs + brand
+# pinned by flake.lock) → sign a real in-toto/SLSA attestation → wrangler deploy.
+# The builder is THIS workflow (an honest SLSA builder id); ATTEST_KEY lives in one
+# place (GitHub secrets). Disconnect Cloudflare's Workers Builds Git App so the two
+# don't double-deploy.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          submodules: recursive
+      - uses: DeterminateSystems/nix-installer-action@90bb610b90bf290cad97484ba341453bd1cbefea # v19
+      - name: Build (nix, reproducible)
+        run: nix build .#site -L
+      - name: Stage dist for wrangler
+        run: cp -rL result dist && chmod -R u+w dist
+      - name: Sign provenance attestation
+        # The nix build is hermetic (no secret, no randomness), so signing happens
+        # here on the staged dist/ — with the stable key when ATTEST_KEY is set.
+        run: nix develop --command node scripts/gen-attestation.mjs
+        env:
+          ATTEST_KEY: ${{ secrets.ATTEST_KEY }}
+          GITHUB_SHA: ${{ github.sha }}
+      - name: Deploy to Cloudflare Workers
+        run: nix develop --command wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

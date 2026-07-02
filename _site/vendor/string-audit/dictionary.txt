@@ -1,0 +1,47 @@
+# Custom dictionary — brand, product, and domain terms the base wordlist won't know.
+# One term per line, lowercase; '#' comments ignored. Spell-check treats these as valid
+# (so brand vocabulary isn't flagged as typos). Define your own here.
+
+# brand / org
+bounded
+bounded.tools
+robertdelanghe
+guest-room
+prx
+hooksmith
+lone
+ocap
+slsa
+in-toto
+capability
+
+# domain — capability security for AI agents (bounded.tools)
+capabilities
+ocaps
+verbspec
+mcp
+openapi
+runtime
+daemon
+
+# common modern words the dated base wordlist (web2) lacks
+email
+app
+apps
+online
+website
+blog
+login
+signup
+required
+included
+
+# engineering vocabulary the auditor itself uses
+schema
+zod
+deterministic
+memoized
+provenance
+anthropic
+llm
+sha256

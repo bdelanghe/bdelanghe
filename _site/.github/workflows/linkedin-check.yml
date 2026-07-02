@@ -1,0 +1,25 @@
+name: linkedin-check
+
+# Advisory drift check: data/profile.json (canonical) vs the committed LinkedIn
+# export (data/linkedin/resume.json, JSON Resume — validated against
+# contract/jsonresume.schema.json). GitHub is the source of truth — this never
+# blocks; it reports what to fix *on LinkedIn* into the run summary.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "data/profile.json"
+      - "data/linkedin/**"
+      - "linkedin-check.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  linkedin-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      # node is preinstalled on ubuntu-latest; the script is dependency-free.
+      - name: Check LinkedIn drift
+        run: node linkedin-check.mjs # report-only; add --strict to gate

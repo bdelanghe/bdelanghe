@@ -1,0 +1,28 @@
+name: coverage
+
+# Design-system coverage: prints the full report (usage, unused tokens, component
+# matrix), then gates that the design system's own CSS is fully tokenized.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Coverage report
+        run: node tools/coverage.mjs css design
+      - name: Gate — design system CSS is fully tokenized
+        run: node tools/coverage.mjs --check css
+      - name: Content tokens — schema valid + every scenario backed by a token
+        run: node tools/content.mjs --check
+      - name: Accessibility — WCAG AA contrast on token pairs
+        run: node tools/a11y.mjs --check

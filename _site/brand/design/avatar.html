@@ -1,0 +1,39 @@
+<!-- @dsCard group="Brand" name="Avatar" subtitle="Square masters + masking" width="760" height="440" -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar — Bounded Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="./preview.css">
+  <style>
+    .av { width: 140px; height: 140px; border-radius: 24px; }
+    .av.circle { border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <header class="bs-head">
+    <p class="eyebrow">Brand</p>
+    <h1 class="bs-text-h2">Avatar</h1>
+    <p>Square masters with a ~16% safe area so the door never clips when a surface
+       masks to rounded-square or circle. Forest is the hero; light is for dark/photo backgrounds.</p>
+  </header>
+  <div class="assets">
+    <div class="asset">
+      <div class="frame on-card"><img class="av" src="../avatar/avatar-forest.svg" alt="Forest avatar"></div>
+      <div class="caption">avatar-forest.svg · rounded mask</div>
+    </div>
+    <div class="asset">
+      <div class="frame on-card"><img class="av circle" src="../avatar/avatar-forest.svg" alt="Forest avatar, circle"></div>
+      <div class="caption">avatar-forest.svg · circle mask</div>
+    </div>
+    <div class="asset">
+      <div class="frame on-forest"><img class="av" src="../avatar/avatar-light.svg" alt="Light avatar"></div>
+      <div class="caption">avatar-light.svg · on dark</div>
+    </div>
+  </div>
+</body>
+</html>

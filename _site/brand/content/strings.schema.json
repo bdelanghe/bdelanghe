@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://bounded.tools/schema/content-strings.json",
+  "title": "Bounded Systems content tokens",
+  "description": "The contract for canonical brand copy. Each token is a DTCG-style { $value, $description }. Mirrors tokens.json for the verbal layer.",
+  "type": "object",
+  "required": ["name", "tagline", "description"],
+  "properties": {
+    "$description": { "type": "string" }
+  },
+  "patternProperties": {
+    "^[a-z][a-z0-9-]*$": {
+      "type": "object",
+      "required": ["$value"],
+      "additionalProperties": false,
+      "properties": {
+        "$value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The canonical copy string presented on every surface."
+        },
+        "$description": {
+          "type": "string",
+          "description": "Where/how this string is used."
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
