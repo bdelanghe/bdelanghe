@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-02</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-03</summary>
 
 ## capability-security
 
@@ -43,16 +43,16 @@ through dev containers, state machines (xstate), and design tokens.
 ## agent-infra
 
 - [prx](https://github.com/bounded-systems/prx) — The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR. `TypeScript`
-- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 - [claude-box](https://github.com/bounded-systems/claude-box) — A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic. `TypeScript`
+- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 - [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
 
 ## ai
 
+- [mcp-conversations-sqlite](https://github.com/bdelanghe/mcp-conversations-sqlite) — SQLite store for MCP (Model Context Protocol) conversation history `TypeScript`
 - [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [claude-token-tools](https://github.com/bounded-systems/claude-token-tools) — Claude Code token-saving toolkit — model-usage auditor + home-manager module `JavaScript`
 - [bdelanghe-claude-skills](https://github.com/bdelanghe/bdelanghe-claude-skills) — Claude Code skills and plugins for AI-assisted engineering workflows
-- [mcp-conversations-sqlite](https://github.com/bdelanghe/mcp-conversations-sqlite) — SQLite store for MCP (Model Context Protocol) conversation history
 
 ## developer-tools
 
