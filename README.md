@@ -30,22 +30,22 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-03</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-04</summary>
 
 ## capability-security
 
+- [trust](https://github.com/bounded-systems/trust) — Bounded Systems Trust Center — a public, grep-verifiable claims ledger (verifiable, not attested). `HTML`
 - [installer](https://github.com/bounded-systems/installer) — Spec-driven provisioning: install/doctor as VerbSpec verbs, effects delegated to capability seams `TypeScript`
 - [cf-oidc-token-broker](https://github.com/bounded-systems/cf-oidc-token-broker) `JavaScript`
 - [seam-check](https://github.com/bounded-systems/seam-check) — Declare and prove a package's seam claim — allowed imports + zero ambient authority — with a coverage meta-check. The extractability harness, productized. `TypeScript`
-- [trust](https://github.com/bounded-systems/trust) — Bounded Systems Trust Center — a public, grep-verifiable claims ledger (verifiable, not attested). `HTML`
 - [dev-registry](https://github.com/bounded-systems/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `Shell`
 
 ## agent-infra
 
 - [prx](https://github.com/bounded-systems/prx) — The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR. `TypeScript`
 - [claude-box](https://github.com/bounded-systems/claude-box) — A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic. `TypeScript`
-- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 - [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
+- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 
 ## ai
 
@@ -56,16 +56,12 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## developer-tools
 
+- [dev-contracts](https://github.com/bounded-systems/dev-contracts) `TypeScript`
 - [hooksmith](https://github.com/bounded-systems/hooksmith) — Build Rust binaries into Lefthook hooks with WASM components `Rust`
 - [git-ast](https://github.com/bounded-systems/git-ast) — Language-aware Git: a clean/smudge design for AST-based diffs & merges. Design stage — spec + compiling skeleton, not yet a working tool. `Rust`
-- [dev-contracts-validate](https://github.com/bounded-systems/dev-contracts-validate) `TypeScript`
-- [dev-contracts-spec](https://github.com/bounded-systems/dev-contracts-spec) — Zod schemas and types for dev-contracts `TypeScript`
 - [schema-bridge](https://github.com/bounded-systems/schema-bridge) — Schema bridge tool for transformations `TypeScript`
 - [lima-devshell](https://github.com/bounded-systems/lima-devshell) — Bootstrap devshell for Lima VM environments + macOS Home Manager config (Nix flake). `Nix`
 - [frond](https://github.com/bounded-systems/frond) — JS/TS round-trip validation with Deno + SWC: parse to an AST and regenerate source to check fidelity. `TypeScript`
-- [dev-contracts-transform](https://github.com/bounded-systems/dev-contracts-transform)
-- [dev-contracts-extract](https://github.com/bounded-systems/dev-contracts-extract)
-- [dev-contracts](https://github.com/bounded-systems/dev-contracts)
 
 ## infrastructure
 
@@ -73,8 +69,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
-- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
+- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 
 ## experiment
@@ -85,26 +81,33 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## agents
 
+- [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
+- [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
+- [door-concierge](https://github.com/bounded-systems/door-concierge) — concierged — the capability-introducer door, as a pinned OCI image (extracted from claude-box) `TypeScript`
+- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [lone](https://github.com/bounded-systems/lone) — Semantic blessing engine for DOM subtrees — untrusted element trees become typed Blessed<T> / Finding[] across a stable contract boundary. `TypeScript`
 - [door-peercred](https://github.com/bounded-systems/door-peercred) — SO_PEERCRED helper for launcherd (Rust) — extracted from claude-box; a launcherd helper, not a door `Rust`
-- [door-concierge](https://github.com/bounded-systems/door-concierge) — concierged — the capability-introducer door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-net](https://github.com/bounded-systems/door-net) — netd — the allowlist-egress capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
 - [ocap-provenance](https://github.com/bounded-systems/ocap-provenance) — Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain. `TypeScript`
 
 ## other
 
 - [fleet](https://github.com/bounded-systems/fleet) — Auto-generated fleet status board for bounded-systems (synoptic Layer 2 — live CI/PR/issue board)
+- [trellis](https://github.com/bounded-systems/trellis) — The bounded-systems contract map (semantic tree) + the aggregating flake check that CI runs `TypeScript`
+- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
+- [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
+- [concierge-wire](https://github.com/bounded-systems/concierge-wire) `TypeScript`
+- [keeper-wire](https://github.com/bounded-systems/keeper-wire) `TypeScript`
+- [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
+- [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
+- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
+- [brand](https://github.com/bdelanghe/brand) — Robert DeLanghe — personal brand. A pinning of bounded-systems/baobab: the token set (colors, type, space) the structure renders. `JavaScript`
+- [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
 - [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system
 - [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut
 - [gh-action-contracts](https://github.com/bounded-systems/gh-action-contracts) — Deno pull-shape contract gate — validates page-data cuts against typed Zod contracts
 - [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
 - [conformance](https://github.com/bounded-systems/conformance) — Org/repo conformance as code — the default-branch standard (rulesets-as-JSON) + an audit that scores every repo. Complements conformance-kit (site content) and fleet (live status). `JavaScript`
-- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
-- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
-- [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
 - [env](https://github.com/bounded-systems/env) — The one sanctioned reader of process.env, routing ambient config through capability imports `TypeScript`
 - [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
 - [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
@@ -129,11 +132,9 @@ through dev containers, state machines (xstate), and design tokens.
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
-- [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
 - [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 - [verify](https://github.com/bounded-systems/verify) — @bounded-systems/verify — standalone zero-dep offline Sigstore-bundle verifier. Published to JSR keyless via OIDC. `JavaScript`
 - [deploy](https://github.com/bdelanghe/deploy) — robertdelanghe.dev DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
-- [brand](https://github.com/bdelanghe/brand) — Robert DeLanghe — personal brand. A pinning of bounded-systems/baobab: the token set (colors, type, space) the structure renders. `JavaScript`
 - [less-software-flake](https://github.com/bdelanghe/less-software-flake) — Nix flakes for georgemandis' less.software suite — Zig CLIs over native macOS APIs (one mkZigMacTool helper) `Nix`
 - [git-ai-flake](https://github.com/bdelanghe/git-ai-flake) — Nix flake packaging git-ai (local-first AI authorship tracking for git) `Nix`
 - [tezcatl-flake](https://github.com/bdelanghe/tezcatl-flake) — Nix flake packaging tezcatl (headless macOS WebKit renderer CLI) `Nix`
