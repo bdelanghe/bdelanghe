@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-12</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-13</summary>
 
 ## capability-security
 
@@ -43,8 +43,8 @@ through dev containers, state machines (xstate), and design tokens.
 ## agent-infra
 
 - [prx](https://github.com/bounded-systems/prx) — The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR. `TypeScript`
-- [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
 - [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
+- [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
 - [claude-box](https://github.com/bounded-systems/claude-box) — A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic. `TypeScript`
 
 ## ai
