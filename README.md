@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-15</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-16</summary>
 
 ## capability-security
 
@@ -92,6 +92,7 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
+- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [conformance](https://github.com/bounded-systems/conformance) — Org/repo conformance as code — the default-branch standard (rulesets-as-JSON) + an audit that scores every repo. Complements conformance-kit (site content) and fleet (live status). `TypeScript`
 - [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
@@ -100,7 +101,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [verbspec-mcp](https://github.com/bounded-systems/verbspec-mcp) — Turn any @bounded-systems/verbspec verb Registry into an MCP server (official @modelcontextprotocol/sdk). `TypeScript`
 - [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
 - [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
-- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [fleet](https://github.com/bounded-systems/fleet) — Auto-generated fleet status board for bounded-systems (synoptic Layer 2 — live CI/PR/issue board)
 - [descriptor-kit](https://github.com/bounded-systems/descriptor-kit) `TypeScript`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
