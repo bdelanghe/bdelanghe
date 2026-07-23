@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-21</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-07-22</summary>
 
 ## capability-security
 
@@ -43,8 +43,8 @@ through dev containers, state machines (xstate), and design tokens.
 ## agent-infra
 
 - [prx](https://github.com/bounded-systems/prx) — The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR. `TypeScript`
-- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 - [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
+- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 - [claude-box](https://github.com/bounded-systems/claude-box) — A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic. `TypeScript`
 
 ## ai
@@ -81,8 +81,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## agents
 
-- [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
+- [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [ocap-provenance](https://github.com/bounded-systems/ocap-provenance) — Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain. `TypeScript`
 - [door-peercred](https://github.com/bounded-systems/door-peercred) — SO_PEERCRED helper for launcherd (Rust) — extracted from claude-box; a launcherd helper, not a door `Rust`
 - [door-net](https://github.com/bounded-systems/door-net) — netd — the allowlist-egress capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
@@ -92,9 +92,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
+- [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
-- [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
 - [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [conformance](https://github.com/bounded-systems/conformance) — Org/repo conformance as code — the default-branch standard (rulesets-as-JSON) + an audit that scores every repo. Complements conformance-kit (site content) and fleet (live status). `TypeScript`
