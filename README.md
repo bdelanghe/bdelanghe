@@ -30,12 +30,12 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-10</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-11</summary>
 
 ## capability-security
 
-- [installer](https://github.com/bounded-systems/installer) — Spec-driven provisioning: install/doctor as VerbSpec verbs, effects delegated to capability seams `TypeScript`
 - [trust](https://github.com/bounded-systems/trust) — Bounded Systems Trust Center — a public, grep-verifiable claims ledger (verifiable, not attested). `HTML`
+- [installer](https://github.com/bounded-systems/installer) — Spec-driven provisioning: install/doctor as VerbSpec verbs, effects delegated to capability seams `TypeScript`
 - [dev-registry](https://github.com/bounded-systems/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `Shell`
 - [cf-oidc-token-broker](https://github.com/bounded-systems/cf-oidc-token-broker) `JavaScript`
 - [seam-check](https://github.com/bounded-systems/seam-check) — Declare and prove a package's seam claim — allowed imports + zero ambient authority — with a coverage meta-check. The extractability harness, productized. `TypeScript`
@@ -69,8 +69,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
 
 ## experiment
