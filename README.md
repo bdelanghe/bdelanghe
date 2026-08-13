@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-11</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-12</summary>
 
 ## capability-security
 
@@ -43,9 +43,9 @@ through dev containers, state machines (xstate), and design tokens.
 ## agent-infra
 
 - [prx](https://github.com/bounded-systems/prx) — The agent-run work-unit CLI: capability-scoped agents whose every privileged effect is verified against its signed owner, driving a work unit through one signed pipeline to a merged PR. `TypeScript`
-- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
-- [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
 - [claude-box](https://github.com/bounded-systems/claude-box) — A capability-secured box for agent sessions — its authority is the door references it holds (keeper/scout/concierge/net), parent-agnostic. `TypeScript`
+- [gh-project-room](https://github.com/bounded-systems/gh-project-room) — Front Desk projection + sync room for bounded-systems (org project #2) `TypeScript`
+- [guest-room](https://github.com/bounded-systems/guest-room) — Guest-agnostic room+door capability runtime — the core library claude-box is built on. `TypeScript`
 
 ## ai
 
@@ -92,6 +92,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
+- [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
+- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
+- [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [verbspec-mcp](https://github.com/bounded-systems/verbspec-mcp) — Turn any @bounded-systems/verbspec verb Registry into an MCP server (official @modelcontextprotocol/sdk). `TypeScript`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `TypeScript`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
@@ -102,11 +105,9 @@ through dev containers, state machines (xstate), and design tokens.
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
 - [await-approval](https://github.com/bounded-systems/await-approval) — In-house manual-approval gate for GitHub Actions: pause a job on an issue until an allowlisted approver comments. SHA-pin when consuming. `Shell`
 - [trellis](https://github.com/bounded-systems/trellis) — The bounded-systems contract map (semantic tree) + the aggregating flake check that CI runs `TypeScript`
-- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
 - [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
 - [agent-memory](https://github.com/bounded-systems/agent-memory) — Agent memory as a capability — a dolt-server-backed KV store behind a memory door. Fully separate from Front Desk; the bd-memories replacement (prx#1008). `TypeScript`
 - [conformance](https://github.com/bounded-systems/conformance) — Org/repo conformance as code — the default-branch standard (rulesets-as-JSON) + an audit that scores every repo. Complements conformance-kit (site content) and fleet (live status). `TypeScript`
-- [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
 - [env](https://github.com/bounded-systems/env) — The one sanctioned reader of process.env, routing ambient config through capability imports `TypeScript`
 - [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
@@ -119,7 +120,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
 - [concierge-wire](https://github.com/bounded-systems/concierge-wire) `TypeScript`
 - [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
-- [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
 - [gh-action-contracts](https://github.com/bounded-systems/gh-action-contracts) — Deno pull-shape contract gate — validates page-data cuts against typed Zod contracts `Shell`
 - [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
 - [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut `Shell`
