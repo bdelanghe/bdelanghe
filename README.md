@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-12</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-13</summary>
 
 ## capability-security
 
@@ -92,6 +92,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
+- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
+- [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 - [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
 - [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
 - [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
@@ -125,7 +127,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut `Shell`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system `Shell`
-- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [schema-gen](https://github.com/bounded-systems/schema-gen) — Project zod schemas to explicit, fast-types-clean TypeScript (zod → JSON Schema → .d.ts) `TypeScript`
 - [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
 - [slack](https://github.com/bounded-systems/slack) — Policy-gated, provenance-tracked Slack read surface: bounded read ops behind a swappable transport port, with keymaker-minted scoped credentials `TypeScript`
@@ -138,7 +139,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [gh](https://github.com/bounded-systems/gh) — GitHub CLI wrapper with policy enforcement, rate-limit gating, and budget audit logging `TypeScript`
 - [bd](https://github.com/bounded-systems/bd) — Typed interface to the beads CLI with policy enforcement and short-ID guards `TypeScript`
 - [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point `TypeScript`
-- [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 - [anchored-chain-sqlite](https://github.com/bounded-systems/anchored-chain-sqlite) — SQLite/Drizzle-backed implementation of the anchored-chain stores `TypeScript`
 - [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
 - [policy](https://github.com/bounded-systems/policy) — Tool-policy engine enforcing subcommand allowlists by tool, state, and role `TypeScript`
