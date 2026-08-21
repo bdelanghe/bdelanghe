@@ -112,14 +112,24 @@ Security layer for agentic systems · capability-based access control · buildin
 ## 5. LinkedIn — About
 
 ```
-I build the security layer for agentic systems — the machinery that lets software be delivered by agents but governed like infrastructure. My work centers on capability-based security: every privileged effect an agent performs is verified against a signed owner, so nothing consequential happens without a traceable, enforceable source.
+I build the security layer for agentic systems — the machinery that lets software be delivered by agents but governed like infrastructure. My work centers on capability-based security: an agent's privileged effects are verified against a signed owner — git-writes today, with egress and external reads next — so a consequential action carries a traceable, enforceable source rather than trust in the agent.
 
-This is the throughline of my engineering: imposing structure on systems as they scale. At Aura I work at the integration boundary between systems; before that I led front-end and developer-experience work, including a rebuild that cut load times 45%. The current work, prx and the bounded-systems capability libraries, is where I'm working out the harder problem — keeping many agent-authored components honest against each other as they evolve.
+This is the throughline of my engineering: imposing structure on systems as they scale. Today that's the contract-and-validation layer behind a commerce platform's inventory and business-operations systems; before that I led front-end and developer-experience work, including a rebuild that brought First Contentful Paint under a second. The current work, prx and the bounded-systems capability libraries, is where I'm working out the harder problem — keeping many agent-authored components honest against each other as they evolve.
 
 Deepest in: capability security, access control, TypeScript, systems architecture. Working across the full stack (Node, Python, Postgres, Docker, AWS) when the problem needs it.
 
-Building in the open at github.com/bounded-systems. Reach me at cv@robertdelanghe.com.
+Building in the open at github.com/bounded-systems. Reach me at cv@robertdelanghe.dev.
 ```
+
+> **Shipped 2026-08-21.** This is the text now live on LinkedIn. It corrects three
+> faults in the earlier draft: the contact address read `cv@robertdelanghe.com`
+> (every other surface uses `.dev`); "every privileged effect … verified against a
+> signed owner" was the Lane C absolute-coverage overclaim the string-audit prose
+> gate errors on, now scoped to git-writes; and "cut load times 45%" was absent
+> from `data/audit/grounding.json` (an older blurb said ~95% for the same rebuild),
+> replaced with the grounded "First Contentful Paint under a second". Recorded in
+> `bdelanghe/site` → `data/linkedin/resume.json` (`basics.summary`).
+
 
 ---
 
