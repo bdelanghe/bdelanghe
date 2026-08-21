@@ -9,7 +9,7 @@
   },
   "hero.summary": {
     "type": "body",
-    "value": "At Aura I ship agent-authored delivery in production. The instinct behind it is old — make invalid states unrepresentable, push correctness into the type system until violations can't compile — and agents are just where it turned urgent: orgs want them shipping like senior engineers and give them none of the safety rails. So I built the rails — a contract-and-validation layer where every privileged effect is bound to a signed owner, enforced in CI. The harder, general version is out in the open, in prx and the bounded-systems libraries."
+    "value": "I ship agent-authored delivery in production. The instinct behind it is old — make invalid states unrepresentable, push correctness into the type system until violations can't compile — and agents are just where it turned urgent: orgs want them shipping like senior engineers and give them none of the safety rails. So I built the rails — a contract-and-validation layer where every privileged effect is bound to a signed owner, enforced in CI. The harder, general version is out in the open, in prx and the bounded-systems libraries."
   },
   "banner.tagline": {
     "type": "tagline",
@@ -29,7 +29,7 @@
   },
   "exp.bounded-systems.what": {
     "type": "body",
-    "value": "Capability security for AI agents — software delivered by agents, governed like infrastructure. The open, general form of the guardrails I ship at Aura."
+    "value": "Capability security for AI agents — software delivered by agents, governed like infrastructure. The open, general form of the guardrails I ship in production."
   },
   "exp.bounded-systems.b0": {
     "type": "body",
@@ -37,11 +37,11 @@
   },
   "exp.aura.what": {
     "type": "claim",
-    "value": "On Commerce — the team behind Aura's website, commerce-routing, and business-operations systems — I architected the contract-and-validation layer behind inventory-purchasing: one source of truth, CI drift-gated across 130+ components, delivered as agent-authored PRs."
+    "value": "On Commerce — the team behind the company's website, commerce-routing, and business-operations systems — I architected the contract-and-validation layer behind inventory-purchasing: one source of truth, CI drift-gated across 130+ components, delivered as agent-authored PRs."
   },
   "exp.aura.b0": {
     "type": "body",
-    "value": "Architected the contract-and-validation layer replacing Aura's spreadsheet-driven supply plan (the system behind inventory-purchasing): a compile-and-publish model where one source of truth generates every downstream surface — schemas, docs, tests, agent context — CI drift-gated so nothing falls out of sync."
+    "value": "Architected the contract-and-validation layer replacing the company's spreadsheet-driven supply plan (the system behind inventory-purchasing): a compile-and-publish model where one source of truth generates every downstream surface — schemas, docs, tests, agent context — CI drift-gated so nothing falls out of sync."
   },
   "exp.aura.b1": {
     "type": "body",
