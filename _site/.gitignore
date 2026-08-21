@@ -1,6 +1,0 @@
-dist/
-node_modules/
-.wrangler/
-result
-result-*
-.DS_Store
