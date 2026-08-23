@@ -54,6 +54,36 @@ file, so an empty directory registers zero tests and reports green having
 measured nothing — the same "we measured all 45" failure that `registry/scope.ts`
 exists to prevent. It is asserted here rather than left implicit.
 
+## What this ratchet cannot see
+
+The assertion is a regex over workflow YAML, so its guarantee is narrower than
+its name suggests: it proves no workflow **file** contains an executable
+`git commit`/`git push`. It cannot see a git write that happens inside a
+`uses:` action.
+
+Measured in `bdelanghe/bdelanghe`, where this file is parked. No workflow there
+contains any executable git write, and the ratchet runs clean against it — 23
+tests, 0 failures. Yet `github-actions[bot]` commits land on `main` daily
+(`b8a5018`, `794b04c`, `efb9442`, all "chore: refresh repositories (synoptic)").
+The only candidate is `bdelanghe/synoptic-github@v2`, invoked from `readme.yml`.
+
+To be exact about the claim: this does **not** establish that the action commits
+with `git` rather than through the API — a `createCommitOnBranch` call would
+produce bot-authored commits too. That is the point. The ratchet cannot
+distinguish the two, so on any repository that delegates to a third-party
+action, a green result is not evidence that history is being written the signed
+way. It is only evidence that no workflow file does it inline.
+
+`registry-refresh.yml` inlines its git write, so the ratchet does catch that
+instance. It does not close the class. Anyone treating a green run as "this repo
+cannot produce unsigned commits" would be making the same inference the
+originating hand-off warns about — asserting a mechanism from how it ought to be
+wired rather than from how it is.
+
+A check that would close the gap has to look at the commits, not the YAML:
+assert that every commit on the default branch reports `verification.verified`.
+That is a different test with a network dependency, and it is not written here.
+
 ## What is NOT done
 
 - **Wiring.** The lint lane invocation is unknown — whether `_workflow-lint.yml`
