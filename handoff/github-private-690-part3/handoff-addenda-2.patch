@@ -1,0 +1,31 @@
+--- a/HANDOFF.md
++++ b/HANDOFF.md
+@@ -338,3 +338,28 @@
+   the ntfy doorbell. Deliberately last: step 1 is not boring yet. No sibling
+   projection to `front-desk.sh` exists, and the `[settings]`-toggle sweep that
+   would size the transport has not happened.
++- **Whether core infra should live in dot-named repos at all.** Raised
++  2026-08-23, not decided, and deliberately not actioned by the session that
++  raised it. `add_repo` refuses any repository whose name begins with `.`, and a
++  *private* dot-named repo has no fallback — the anonymous lane serves public
++  repos only, so `.github-private` returns 403 on the API and on git alike.
++  `.github` is reachable purely because it is public, which is a property of its
++  visibility rather than a designed access path.
++
++  The reason this belongs in §7 and not in §5 is that it is not merely a trap to
++  route around. **The split is what caused §4.** `workflows.test.mjs` resolves
++  its workflow directory relative to its own checkout, so its blast radius is
++  exactly one repo; `.github-private` was never covered and the same defect
++  landed a third time. Porting the ratchet fixes the instance, not the class —
++  and the same shape recurs in `org/rulesets/ci-green.json` living apart from the
++  `schema` job it would gate.
++
++  Almost nothing in either repo is pinned there by GitHub: only `profile/`,
++  the fallback issue templates, and the community-health files. The 7 reusable
++  `workflow_call` workflows, the 2 composite actions, ~15 scheduled workflows,
++  the root tooling, and the whole registry are ordinary infra that could live in
++  normal repos — where they would also become SHA-pinnable, which
++  `uses: ./.github/actions/...` can never be. A fuller write-up with the
++  measurements is at
++  `bdelanghe/bdelanghe:handoff/dot-named-core-infra.md`. It needs an issue here;
++  the session that wrote it could not reach this repo to file one.
