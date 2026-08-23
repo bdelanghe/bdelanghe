@@ -42,7 +42,22 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const DIR = ".github/workflows";
-const files = readdirSync(DIR).filter((f) => f.endsWith(".yml") || f.endsWith(".yaml"));
+
+// Resolved relative to the working directory, exactly as the upstream ratchet
+// does — so this must run from the repository root. A wrong cwd raises ENOENT
+// from readdirSync at module load, which fails the run but reports it as a
+// filesystem stack rather than as the wiring mistake it is. Restated, because a
+// check whose failure is unreadable gets rerun, not diagnosed.
+let files;
+try {
+  files = readdirSync(DIR).filter((f) => f.endsWith(".yml") || f.endsWith(".yaml"));
+} catch (err) {
+  throw new Error(
+    `Cannot read ${DIR} from ${process.cwd()}. This ratchet resolves the ` +
+      `workflow directory relative to the working directory, so it must run ` +
+      `from the repository root. (${err.code ?? err.message})`,
+  );
+}
 
 // Guard the denominator. `readdirSync` on a path that exists but holds nothing
 // yields `[]`, and a `for` loop over `[]` registers ZERO tests — a suite that

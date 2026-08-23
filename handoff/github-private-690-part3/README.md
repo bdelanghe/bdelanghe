@@ -54,39 +54,85 @@ file, so an empty directory registers zero tests and reports green having
 measured nothing — the same "we measured all 45" failure that `registry/scope.ts`
 exists to prevent. It is asserted here rather than left implicit.
 
-## What this ratchet cannot see
+## What this ratchet cannot see — measured, not theorised
 
-The assertion is a regex over workflow YAML, so its guarantee is narrower than
-its name suggests: it proves no workflow **file** contains an executable
-`git commit`/`git push`. It cannot see a git write that happens inside a
-`uses:` action.
+The YAML assertion proves only that no workflow **file** contains an executable
+`git commit`/`git push`. It cannot see a git write inside a `uses:` action.
 
-Measured in `bdelanghe/bdelanghe`, where this file is parked. No workflow there
-contains any executable git write, and the ratchet runs clean against it — 23
-tests, 0 failures. Yet `github-actions[bot]` commits land on `main` daily
-(`b8a5018`, `794b04c`, `efb9442`, all "chore: refresh repositories (synoptic)").
-The only candidate is `bdelanghe/synoptic-github@v2`, invoked from `readme.yml`.
+Measured in `bdelanghe/bdelanghe`, where this directory is parked. No workflow
+there contains any executable git write, and the ratchet runs clean — 23 tests,
+0 failures. Then the commit-verification check was run against the same branch:
 
-To be exact about the claim: this does **not** establish that the action commits
-with `git` rather than through the API — a `createCommitOnBranch` call would
-produce bot-authored commits too. That is the point. The ratchet cannot
-distinguish the two, so on any repository that delegates to a third-party
-action, a green result is not evidence that history is being written the signed
-way. It is only evidence that no workflow file does it inline.
+```
+Scanned 116 commit(s) on bdelanghe/bdelanghe@main (full history of the ref).
+92 unverified:
+    71  unsigned  github-actions[bot]
+    18  unsigned  Robert
+     3  unsigned  GitHub
+```
 
-`registry-refresh.yml` inlines its git write, so the ratchet does catch that
-instance. It does not close the class. Anyone treating a green run as "this repo
-cannot produce unsigned commits" would be making the same inference the
-originating hand-off warns about — asserting a mechanism from how it ought to be
-wired rather than from how it is.
+The 71 bot commits come from `bdelanghe/synoptic-github@v2`, invoked by
+`readme.yml`. `reason: unsigned` settles what the YAML could not: a
+`createCommitOnBranch` call would have produced a *verified* bot commit, so the
+action is writing history with `git` inside the runner. The exact defect of #690
+part 2, in a lane the ported ratchet reports green on.
 
-A check that would close the gap has to look at the commits, not the YAML:
-assert that every commit on the default branch reports `verification.verified`.
-That is a different test with a network dependency, and it is not written here.
+To be clear about relevance: `bdelanghe/bdelanghe` does not require signatures,
+so this is not a defect *there* — it is simply the state, and it is being used
+here as the fixture that proves the gap. In `.github-private`, where `main`
+carries `required_signatures`, the same shape is what makes a PR unmergeable.
+
+## The commit-verification check
+
+`commit-verification.mjs` closes the class by asserting the **outcome** rather
+than the mechanism: whatever wrote the commit, by whatever route, GitHub either
+verified it or did not.
+
+```
+node check-commit-verification.mjs --owner bounded-systems --repo .github-private --ref main
+```
+
+Flags: `--since <ISO8601>`, `--allow <sha,sha>`. Token from `GH_TOKEN`, else
+`GITHUB_TOKEN`. Exit 0 only when a non-empty scan completed and every commit was
+verified.
+
+Every failure mode is a throw, deliberately — this is the #688 lesson applied to
+a new transport. A non-2xx throws; a missing token throws rather than skipping; an
+empty scan throws rather than reporting clean; a truncated scan throws rather than
+reporting on a prefix. There is no path through the module that reports success
+from a failed or incomplete read.
+
+`commit-verification.test.mjs` covers this with 15 pure tests, no network — the
+transport is stubbed. Every guard was mutation-tested; each mutation reds exactly
+its own tests and restore returns green:
+
+| Mutation | Expected | Result |
+|---|---|---|
+| Non-2xx returns `[]` instead of throwing (the #688 shape) | red | 5 fail |
+| Missing `verification` block reads as verified | red | 1 fail |
+| Denominator guard removed | red | 1 fail |
+| Truncated scan returns its prefix silently | red | 1 fail |
+| Missing token skips instead of throwing | red | 1 fail |
+| Restore | green | 15 pass, 0 fail |
+
+### Two environment traps found while smoke-testing it
+
+- **Node's `fetch` ignores `HTTPS_PROXY`.** `curl` honors the proxy and gets 200;
+  the same request from node's global `fetch` goes direct and gets
+  `401 Bad credentials`, because the proxy is what supplies working credentials.
+  Run with `NODE_USE_ENV_PROXY=1` (node 22+). A session that reads the 401 as
+  "my token is wrong" will chase the wrong thing for a while.
+- **`GITHUB_TOKEN` and `GH_TOKEN` can both be set with only one valid.** Here
+  `GITHUB_TOKEN` 401s and `GH_TOKEN` works. The CLI uses `gh`'s own precedence —
+  `GH_TOKEN` first — which is the order that works in both environments.
+
+Both were caught only because the check fails closed. Reading a 401 as "no
+unverified commits found" would have printed a clean green run.
 
 ## What is NOT done
 
-- **Wiring.** The lint lane invocation is unknown — whether `_workflow-lint.yml`
+- **Wiring.** Neither the ratchet nor the verification check is wired into a
+  lane. The invocation is unknown — whether `_workflow-lint.yml`
   or `_scripts-lint.yml` is the right home, whether it runs from the repository
   root, and whether `bun` or `node --test` is the runner. The file is written to
   be dropped in; it is not correct about its own wiring, because that could not
@@ -97,6 +143,12 @@ That is a different test with a network dependency, and it is not written here.
   never opened, would reproduce the exact defect #688 describes.
 - **#690 part 1**, the GitHub App installation token, remains a `[settings]`
   action. Part 2 alone makes the commits signed and leaves the PRs unmergeable.
+
+When wiring the verification check in `.github-private`, note that its history
+predates the rule, so it will need either a `--since` boundary or an `--allow`
+list on first run. Both are disclosed in the check's own output; neither is
+silent. `findStaleAllowEntries` fails the run if an allowlisted SHA falls outside
+the scanned range, so the exemption cannot quietly outlive what it excused.
 
 While in `.github-private`, note that `.github/actions/signed-commit/action.yml`
 exists in `.github` and may be a cleaner reference for part 2 than the
