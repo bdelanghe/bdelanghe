@@ -31,7 +31,56 @@
  ### The blocker parts 2 and 3 do not touch
  
  `registry-refresh.yml` creates its PR with `github.token`, and **GitHub does not
-@@ -182,6 +206,20 @@
+@@ -166,6 +190,48 @@
+ on that distinction. The install is a `[settings]` action. List it in the PR body
+ per `CLAUDE.md` §3; do not attempt it.
+ 
++**The plumbing already exists — part 1 is narrower than "get a token" sounds.**
++Apps are launched from workflows here, and the mechanism is
++`.github/actions/broker-gh-token`: the job mints a GitHub Actions OIDC JWT and
++exchanges it at the `cf-token-broker` for a short-lived App **installation**
++token. No App private key sits in any repo — the keys live only in the broker,
++which is the ocap distinction §4 already names, implemented. Seven workflows in
++`.github` already call it (`org-defaults`, `registry-graph`, `branch-sweep`,
++`claim-ticket`, `front-desk-add`, `release-cut`, `sign-branch`), so this lane
++adopts an established door rather than opening a new one. What is actually a
++`[settings]` action is *registering the App and its broker entry* — not building
++token plumbing.
++
++**`registry-graph.yml` is the template, and it covers parts 1 and 2 at once.**
++It is the closest sibling to `registry-refresh.yml` and already does the whole
++shape:
++
++```yaml
++permissions: { contents: write, pull-requests: write, id-token: write }
++...
++  uses: ./.github/actions/broker-gh-token
++  with:
++    app: front-desk-registry          # its own pinned entry, not a fan-in one
++    broker-url: ${{ vars.CF_BROKER_URL }}
++    require: contents, pull_requests  # BOTH — see #87
++```
++
++then commits through `createCommitOnBranch` with that token. Three things that
++bite in that order: the job needs `id-token: write` or the OIDC vars are never
++injected; `require:` must name **every** scope the job will use, because the
++partial preflight is what killed the `pin` job at `exit 128` (#87); and
++`broker-url` is `vars.CF_BROKER_URL`, not a secret — an unset *variable* fails
++open, so a typo there does not go red, the step just skips forever.
++
++**Why this is what unblocks the merge, not merely a nicer token.** The blocker
++above is that GitHub starts no workflow runs from `GITHUB_TOKEN` events, so
++`gate` never exists to pass or fail. An App installation token is not
++`GITHUB_TOKEN`: PRs opened with it *do* start runs, so `gate` comes into
++existence and the ruleset has something to evaluate. Part 2 makes the commits
++signed; part 1 is what makes the PR checkable at all. Neither substitutes for the
++other, and part 2 shipping alone leaves the lane exactly as unmergeable as
++before.
++
+ **Say this plainly in your PR:** part 2 alone makes the commits signed and the
+ PRs still unmergeable. A PR that implies the lane is fixed is worse than one that
+ says what remains.
+@@ -182,6 +248,20 @@
    reading and had to re-sign everything.
    `handoffs/claim-bound-signing.md` §1's zero-byte measurement is correct; the
    inference "therefore a session cannot produce a signed commit" is not.
@@ -52,7 +101,7 @@
  - **`claim-ticket.yml` takes a PLAIN repo name** — `.github-private`, not
    `owner/repo`. The qualified form fails the preflight.
  - **Do not regenerate `registry/registry.json`.** Fresh at `2d6eefa`, and §2 is
-@@ -198,6 +236,21 @@
+@@ -198,6 +278,21 @@
  - **A rebase is sometimes the fix.** After the registry refresh merged, an open
    PR's `registry / check` still failed — correctly: its *checkout* still carried
    the stale `registry/`. The drift guard was right both times.
@@ -74,7 +123,7 @@
  
  ---
  
-@@ -211,6 +264,17 @@
+@@ -211,6 +306,17 @@
  `.github` and `add_repo` the target, per
  [`../spawned-sessions.md`](../spawned-sessions.md).
  

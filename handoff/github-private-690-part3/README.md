@@ -134,7 +134,7 @@ unverified commits found" would have printed a clean green run.
 Additive edits to the hand-off document this work came from, which lives in
 `.github-private` and so could not be edited directly. Generated against the
 copy supplied to the session and verified: `git apply --check` passes, applying
-it round-trips byte-exact, 4 hunks, 64 lines added, **0 removed**.
+it round-trips byte-exact, 5 hunks, 106 lines added, **0 removed**.
 
 ```
 git apply -p1 handoff-addenda.patch      # after renaming a/b to the real path
@@ -164,6 +164,19 @@ What it adds:
 4. **§6 — the `add_repo` refusal confirmed, with its reason**, and the
    consequence §6 does not draw: a *private* dot-named repo has no anonymous-read
    fallback either, so the web selector is the only route.
+5. **§4 — what #690 part 1 actually is.** The hand-off names it as a
+   `[settings]` action and stops. Apps are launched from workflows here via
+   `.github/actions/broker-gh-token`, which exchanges an Actions OIDC JWT at the
+   `cf-token-broker` for a short-lived App installation token, with no App key in
+   any repo. Seven workflows in `.github` already call it, so the lane adopts an
+   existing door rather than opening one; the `[settings]` part is registering
+   the App and its broker entry, not building plumbing. `registry-graph.yml` is
+   the template and covers parts 1 and 2 together — broker call plus
+   `createCommitOnBranch`. Records the three things that bite in order
+   (`id-token: write`, `require:` naming every scope per #87, and `broker-url`
+   being a *var* whose absence fails open), and why part 1 is what unblocks the
+   merge: an installation token is not `GITHUB_TOKEN`, so PRs opened with it do
+   start runs and `gate` comes into existence.
 
 ## What is NOT done
 
