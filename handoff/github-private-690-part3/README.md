@@ -129,6 +129,55 @@ its own tests and restore returns green:
 Both were caught only because the check fails closed. Reading a 401 as "no
 unverified commits found" would have printed a clean green run.
 
+## `handoff-addenda.patch` — four corrections to the originating hand-off
+
+Additive edits to the hand-off document this work came from, which lives in
+`.github-private` and so could not be edited directly. Generated against the
+copy supplied to the session and verified: `git apply --check` passes, applying
+it round-trips byte-exact, 5 hunks, 106 lines added, **0 removed**.
+
+```
+git apply -p1 handoff-addenda.patch      # after renaming a/b to the real path
+```
+
+The patch labels the target `HANDOFF.md` because the document's real filename in
+`.github-private` was never visible from here — substitute it before applying. If
+the document has been edited since, the hunks are independent and small enough to
+apply by hand; nothing is deleted, so a rejected hunk loses only that addition.
+
+What it adds:
+
+1. **§5 — the `%G?` trap is worse than recorded.** §5 says `%G?` reports `N`
+   because `gpg.ssh.allowedSignersFile` is unset. Configuring it, as that implies
+   you should, makes `%G?` report `B` — *bad signature* — because git routes
+   verification through `gpg.ssh.program` too and that broker is sign-only. The
+   trap gets worse for a session that follows the advice. The patch replaces the
+   qualified claim with an absolute one: no `%G?` value there carries
+   information.
+2. **§5 — three new environment traps.** Node's `fetch` ignores `HTTPS_PROXY`
+   and 401s where `curl` gets 200; `GITHUB_TOKEN` and `GH_TOKEN` can both be set
+   with only one valid; a PR with no checks reports `state: pending` with
+   `total_count: 0` and never turns green, so "merge when it is green" never
+   terminates.
+3. **§4 — the ported ratchet's blind spot**, with the measurement that proves it
+   and a description of the outcome-based check that closes the class.
+4. **§6 — the `add_repo` refusal confirmed, with its reason**, and the
+   consequence §6 does not draw: a *private* dot-named repo has no anonymous-read
+   fallback either, so the web selector is the only route.
+5. **§4 — what #690 part 1 actually is.** The hand-off names it as a
+   `[settings]` action and stops. Apps are launched from workflows here via
+   `.github/actions/broker-gh-token`, which exchanges an Actions OIDC JWT at the
+   `cf-token-broker` for a short-lived App installation token, with no App key in
+   any repo. Seven workflows in `.github` already call it, so the lane adopts an
+   existing door rather than opening one; the `[settings]` part is registering
+   the App and its broker entry, not building plumbing. `registry-graph.yml` is
+   the template and covers parts 1 and 2 together — broker call plus
+   `createCommitOnBranch`. Records the three things that bite in order
+   (`id-token: write`, `require:` naming every scope per #87, and `broker-url`
+   being a *var* whose absence fails open), and why part 1 is what unblocks the
+   merge: an installation token is not `GITHUB_TOKEN`, so PRs opened with it do
+   start runs and `gate` comes into existence.
+
 ## What is NOT done
 
 - **Wiring.** Neither the ratchet nor the verification check is wired into a
