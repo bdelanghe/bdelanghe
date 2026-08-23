@@ -178,6 +178,23 @@ What it adds:
    merge: an installation token is not `GITHUB_TOKEN`, so PRs opened with it do
    start runs and `gate` comes into existence.
 
+## `handoff-addenda-2.patch` — the dot-named-repo question into §7
+
+A second, separate patch adding one bullet to the hand-off's §7 ("what is
+deliberately left open"): whether core infra should live in dot-named
+repositories at all. The argument and its measurements are in
+[`../dot-named-core-infra.md`](../dot-named-core-infra.md).
+
+**The two patches are independent.** Verified by applying them in both orders
+against a pristine copy: each applies standalone, and either order produces a
+byte-identical result. Apply one, the other, or both. 1 hunk, 25 lines added,
+0 removed.
+
+It is filed as a §7 item rather than a §5 trap on purpose. §5 is for things to
+route around; this is a claim that the topology *caused* §4 — the ratchet's blast
+radius is one repository because it resolves its workflow directory relative to
+its own checkout, so porting it fixes the instance and not the class.
+
 ## What is NOT done
 
 - **Wiring.** Neither the ratchet nor the verification check is wired into a
