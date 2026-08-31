@@ -30,15 +30,15 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-29</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-08-30</summary>
 
 ## capability-security
 
+- [trust](https://github.com/bounded-systems/trust) — Bounded Systems Trust Center — a public, grep-verifiable claims ledger (verifiable, not attested). `HTML`
+- [dev-registry](https://github.com/bounded-systems/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `Shell`
 - [cf-oidc-token-broker](https://github.com/bounded-systems/cf-oidc-token-broker) `JavaScript`
 - [seam-check](https://github.com/bounded-systems/seam-check) — Declare and prove a package's seam claim — allowed imports + zero ambient authority — with a coverage meta-check. The extractability harness, productized. `TypeScript`
 - [installer](https://github.com/bounded-systems/installer) — Spec-driven provisioning: install/doctor as VerbSpec verbs, effects delegated to capability seams `TypeScript`
-- [trust](https://github.com/bounded-systems/trust) — Bounded Systems Trust Center — a public, grep-verifiable claims ledger (verifiable, not attested). `HTML`
-- [dev-registry](https://github.com/bounded-systems/dev-registry) — Local-first, OCI-compatible container registry + devcontainer build system, with Git/MCP integration and build traceability. `Shell`
 
 ## agent-infra
 
@@ -49,8 +49,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## ai
 
-- [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [claude-token-tools](https://github.com/bounded-systems/claude-token-tools) — Claude Code token-saving toolkit — model-usage auditor + home-manager module `JavaScript`
+- [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [mcp-conversations-sqlite](https://github.com/bdelanghe/mcp-conversations-sqlite) — SQLite store for MCP (Model Context Protocol) conversation history `TypeScript`
 - [bdelanghe-claude-skills](https://github.com/bdelanghe/bdelanghe-claude-skills) — Claude Code skills and plugins for AI-assisted engineering workflows
 
@@ -58,10 +58,10 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [git-ast](https://github.com/bounded-systems/git-ast) — Language-aware Git: a clean/smudge design for AST-based diffs & merges. Design stage — spec + compiling skeleton, not yet a working tool. `Rust`
 - [lima-devshell](https://github.com/bounded-systems/lima-devshell) — Bootstrap devshell for Lima VM environments + macOS Home Manager config (Nix flake). `Nix`
+- [schema-bridge](https://github.com/bounded-systems/schema-bridge) — Schema bridge tool for transformations `TypeScript`
 - [hooksmith](https://github.com/bounded-systems/hooksmith) — Build Rust binaries into Lefthook hooks with WASM components `Rust`
 - [frond](https://github.com/bounded-systems/frond) — JS/TS round-trip validation with Deno + SWC: parse to an AST and regenerate source to check fidelity. `TypeScript`
 - [dev-contracts](https://github.com/bounded-systems/dev-contracts) `TypeScript`
-- [schema-bridge](https://github.com/bounded-systems/schema-bridge) — Schema bridge tool for transformations `TypeScript`
 
 ## infrastructure
 
@@ -81,12 +81,12 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## agents
 
+- [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
+- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-peercred](https://github.com/bounded-systems/door-peercred) — SO_PEERCRED helper for launcherd (Rust) — extracted from claude-box; a launcherd helper, not a door `Rust`
 - [door-concierge](https://github.com/bounded-systems/door-concierge) — concierged — the capability-introducer door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-scout](https://github.com/bounded-systems/door-scout) — scoutd — the external-read capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
 - [door-net](https://github.com/bounded-systems/door-net) — netd — the allowlist-egress capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-keeper](https://github.com/bounded-systems/door-keeper) — keeperd — the git-signing capability door, as a pinned OCI image (extracted from claude-box) `TypeScript`
-- [door-kit](https://github.com/bounded-systems/door-kit) — In-box door-client SDK for claude-box's capability doors (keeper/scout/concierge/spawn), over the guest-room protocol `TypeScript`
 - [ocap-provenance](https://github.com/bounded-systems/ocap-provenance) — Capability-use provenance — a schema + SLSA mapping binding each privileged effect to a signed owner and an auditable chain. `TypeScript`
 - [lone](https://github.com/bounded-systems/lone) — Semantic blessing engine for DOM subtrees — untrusted element trees become typed Blessed<T> / Finding[] across a stable contract boundary. `TypeScript`
 
@@ -94,39 +94,40 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
 - [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
-- [verb-claude-md](https://github.com/bounded-systems/verb-claude-md) — CLAUDE.md verbs — validate claude.config.json and generate CLAUDE.md, via verbspec `TypeScript`
-- [verb-router](https://github.com/bounded-systems/verb-router) — Compose verbspec registries into one nix-generated Claude Code plugin: a verb router MCP server plus generated /verb:* commands and marketplace. `Nix`
 - [desk](https://github.com/bounded-systems/desk) — The Front Desk, live — a Worker that renders the org's ranked board at request time. `JavaScript`
-- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
+- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
+- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
+- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [keycard](https://github.com/bounded-systems/keycard) — The OIDC model as machine-checked proofs, a hardened little tool, and a standing question. `Lean`
 - [ci-workflows](https://github.com/bounded-systems/ci-workflows) — Reusable GitHub Actions workflows shared across bounded-systems. Public because private-repo workflows never resolve into public callers. `Python`
+- [verify](https://github.com/bounded-systems/verify) — @bounded-systems/verify — standalone zero-dep offline Sigstore-bundle verifier. Published to JSR keyless via OIDC. `JavaScript`
+- [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
+- [concierge-wire](https://github.com/bounded-systems/concierge-wire) `Shell`
+- [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
+- [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
+- [gh-action-contracts](https://github.com/bounded-systems/gh-action-contracts) — Deno pull-shape contract gate — validates page-data cuts against typed Zod contracts `Shell`
+- [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
+- [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut `Shell`
+- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
+- [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system `Shell`
+- [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
+- [verb-claude-md](https://github.com/bounded-systems/verb-claude-md) — CLAUDE.md verbs — validate claude.config.json and generate CLAUDE.md, via verbspec `TypeScript`
+- [verb-router](https://github.com/bounded-systems/verb-router) — Compose verbspec registries into one nix-generated Claude Code plugin: a verb router MCP server plus generated /verb:* commands and marketplace. `Nix`
+- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [await-approval](https://github.com/bounded-systems/await-approval) — In-house manual-approval gate for GitHub Actions: pause a job on an issue until an allowlisted approver comments. SHA-pin when consuming. `Shell`
 - [agent-memory](https://github.com/bounded-systems/agent-memory) — Agent memory as a capability — a dolt-server-backed KV store behind a memory door. Fully separate from Front Desk; the bd-memories replacement (prx#1008). `TypeScript`
 - [trellis](https://github.com/bounded-systems/trellis) — The bounded-systems contract map (semantic tree) + the aggregating flake check that CI runs `TypeScript`
-- [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [verbspec-mcp](https://github.com/bounded-systems/verbspec-mcp) — Turn any @bounded-systems/verbspec verb Registry into an MCP server (official @modelcontextprotocol/sdk). `TypeScript`
-- [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
 - [descriptor-kit](https://github.com/bounded-systems/descriptor-kit) `TypeScript`
-- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
-- [concierge-wire](https://github.com/bounded-systems/concierge-wire) `Shell`
-- [scout-wire](https://github.com/bounded-systems/scout-wire) `TypeScript`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `TypeScript`
-- [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
-- [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system `Shell`
-- [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut `Shell`
-- [gh-action-contracts](https://github.com/bounded-systems/gh-action-contracts) — Deno pull-shape contract gate — validates page-data cuts against typed Zod contracts `Shell`
 - [conformance](https://github.com/bounded-systems/conformance) — Org/repo conformance as code — the default-branch standard (rulesets-as-JSON) + an audit that scores every repo. Complements conformance-kit (site content) and fleet (live status). `TypeScript`
 - [fleet](https://github.com/bounded-systems/fleet) — Auto-generated fleet status board for bounded-systems (synoptic Layer 2 — live CI/PR/issue board) `Shell`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
-- [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
-- [verify](https://github.com/bounded-systems/verify) — @bounded-systems/verify — standalone zero-dep offline Sigstore-bundle verifier. Published to JSR keyless via OIDC. `JavaScript`
-- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
-- [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
 - [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
-- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [schema-gen](https://github.com/bounded-systems/schema-gen) — Project zod schemas to explicit, fast-types-clean TypeScript (zod → JSON Schema → .d.ts) `TypeScript`
 - [lobby](https://github.com/bounded-systems/lobby) — Offline Obsidian vault (Copilot+Ollama) — drafts become robertdelanghe.dev posts `Shell`
 - [surface-sync](https://github.com/bounded-systems/surface-sync) — Type ontology for work-unit change-detection across GH/branch/worktree/tmux/beads `TypeScript`
@@ -149,7 +150,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [disposition](https://github.com/bounded-systems/disposition) — Pure classifier mapping work-unit surface state to a disposition (ok/prune/repair/review) `TypeScript`
 - [audit-context](https://github.com/bounded-systems/audit-context) — Ambient runtime context for gh-call audit attribution (verb, actor, truth reason) `TypeScript`
 - [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
-- [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [nori-nix](https://github.com/bdelanghe/nori-nix) — nori — the multi-provider agent CLI, as a pinned release binary and a home-manager module `Nix`
 - [ghostty-nix](https://github.com/bdelanghe/ghostty-nix) — Ghostty terminal configuration as a home-manager module — minimal, high-contrast, low-motion, deterministic `Nix`
 - [flake-verbs](https://github.com/bdelanghe/flake-verbs) — Flake-structure verbs — which inputs a flake actually uses, and which it can still fetch. verbspec-projected to CLI/MCP/OpenAPI. `TypeScript`
