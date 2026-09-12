@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-10</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-11</summary>
 
 ## capability-security
 
@@ -49,8 +49,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## ai
 
-- [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [claude-token-tools](https://github.com/bounded-systems/claude-token-tools) — Claude Code token-saving toolkit — model-usage auditor + home-manager module `JavaScript`
+- [string-audit](https://github.com/bounded-systems/string-audit) — Cost-aware, grounded content auditor — typed string symbols, type-scoped audits, CAS-memoized LLM calls. `JavaScript`
 - [mcp-conversations-sqlite](https://github.com/bdelanghe/mcp-conversations-sqlite) — SQLite store for MCP (Model Context Protocol) conversation history `TypeScript`
 - [bdelanghe-claude-skills](https://github.com/bdelanghe/bdelanghe-claude-skills) — Claude Code skills and plugins for AI-assisted engineering workflows
 
@@ -93,6 +93,7 @@ through dev containers, state machines (xstate), and design tokens.
 ## other
 
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [ghostty-nix](https://github.com/bdelanghe/ghostty-nix) — Ghostty terminal configuration as a home-manager module — minimal, high-contrast, low-motion, deterministic `Nix`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [desk](https://github.com/bounded-systems/desk) — The Front Desk, live — a Worker that renders the org's ranked board at request time. `JavaScript`
@@ -153,7 +154,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [claude-mcp-nix](https://github.com/bdelanghe/claude-mcp-nix) `Nix`
 - [night-audit](https://github.com/bounded-systems/night-audit) — The Front Desk's reconciliation room — the public home for the board's sweep lanes, so their minutes draw the free allowance.
 - [nori-nix](https://github.com/bdelanghe/nori-nix) — nori — the multi-provider agent CLI, as a pinned release binary and a home-manager module `Nix`
-- [ghostty-nix](https://github.com/bdelanghe/ghostty-nix) — Ghostty terminal configuration as a home-manager module — minimal, high-contrast, low-motion, deterministic `Nix`
 - [flake-verbs](https://github.com/bdelanghe/flake-verbs) — Flake-structure verbs — which inputs a flake actually uses, and which it can still fetch. verbspec-projected to CLI/MCP/OpenAPI. `TypeScript`
 - [brand-tools](https://github.com/bdelanghe/brand-tools) `JavaScript`
 - [brand](https://github.com/bdelanghe/brand) — Robert DeLanghe — personal brand. A pinning of bounded-systems/baobab: the token set (colors, type, space) the structure renders. `JavaScript`
