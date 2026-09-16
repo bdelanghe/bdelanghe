@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-14</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-15</summary>
 
 ## capability-security
 
@@ -92,8 +92,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
-- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [yubikey](https://github.com/bounded-systems/yubikey) `Nix`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `Shell`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
