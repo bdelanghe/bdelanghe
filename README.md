@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-22</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-09-23</summary>
 
 ## capability-security
 
@@ -92,8 +92,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## other
 
-- [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
 - [yubikey](https://github.com/bounded-systems/yubikey) `Nix`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `Shell`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
@@ -151,7 +152,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [anchored-chain](https://github.com/bounded-systems/anchored-chain) — Derivation chain with contract validation, signing, lineage tracking, and invalidation `TypeScript`
 - [ghostty-nix](https://github.com/bdelanghe/ghostty-nix) — Ghostty terminal configuration as a home-manager module — minimal, high-contrast, low-motion, deterministic `Nix`
 - [verb-claude-md](https://github.com/bounded-systems/verb-claude-md) — CLAUDE.md verbs — validate claude.config.json and generate CLAUDE.md, via verbspec `TypeScript`
-- [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [claude-mcp-nix](https://github.com/bdelanghe/claude-mcp-nix) `Nix`
 - [night-audit](https://github.com/bounded-systems/night-audit) — The Front Desk's reconciliation room — the public home for the board's sweep lanes, so their minutes draw the free allowance.
 - [nori-nix](https://github.com/bdelanghe/nori-nix) — nori — the multi-provider agent CLI, as a pinned release binary and a home-manager module `Nix`
