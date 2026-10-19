@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-10-17</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-10-18</summary>
 
 ## capability-security
 
@@ -69,9 +69,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 
 ## experiment
 
@@ -93,17 +93,18 @@ through dev containers, state machines (xstate), and design tokens.
 ## other
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
+- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [keycard](https://github.com/bounded-systems/keycard) — The OIDC model as machine-checked proofs, a hardened little tool, and a standing question. `Lean`
+- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
-- [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [trellis](https://github.com/bounded-systems/trellis) — The bounded-systems contract map (semantic tree) + the aggregating flake check that CI runs `TypeScript`
 - [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
 - [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
 - [deploy](https://github.com/bounded-systems/deploy) — bounded.tools DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
-- [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [scout-wire](https://github.com/bounded-systems/scout-wire) `Shell`
 - [drift-gate](https://github.com/bounded-systems/drift-gate) — Surface & descriptor drift gate for TS/JS repos — library, verbspec CLI, and standalone binary. `TypeScript`
 - [baobab](https://github.com/bounded-systems/baobab) — Configurable design-system structure — no defaults. brand is its exact pinning (the token set); components are a11y-specced by lone. `TypeScript`
@@ -143,7 +144,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [gh](https://github.com/bounded-systems/gh) — GitHub CLI wrapper with policy enforcement, rate-limit gating, and budget audit logging `TypeScript`
 - [git](https://github.com/bounded-systems/git) — Git CLI wrapper with policy enforcement and stale-lock recovery `TypeScript`
 - [fs](https://github.com/bounded-systems/fs) — Filesystem capability seam; the one allowed filesystem-access point with an injectable FileSystem `TypeScript`
-- [keycard](https://github.com/bounded-systems/keycard) — The OIDC model as machine-checked proofs, a hardened little tool, and a standing question. `Lean`
 - [disposition](https://github.com/bounded-systems/disposition) — Pure classifier mapping work-unit surface state to a disposition (ok/prune/repair/review) `TypeScript`
 - [bd](https://github.com/bounded-systems/bd) — Typed interface to the beads CLI with policy enforcement and short-ID guards `TypeScript`
 - [auth](https://github.com/bounded-systems/auth) — Service-credential resolver (GitHub, Notion) through a single sanctioned access point `TypeScript`
