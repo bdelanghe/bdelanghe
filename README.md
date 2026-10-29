@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-10-27</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-10-28</summary>
 
 ## capability-security
 
@@ -95,6 +95,17 @@ through dev containers, state machines (xstate), and design tokens.
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module)
+- [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
+- [voiceover-prefs](https://github.com/bdelanghe/voiceover-prefs) — macOS VoiceOver portable preferences on a sparse image, mounted at login and versioned as XML plists (Home Manager module)
+- [displayplacer-hm](https://github.com/bdelanghe/displayplacer-hm) — displayplacer (macOS display arrangement from the CLI) for Home Manager, with a guarded applier that reasserts a pinned arrangement
+- [passage-hm](https://github.com/bdelanghe/passage-hm) — passage (pass with age, SSH keys as identities) for Home Manager: packages, PASSAGE_* variables, a non-destructive store bootstrap `Nix`
+- [contacts](https://github.com/bdelanghe/contacts) — A local vCard store (vdir) and a loopback-only Radicale CardDAV server in front of it, as a Home Manager module `Nix`
+- [focus-observer](https://github.com/bdelanghe/focus-observer) — Which app, window and browser tab had the screen on macOS: focus intervals as OTLP spans, a Chrome extension, an lsappinfo sampler (Home Manager module)
+- [time-sync](https://github.com/bdelanghe/time-sync) — An hourly clock-offset check for macOS (sntp, no root, never sets the clock), as a Home Manager module
+- [claude-code-hooks](https://github.com/bdelanghe/claude-code-hooks) — Claude Code PreToolUse hooks (read-only approvals, auto-background, macOS-block and ad-hoc-notification guards) with a Home Manager module `Shell`
+- [launchd-tools](https://github.com/bdelanghe/launchd-tools) — Home Manager helpers for macOS launchd user agents: legible Login Items names, one KeepAlive supervisor agent `Nix`
+- [disk-steward](https://github.com/bdelanghe/disk-steward) — Keeps host free space above a floor by sweeping declared consumers (dry-run by default); Rust + Home Manager module `Rust`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [cake-demo](https://github.com/bdelanghe/cake-demo) — cake demo: one wip commit served as stacked PRs `Rust`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
