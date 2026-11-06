@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-04</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-05</summary>
 
 ## capability-security
 
@@ -94,8 +94,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
-- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
+- [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module) `Nix`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
@@ -103,7 +104,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [desk](https://github.com/bounded-systems/desk) — The Front Desk, live — a Worker that renders the org's ranked board at request time. `JavaScript`
-- [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module)
 - [voiceover-prefs](https://github.com/bdelanghe/voiceover-prefs) — macOS VoiceOver portable preferences on a sparse image, mounted at login and versioned as XML plists (Home Manager module)
 - [displayplacer-hm](https://github.com/bdelanghe/displayplacer-hm) — displayplacer (macOS display arrangement from the CLI) for Home Manager, with a guarded applier that reasserts a pinned arrangement
 - [passage-hm](https://github.com/bdelanghe/passage-hm) — passage (pass with age, SSH keys as identities) for Home Manager: packages, PASSAGE_* variables, a non-destructive store bootstrap `Nix`
