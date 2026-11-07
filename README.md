@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-05</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-06</summary>
 
 ## capability-security
 
@@ -69,8 +69,8 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
-- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
+- [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
 
 ## experiment
@@ -94,8 +94,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
-- [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module) `Nix`
+- [contacts](https://github.com/bdelanghe/contacts) — A local vCard store (vdir) and a loopback-only Radicale CardDAV server in front of it, as a Home Manager module `Nix`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module) `Nix`
 - [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
@@ -107,7 +108,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [voiceover-prefs](https://github.com/bdelanghe/voiceover-prefs) — macOS VoiceOver portable preferences on a sparse image, mounted at login and versioned as XML plists (Home Manager module)
 - [displayplacer-hm](https://github.com/bdelanghe/displayplacer-hm) — displayplacer (macOS display arrangement from the CLI) for Home Manager, with a guarded applier that reasserts a pinned arrangement
 - [passage-hm](https://github.com/bdelanghe/passage-hm) — passage (pass with age, SSH keys as identities) for Home Manager: packages, PASSAGE_* variables, a non-destructive store bootstrap `Nix`
-- [contacts](https://github.com/bdelanghe/contacts) — A local vCard store (vdir) and a loopback-only Radicale CardDAV server in front of it, as a Home Manager module `Nix`
 - [focus-observer](https://github.com/bdelanghe/focus-observer) — Which app, window and browser tab had the screen on macOS: focus intervals as OTLP spans, a Chrome extension, an lsappinfo sampler (Home Manager module)
 - [time-sync](https://github.com/bdelanghe/time-sync) — An hourly clock-offset check for macOS (sntp, no root, never sets the clock), as a Home Manager module
 - [claude-code-hooks](https://github.com/bdelanghe/claude-code-hooks) — Claude Code PreToolUse hooks (read-only approvals, auto-background, macOS-block and ad-hoc-notification guards) with a Home Manager module `Shell`
