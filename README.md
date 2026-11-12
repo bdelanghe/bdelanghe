@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-10</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-11</summary>
 
 ## capability-security
 
@@ -94,6 +94,7 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [exe-host](https://github.com/bdelanghe/exe-host) `Shell`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `Shell`
@@ -130,7 +131,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [gh-action-node-uniqueness](https://github.com/bounded-systems/gh-action-node-uniqueness) — Node.js identity-key uniqueness gate — no identity key may repeat in any data cut `Shell`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system `Shell`
-- [exe-host](https://github.com/bdelanghe/exe-host) `Shell`
 - [contacts](https://github.com/bdelanghe/contacts) — A local vCard store (vdir) and a loopback-only Radicale CardDAV server in front of it, as a Home Manager module `Nix`
 - [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module) `Nix`
 - [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
