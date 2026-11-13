@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-11</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-12</summary>
 
 ## capability-security
 
@@ -69,14 +69,14 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
-- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
+- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
 
 ## experiment
 
-- [fold-engine](https://github.com/bounded-systems/fold-engine) — Linked-data engine for an Obsidian vault — JSON-LD / schema.org structure over notes. `HTML`
 - [flask-mysql-ngrok](https://github.com/bdelanghe/flask-mysql-ngrok) — Bare-bones Flask + MySQL todo app with ngrok, set up with devenv. `HTML`
+- [fold-engine](https://github.com/bounded-systems/fold-engine) — Linked-data engine for an Obsidian vault — JSON-LD / schema.org structure over notes. `HTML`
 - [lean-to](https://github.com/bdelanghe/lean-to) — tiny vite project `TypeScript`
 
 ## agents
@@ -94,9 +94,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
+- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [exe-host](https://github.com/bdelanghe/exe-host) `Shell`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
-- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `Shell`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
