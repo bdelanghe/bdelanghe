@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-24</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-25</summary>
 
 ## capability-security
 
@@ -69,9 +69,9 @@ through dev containers, state machines (xstate), and design tokens.
 
 ## design-tokens
 
+- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 - [site](https://github.com/bounded-systems/site) — The bounded.tools website — static, built on @bounded-systems/brand `JavaScript`
 - [brand](https://github.com/bounded-systems/brand) — Bounded Systems brand — W3C design tokens, self-hosted fonts, the mark, and ready-to-link CSS. `JavaScript`
-- [site](https://github.com/bdelanghe/site) — robertdelanghe.dev — software-engineering portfolio (synoptic v2) `JavaScript`
 
 ## experiment
 
@@ -93,14 +93,21 @@ through dev containers, state machines (xstate), and design tokens.
 ## other
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
+- [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
+- [launchd-tools](https://github.com/bdelanghe/launchd-tools) — Home Manager helpers for macOS launchd user agents: legible Login Items names, one KeepAlive supervisor agent `Nix`
+- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
+- [focus-observer](https://github.com/bdelanghe/focus-observer) — Which app, window and browser tab had the screen on macOS: focus intervals as OTLP spans, a Chrome extension, an lsappinfo sampler (Home Manager module)
+- [flake-verbs](https://github.com/bdelanghe/flake-verbs) — Flake-structure verbs — which inputs a flake actually uses, and which it can still fetch. verbspec-projected to CLI/MCP/OpenAPI. `TypeScript`
+- [exe-host](https://github.com/bdelanghe/exe-host) `Shell`
+- [disk-steward](https://github.com/bdelanghe/disk-steward) — Keeps host free space above a floor by sweeping declared consumers (dry-run by default); Rust + Home Manager module `Rust`
+- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
+- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
 - [front-desk-feed](https://github.com/bounded-systems/front-desk-feed) — Publishes the public half of the Front Desk board as a cosign-signed snapshot, for anyone to fetch and verify. `Shell`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
 - [conformance-kit](https://github.com/bounded-systems/conformance-kit) — Standalone web-conformance toolkit — integrity (provenance/manifest/verify) + conformance gates (SBOM, SHACL runner, SEO/readability/HTTP, lone semantic) + generators (static API/OpenAPI, did:web/VC, IPFS CID). Site-agnostic; vendored hash-pinned by consuming sites. `JavaScript`
 - [static-mcp](https://github.com/bounded-systems/static-mcp) — @bounded-systems/static-mcp — serve VerbSpec verbs as a Sigstore-verified static-response MCP server. `TypeScript`
 - [site-mcp](https://github.com/bounded-systems/site-mcp) — MCP server over robertdelanghe.dev's signed static API — read-only, verifies responses against the site's content-addressed manifest. `TypeScript`
 - [bounded-tools-mcp](https://github.com/bounded-systems/bounded-tools-mcp) — MCP server over bounded.tools' signed static API — a static-mcp implementation `TypeScript`
-- [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
-- [exe-host](https://github.com/bdelanghe/exe-host) `Shell`
 - [keeper-wire](https://github.com/bounded-systems/keeper-wire) `Shell`
 - [front-desk-scheduler](https://github.com/bounded-systems/front-desk-scheduler) — Front Desk (org project #2) modeled as a concurrent scheduler — reuses gh-project-room's pure policy, reproduces & proves its race conditions (DST sim + TLA+). `TypeScript`
 - [lobby](https://github.com/bounded-systems/lobby) — Offline Obsidian vault (Copilot+Ollama) — drafts become robertdelanghe.dev posts `Shell`
@@ -108,7 +115,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [descriptor-kit](https://github.com/bounded-systems/descriptor-kit) `TypeScript`
 - [await-approval](https://github.com/bounded-systems/await-approval) — In-house manual-approval gate for GitHub Actions: pause a job on an issue until an allowlisted approver comments. SHA-pin when consuming. `Shell`
 - [trellis](https://github.com/bounded-systems/trellis) — The bounded-systems contract map (semantic tree) + the aggregating flake check that CI runs `TypeScript`
-- [mint](https://github.com/bounded-systems/mint) — Deterministic versioning — intent files in, signed release out. A seam over semver. `JavaScript`
 - [verb-router](https://github.com/bounded-systems/verb-router) — Compose verbspec registries into one nix-generated Claude Code plugin: a verb router MCP server plus generated /verb:* commands and marketplace. `Shell`
 - [bounded.tools](https://github.com/bounded-systems/bounded.tools) — GitHub App receiver + setup endpoint for prx (bounded-systems-prx) `TypeScript`
 - [cas](https://github.com/bounded-systems/cas) — Content-addressable storage substrate: bytes addressed by their SHA-256 digest, with a storage-agnostic blob-store port `TypeScript`
@@ -118,7 +124,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [repo-health](https://github.com/bounded-systems/repo-health) — Code-structure health signals (import cycles, god-files, hubs) as a verbspec CLI + CI gate — the internal-structure complement to drift-gate `TypeScript`
 - [env](https://github.com/bounded-systems/env) — The one sanctioned reader of process.env, routing ambient config through capability imports `Shell`
 - [trellis-kit](https://github.com/bounded-systems/trellis-kit) `TypeScript`
-- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
 - [verbspec](https://github.com/bounded-systems/verbspec) — Spec-driven CLI core: author a verb once as a typed VerbSpec, project it to CLI, MCP, OpenAPI, and Anthropic tool surfaces `TypeScript`
 - [keycard](https://github.com/bounded-systems/keycard) — The OIDC model as machine-checked proofs, a hardened little tool, and a standing question. `Lean`
 - [ci-workflows](https://github.com/bounded-systems/ci-workflows) — Reusable GitHub Actions workflows shared across bounded-systems. Public because private-repo workflows never resolve into public callers. `Python`
@@ -133,16 +138,12 @@ through dev containers, state machines (xstate), and design tokens.
 - [gh-action-brand-checks](https://github.com/bounded-systems/gh-action-brand-checks) — Brand token, meta, a11y, and content-token gate against the @bounded-systems/brand system `Shell`
 - [contacts](https://github.com/bdelanghe/contacts) — A local vCard store (vdir) and a loopback-only Radicale CardDAV server in front of it, as a Home Manager module `Nix`
 - [claude-otel](https://github.com/bdelanghe/claude-otel) — Claude Code telemetry kept on the machine: a local OpenTelemetry collector + OpenObserve, and the OTEL_* environment pointing at it (Home Manager module) `Nix`
-- [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
 - [desk](https://github.com/bounded-systems/desk) — The Front Desk, live — a Worker that renders the org's ranked board at request time. `JavaScript`
 - [voiceover-prefs](https://github.com/bdelanghe/voiceover-prefs) — macOS VoiceOver portable preferences on a sparse image, mounted at login and versioned as XML plists (Home Manager module)
 - [displayplacer-hm](https://github.com/bdelanghe/displayplacer-hm) — displayplacer (macOS display arrangement from the CLI) for Home Manager, with a guarded applier that reasserts a pinned arrangement
 - [passage-hm](https://github.com/bdelanghe/passage-hm) — passage (pass with age, SSH keys as identities) for Home Manager: packages, PASSAGE_* variables, a non-destructive store bootstrap `Nix`
-- [focus-observer](https://github.com/bdelanghe/focus-observer) — Which app, window and browser tab had the screen on macOS: focus intervals as OTLP spans, a Chrome extension, an lsappinfo sampler (Home Manager module)
 - [time-sync](https://github.com/bdelanghe/time-sync) — An hourly clock-offset check for macOS (sntp, no root, never sets the clock), as a Home Manager module
 - [claude-code-hooks](https://github.com/bdelanghe/claude-code-hooks) — Claude Code PreToolUse hooks (read-only approvals, auto-background, macOS-block and ad-hoc-notification guards) with a Home Manager module `Shell`
-- [launchd-tools](https://github.com/bdelanghe/launchd-tools) — Home Manager helpers for macOS launchd user agents: legible Login Items names, one KeepAlive supervisor agent `Nix`
-- [disk-steward](https://github.com/bdelanghe/disk-steward) — Keeps host free space above a floor by sweeping declared consumers (dry-run by default); Rust + Home Manager module `Rust`
 - [cake-demo](https://github.com/bdelanghe/cake-demo) — cake demo: one wip commit served as stacked PRs `Rust`
 - [yubikey](https://github.com/bounded-systems/yubikey) `Nix`
 - [scout](https://github.com/bounded-systems/scout) — Content-addressed surface reads (file/grep/files) with anchored-chain provenance `TypeScript`
@@ -169,7 +170,6 @@ through dev containers, state machines (xstate), and design tokens.
 - [claude-mcp-nix](https://github.com/bdelanghe/claude-mcp-nix) `Nix`
 - [night-audit](https://github.com/bounded-systems/night-audit) — The Front Desk's reconciliation room — the public home for the board's sweep lanes, so their minutes draw the free allowance.
 - [nori-nix](https://github.com/bdelanghe/nori-nix) — nori — the multi-provider agent CLI, as a pinned release binary and a home-manager module `Nix`
-- [flake-verbs](https://github.com/bdelanghe/flake-verbs) — Flake-structure verbs — which inputs a flake actually uses, and which it can still fetch. verbspec-projected to CLI/MCP/OpenAPI. `TypeScript`
 - [brand-tools](https://github.com/bdelanghe/brand-tools) `JavaScript`
 - [brand](https://github.com/bdelanghe/brand) — Robert DeLanghe — personal brand. A pinning of bounded-systems/baobab: the token set (colors, type, space) the structure renders. `JavaScript`
 - [deploy](https://github.com/bdelanghe/deploy) — robertdelanghe.dev DNS-as-code (reviewer-gated, OIDC-brokered) `JavaScript`
