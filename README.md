@@ -30,7 +30,7 @@ through dev containers, state machines (xstate), and design tokens.
 - [synoptic-github](https://github.com/bdelanghe/synoptic-github) —  A dynamic template that auto-updates your README to showcase all your GitHub projects, offering a concise overview of your coding journey 🌟✨ `TypeScript`
 
 <details>
-<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-26</summary>
+<summary><b>All public repositories</b> — grouped by topic · auto-updated 2026-11-27</summary>
 
 ## capability-security
 
@@ -93,8 +93,8 @@ through dev containers, state machines (xstate), and design tokens.
 ## other
 
 - [proofs](https://github.com/bounded-systems/proofs) — Formal specification as a concept: one small system, specified twice — a TLC-checked TLA+ model and a Lean 4 development, with CI that keeps both honest. `Lean`
-- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
 - [content-catalog](https://github.com/bounded-systems/content-catalog) — Org-wide content token catalog — aggregated from opted-in repos, gated and attested by string-audit `JavaScript`
+- [synoptic](https://github.com/bounded-systems/synoptic) — Site-build engine: layered validation both sites consume `TypeScript`
 - [fold-core](https://github.com/bdelanghe/fold-core) — One fold core: content + viewport + budgets → folds, deterministic (Rust; wasm later). Shared by home's fold viewer, Allie and fold-engine. `Rust`
 - [netwitness](https://github.com/bdelanghe/netwitness) — What a Mac talks to: network CLI tools, continuous zeek capture, and a domain-to-organisation resolver (Home Manager module) `Python`
 - [flake-verbs](https://github.com/bdelanghe/flake-verbs) — Flake-structure verbs — which inputs a flake actually uses, and which it can still fetch. verbspec-projected to CLI/MCP/OpenAPI. `TypeScript`
